@@ -12,7 +12,7 @@ import Footer from 'src/core/navigation/Footer';
 
 import 'src/core/tailwind.css';
 
-import { fontsClassName } from 'src/libs/fonts';
+import { fontsClassName } from 'src/libs/next';
 
 
 export const metadata: Metadata = {

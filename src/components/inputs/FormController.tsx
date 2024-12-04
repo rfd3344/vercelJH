@@ -1,59 +1,49 @@
-// import React from 'react';
-// import _ from 'lodash';
-// import { useForm } from 'src/hooks';
-// import { Controller } from 'react-hook-form';
+import { ReactNode, ChangeEvent } from 'react';
+import _ from 'lodash';
+import { Controller } from 'react-hook-form';
 
-// export default function FormContoller({
-//   name = '',
-//   label,
-//   rules,
-//   formObj,
-//   value = '',
-//   onChange,
-//   render,
-//   ...rest
-// }: IProps) {
-//   const displayLabel = _.isString(label) ? label : _.startCase(name);
+import { useForm } from 'src/hooks/useForm';
 
-//   const controllerName = name || 'mock';
-//   const mockForm = useForm({ [controllerName]: value });
 
-//   // if (!formObj?.control) {
-//   //   return render({
-//   //     name,
-//   //     label: displayLabel,
-//   //     onChange: onChange,
-//   //     defaultValue: value,
-//   //     // onBlur: onBlur,
-//   //     ...rest
-//   //   });
-//   // }
-//   // console.warn(formObj, formFolk)
+interface IProps {
+  name?: string;
+  label?: ReactNode;
+  value: string;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  [key: string]: any;
+}
 
-//   return (
-//     <Controller
-//       name={controllerName}
-//       rules={rules}
-//       control={formObj?.control || mockForm.formObj.control}
-//       render={({ field }) =>
-//         render({
-//           ...field,
-//           onChange: (e: ChangeEvent) => {
-//             onChange(e);
-//             field.onChange(e);
-//           },
-//           value: field.value || '',
-//           label: displayLabel,
-//           errorMessage: formObj?.errors[name]?.message,
-//         })
-//       }
-//       {...rest}
-//     />
-//   );
-// }
+export default function FormContoller({
+  name = '',
+  label,
+  rules,
+  formObj,
+  value = '',
+  onChange,
+  render,
+  ...rest
+}: IProps) {
+  const displayLabel = _.isString(label) ? label : _.startCase(name);
 
-// type IProps = {
-//   // name?: string;
-//   // formObj?: any;
-//   [key: string]: any;
-// };
+  const controllerName = name || 'mock';
+  const mockForm = useForm({ [controllerName]: value });
+
+  return (
+    <Controller
+      name={controllerName}
+      rules={rules}
+      control={formObj?.control || mockForm.formObj.control}
+      render={({ field }) => render({
+        ...field,
+        onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+          onChange(e);
+          field.onChange(e);
+        },
+        value: field.value || '',
+        label: displayLabel,
+        errorMessage: formObj?.errors?.[controllerName]?.message,
+      })}
+      {...rest}
+    />
+  );
+}

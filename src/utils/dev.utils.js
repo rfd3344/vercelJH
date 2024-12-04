@@ -2,6 +2,7 @@ import _ from 'lodash';
 
 import packageJson from 'src/../package.json';
 
+
 /*********************************************************************************************
  * method to check current environment is development or not
  *
@@ -25,8 +26,8 @@ export const getBuildInfo = () => {
  */
 export const addDevFunctions = () => {
   _.mixin({
-    log: isDev() ? console.log : () => {},
-    warn: isDev() ? console.warn : () => {},
+    log: isDev() ? console.log : () => { },
+    warn: isDev() ? console.warn : () => { },
     error: console.error,
   });
 
