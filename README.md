@@ -1,4 +1,5 @@
 
 ## Demo
 
-Personal website
+- Personal website
+- This is public repo. vercel requires pro version to build private repo.
