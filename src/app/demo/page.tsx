@@ -12,6 +12,8 @@ export default async function Page() {
       <PlayGround1 />
       <PlayGround2 />
       <ClientTest />
+
+
     </section>
   );
 }
