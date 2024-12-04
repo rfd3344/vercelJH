@@ -8,5 +8,5 @@ export const PagePath = {
   webpage: '/webpage',
   mongo: '/mongo',
 
-  test: '/test',
+  demo: '/demo',
 };

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import PlayGround1 from './PlayGround1';
 import PlayGround2 from './PlayGround2';
 
-import ClientTest from 'src/sections/test/ClientTest';
+import ClientTest from 'src/sections/demo/ClientTest';
 
 export default async function Page() {
   return (

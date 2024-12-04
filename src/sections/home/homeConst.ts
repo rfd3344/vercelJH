@@ -97,7 +97,7 @@ export const ShopLinks = {
 };
 
 export const OtherLinks = {
-  Test: PagePath.test,
+  Demo: PagePath.demo,
   Webpage: PagePath.webpage,
   Mongo: PagePath.mongo,
 };
