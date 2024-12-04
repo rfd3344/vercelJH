@@ -1,0 +1,63 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      height: 99vh;
+      display: flex;
+      font-family: monospace;
+    }
+
+    body * {
+      font-size: 20px;
+    }
+
+    textarea {
+      background: PaleTurquoise;
+      width: 61.8%;
+      resize: horizontal;
+    }
+
+    #result {
+      background: SandyBrown;
+      padding: 0px 8px;
+      flex: 1;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body id="calculator">
+  <textarea onkeyup="handleKeyPress(this)"></textarea>
+  <div id="result"></div>
+</body>
+
+<script type="text/javascript">
+  var STORAGE = 'calculator';
+
+  var text = localStorage.getItem(STORAGE) || 'a = 10';
+  document.querySelector('textarea').innerHTML = text;
+  caculate(text);
+
+  function handleKeyPress(dom) {
+    var value = dom.value;
+    caculate(value);
+    localStorage.setItem(STORAGE, value);
+  }
+
+  function caculate(value) {
+    var lines = value.split(String.fromCharCode(10));
+
+    var displayArea = lines.map((item) => {
+      if (!item.trim()) return '';
+      var [variable] = item.split('=');
+      try {
+        var evalRes = eval(item);
+        return `${variable} = ${evalRes}`;
+      } catch (e) { }
+    });
+    document.querySelector('#result').innerHTML = displayArea.join('<br/>');
+  }
+</script>

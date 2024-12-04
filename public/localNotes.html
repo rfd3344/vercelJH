@@ -1,0 +1,67 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TempNotes</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      height: 99vh;
+      display: flex;
+      flex-wrap: wrap;
+      font-family: monospace;
+    }
+
+    textarea {
+      font-size: 20px;
+      resize: horizontal;
+      flex: 1 0 400px;
+    }
+
+    textarea:nth-child(1) {
+      background: Beige;
+    }
+
+    textarea:nth-child(2) {
+      background: LightBlue;
+
+    }
+
+    textarea:nth-child(3) {
+      background: PaleTurquoise;
+      display: none;
+    }
+  </style>
+</head>
+
+<body id="tempNotes">
+  <textarea id="tempNote1" onkeyup="handleKeyPress(this)"></textarea>
+  <textarea id="tempNote2" onkeyup="handleKeyPress(this)"></textarea>
+  <textarea id="tempNote3" onkeyup="handleKeyPress(this)"></textarea>
+</body>
+
+
+
+<script type="text/javascript">
+  const [noteDom1, noteDom2, noteDom3] = document.querySelectorAll('textarea');
+
+  setInitialText(noteDom1);
+  setInitialText(noteDom2);
+  setInitialText(noteDom3);
+
+  const searchParams = new URL(document.location.toString()).searchParams;
+  const notes = searchParams.get("notes");
+  if (notes === '3') {
+    noteDom3.style.display = 'block';
+  } else if (notes === '1') {
+    noteDom2.style.display = 'none';
+  }
+
+  function handleKeyPress(dom) {
+    localStorage.setItem(dom.id, dom.value);
+  };
+
+  function setInitialText(dom) {
+    dom.innerHTML = localStorage.getItem(dom.id);
+  }
+
+</script>

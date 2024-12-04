@@ -1,0 +1,92 @@
+<script>
+  let counter = 0;
+  const solution = (k, w, profits, capital) => {
+
+  };
+
+
+  function binarySearch(arr, target) {
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left <= right) {
+      let mid = Math.floor((left + right) / 2);
+
+      if (arr[mid] === target) {
+        return mid;
+      } else if (arr[mid] < target) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    }
+    return right;
+    return -1; // Target not found
+  }
+
+  // Example usage:
+  const sortedArray = [1, 5, 6, 7, 8, 9];
+  const targetValue = 4;
+  const result = binarySearch(sortedArray, targetValue);
+  console.log(result); // Output: 3 (index of the target value)
+
+
+  k = 2, w = 0, profits = [1, 2, 3], capital = [0, 1, 1];
+
+  const res = solution(k, w, profits, capital);
+  console.warn('res', res);
+
+
+
+
+
+
+
+
+
+
+
+
+  var array = [];
+  for (var i = 0; i < 1_000_000; i++) {
+    array.push(i);
+  }
+  const arrLength = array.length;
+  var start = new Date().getTime();
+  for (var i = 0; i < 1000000; i++) {
+    // array.shift();
+    // array.pop();
+    // array.push(-1);
+    // array.splice(10, 1);
+    // array.splice(arrLength - 1, 0, -1);
+    // array.splice(1, 0, -1);
+  }
+  var duration = new Date().getTime() - start;// duration is so large, greater than 3 minutes
+
+  console.warn(duration, array.length);
+
+
+
+  a = {
+    a1: {
+      a2: {
+        a3: {
+          a4: 4
+        }
+      }
+    },
+    b1: {
+      b2: 2
+    }
+  };
+
+
+  aa = { ...a };
+  aa.c1 = 10;
+  aa.a1.b2 = 10;
+
+  console.warn(aa, a)
+
+
+
+</script>
