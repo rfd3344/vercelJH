@@ -17,7 +17,7 @@ interface IProps {
  * @param rules - check https://react-hook-form.com/docs/useform/register#options
  *
  */
-export default function CheckBoxCarly({
+export default function CheckField({
   name = '',
   label = '',
   value = false,

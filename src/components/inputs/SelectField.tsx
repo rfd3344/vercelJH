@@ -28,7 +28,7 @@ type Option = {
  *
  *
  */
-export default function SelectorCarly({
+export default function SelectField({
   name = '',
   label,
   value = '',

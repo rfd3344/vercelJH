@@ -26,7 +26,7 @@ interface IProps {
  * @param rules - check https://react-hook-form.com/docs/useform/register#options
  *
  */
-export default function InputCarly({
+export default function InputField({
   name,
   label,
   formObj,
