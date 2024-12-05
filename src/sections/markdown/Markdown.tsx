@@ -28,7 +28,7 @@ export default function Page({ }) {
 
   return (
     <section id="Markdown" className='container break-all'>
-1111
+
       <ReactMarkdown
         components={{
           h1: ({ node, ...props }) => <h2 className='text-center' style={{ color: 'red' }} {...props} />,

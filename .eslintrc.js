@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react-hooks/recommended',
     'next',
+    "next/babel",
     'next/core-web-vitals',
     'eslint-config-next',
     'plugin:@next/next/recommended',
