@@ -7,7 +7,7 @@ module.exports = {
     'prettier',
     'eslint:recommended',
     'plugin:react-hooks/recommended',
-    'next',
+    // 'next',
     "next/babel",
     'next/core-web-vitals',
     'eslint-config-next',
