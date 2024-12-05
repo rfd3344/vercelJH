@@ -5,8 +5,8 @@ export type { ParsedQuery } from 'query-string';
 
 export const queryStringParse = (search = '', paramsFormat = {}) => {
   const DefaultFormat: ParseOptions = {
-    parseBooleans: true,
-    parseNumbers: true,
+    // parseBooleans: true,
+    // parseNumbers: true,
     // arrayFormat: 'comma',
   };
 

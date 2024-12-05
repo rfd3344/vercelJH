@@ -27,7 +27,7 @@ export default function Header() {
         </div>
         <div className=''>
           <Link href="/">
-            <Avatar rounded img="./image/zhongli3.jpg" />
+            <Avatar rounded img="/image/zhongli3.jpg" />
 
           </Link>
 

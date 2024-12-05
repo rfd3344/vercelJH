@@ -6,7 +6,7 @@ export const PagePath = {
   repo: '/github-repo',
   markdown: '/markdown',
   webpage: '/webpage',
-  mongo: '/mongo',
+  search: '/search',
 
   demo: '/demo',
 };

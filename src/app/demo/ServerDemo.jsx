@@ -1,12 +1,12 @@
 import _ from 'lodash';
 
 
-export default function PlayGround1({ }) {
+export default function ServerDemo() {
   // const data = await getData();
 
   return (
     <div>
-      <h3> PlayGround1</h3>
+      <h3> ServerTest</h3>
 
       <div>
         {/* {data.slice(0, 2)?.map((row) => (

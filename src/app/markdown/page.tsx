@@ -33,7 +33,7 @@ export default function Page({ }) {
   }, [selectFile, searchParams]);
 
   return (
-    <section id="Markdown" className='container  break-all'>
+    <main id="Markdown" className='container break-all'>
       <div>
         <ReactMarkdown
           remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
@@ -55,6 +55,6 @@ export default function Page({ }) {
           {content}
         </ReactMarkdown>
       </div>
-    </section>
+    </main>
   );
 }

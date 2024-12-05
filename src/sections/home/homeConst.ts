@@ -99,5 +99,5 @@ export const ShopLinks = {
 export const OtherLinks = {
   Demo: PagePath.demo,
   Webpage: PagePath.webpage,
-  Mongo: PagePath.mongo,
+  Search: PagePath.search,
 };

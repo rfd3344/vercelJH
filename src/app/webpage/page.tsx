@@ -20,7 +20,7 @@ export default function Page() {
   };
 
   return (
-    <section id="Webpage">
+    <main id="Webpage">
       <div >
         <div >
           <iframe
@@ -47,6 +47,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

@@ -4,11 +4,6 @@ module.exports = {
     // https://create-react-app.dev/docs/advanced-configuration/
 
     PORT: 3344,
-    // BROWSER: 'none',
-    // REACT_EDITOR: 'none',
-    // NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: 'your_google_analytics_id_here',
-    // GENERATE_SOURCEMAP: false, // diabled create source map
-    // BUILD_PATH: './docs',
     NEXT_PUBLIC_BUILD_TIME: Date(),
 
     NEXT_PUBLIC_GITHUB_API: 'https://api.github.com/repos',

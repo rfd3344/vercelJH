@@ -18,7 +18,7 @@ import { fontsClassName } from 'src/libs/next';
 export const metadata: Metadata = {
   title: 'RFD3344',
   description: 'https://rfd3344.vercel.app/',
-  manifest: './manifest.json',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
@@ -31,15 +31,14 @@ export default function RootLayout({
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>
         <Provider>
           <Suspense fallback="">
+            <Initiator />
             <Header />
 
-            <main className='auto-rows-auto grid-flow-row px-2 '>
+            <div className='auto-rows-auto grid-flow-row px-2'>
+              {children}
+            </div>
 
-              <div >{children}</div>
-
-            </main>
             <Footer />
-            <Initiator />
           </Suspense>
 
         </Provider>

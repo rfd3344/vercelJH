@@ -30,7 +30,7 @@ export default function Page() {
   }, [repoPath, dispatch]);
 
   return (
-    <section id="GithubRepo" className='container '>
+    <main id="GithubRepo" className='container '>
       <div >
         <Accordion
           defaultExpandIndex={0}
@@ -48,6 +48,6 @@ export default function Page() {
             }))}
         />
       </div>
-    </section>
+    </main>
   );
 }
