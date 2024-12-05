@@ -18,7 +18,7 @@ i = a[n]; // sapce O(n)
 
 ## Summary
 
-- Hash
+- HashMap
 - DFS (Backtracking)
 - BFS
 - BinarySearch
@@ -27,7 +27,7 @@ i = a[n]; // sapce O(n)
 - DynanicProgramming
 - Others
 
-# **Hash (Dictionary)**
+# **HashMap (Dictionary)**
 
 #### Q454 SomeArraySum
 
@@ -109,6 +109,24 @@ console.warn('res', res);
 - Solution: https://leetcode.com/problems/word-ladder-ii/solutions/388875/javascript-easy-to-understand-solution-using-bfs-dfs/
 
 # **BinarySearch**
+
+#### Q704. BinarySearch
+
+- https://leetcode.com/problems/binary-search/
+
+```js
+const binarySearch = (nums, target) => {
+  let left = 0;
+  let right = nums.length - 1;
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    if (nums[mid] === target) return mid;
+    else if (nums[mid] > target) right = mid - 1;
+    else left = mid + 1;
+  }
+  return -1;
+};
+```
 
 # **SliderWindow**
 
