@@ -1,18 +1,16 @@
 
 
+
+
+import { Suspense, ReactNode } from 'react';
 import type { Metadata } from 'next';
 
-
-import { Suspense } from 'react';
 import Provider from 'src/core/Provider';
 import Initiator from 'src/core/Initiator';
 import Header from 'src/core/navigation/Header';
 import Footer from 'src/core/navigation/Footer';
-
-
-import 'src/core/tailwind.css';
-
 import { fontsClassName } from 'src/libs/next';
+import 'src/core/tailwind/tailwind.css';
 
 
 export const metadata: Metadata = {
@@ -21,11 +19,13 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
 };
 
+interface IProps {
+  children: ReactNode;
+}
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: IProps) {
   return (
     <html lang="en" className={fontsClassName}>
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>

@@ -12,7 +12,7 @@ import { omitRoot } from './githubRepoUtils';
 import { getGithubFileUrl } from './githubRepoUtils';
 
 export default function FielItem({
-  file = {}
+  file = {},
 }) {
   const { repoPath = '' } = useSelector((state) => state.githubRepo);
 

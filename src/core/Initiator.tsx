@@ -14,7 +14,7 @@ export default function Initiator() {
     isInitiated.current = true;
 
     addDevFunctions();
-  }, [])
+  }, []);
 
   return null;
 }

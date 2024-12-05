@@ -9,7 +9,7 @@ import {
   FormatAlignRightIcon,
 } from 'src/core/Icons';
 
-import { Button, ButtonGroup, RangeSlider } from "src/components/flowbite";
+import { Button, ButtonGroup, RangeSlider } from 'src/components/flowbite';
 
 import { updateWebpage } from 'src/sections/webpage/webpageSlice';
 

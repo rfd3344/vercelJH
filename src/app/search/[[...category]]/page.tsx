@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 
 
-import SearchFilter from 'src/sections/search/SearchFilter'
+import SearchFilter from 'src/sections/search/SearchFilter';
 
 interface IProp {
   params: {

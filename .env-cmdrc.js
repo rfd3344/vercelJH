@@ -19,7 +19,8 @@ module.exports = {
   },
   dev: {
     NEXT_PUBLIC_STAGE: 'dev',
-    MONGODB_URI: 'mongodb+srv://admin:admin@cluster0.lph5oow.mongodb.net/next?retryWrites=true&w=majority'
+
+    // MONGODB_URI: 'mongodb+srv://admin:admin@cluster0.lph5oow.mongodb.net/next?retryWrites=true&w=majority'
 
   },
 
@@ -27,7 +28,7 @@ module.exports = {
     NEXT_PUBLIC_STAGE: 'prod',
     GENERATE_SOURCEMAP: false, // diabled create source map
 
-    MONGODB_URI: 'mongodb+srv://admin:admin@cluster0.lph5oow.mongodb.net/next?retryWrites=true&w=majority'
+    // MONGODB_URI: 'mongodb+srv://admin:admin@cluster0.lph5oow.mongodb.net/next?retryWrites=true&w=majority'
 
   },
 };

@@ -5,7 +5,7 @@ import path from 'path';
 import fs from 'fs';
 
 import { PagePath } from 'src/constants/pagePath';
-import Section from 'src/sections/home/Section';
+import LinksSection from 'src/sections/home/LinksSection';
 import {
   ToolsLinks,
   CloudLinks,
@@ -22,14 +22,14 @@ export default function Page({ }) {
   const mdFiles = fs.readdirSync(path.resolve('./public', 'markdown'));
 
   return (
-    <section id="Home" className='container'>
+    <main id="home" className='container'>
 
-      <Section title="Tools" linkMap={ToolsLinks} />
+      <LinksSection title="Tools" linkMap={ToolsLinks} />
 
-      <Section title="Cloud" linkMap={CloudLinks} />
-      <Section title="Github" linkMap={GithubLinks} />
-      <Section title="Develop" linkMap={DevelopLinks} />
-      <Section
+      <LinksSection title="Cloud" linkMap={CloudLinks} />
+      <LinksSection title="Github" linkMap={GithubLinks} />
+      <LinksSection title="Develop" linkMap={DevelopLinks} />
+      <LinksSection
         title="Markdown"
         linkMap={mdFiles.reduce(
           (acc, item) => ({
@@ -40,13 +40,13 @@ export default function Page({ }) {
         )}
       />
 
-      <Section title="Work" linkMap={WorkLinks} />
-      <Section title="Home" linkMap={HomeLinks} />
-      <Section title="Fun" linkMap={FunLinks} />
-      <Section title="Shop" linkMap={ShopLinks} />
+      <LinksSection title="Work" linkMap={WorkLinks} />
+      <LinksSection title="Home" linkMap={HomeLinks} />
+      <LinksSection title="Fun" linkMap={FunLinks} />
+      <LinksSection title="Shop" linkMap={ShopLinks} />
 
-      <Section title="Other" linkMap={OtherLinks} />
+      <LinksSection title="Other" linkMap={OtherLinks} />
 
-    </section>
+    </main>
   );
 }

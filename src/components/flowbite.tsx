@@ -7,8 +7,8 @@ export { Datepicker } from 'flowbite-react';
 export { Badge } from 'flowbite-react';
 export { Avatar } from 'flowbite-react';
 
-export { Accordion } from "flowbite-react";
+export { Accordion } from 'flowbite-react';
 
 
 
-export { RangeSlider } from "flowbite-react";
+export { RangeSlider } from 'flowbite-react';

@@ -4,13 +4,14 @@
 module.exports = {
 
   "extends": [
-    "prettier",
-    "eslint:recommended",
+    'prettier',
+    'eslint:recommended',
     'plugin:react-hooks/recommended',
-    "next/babel",
-    "next/core-web-vitals",
-    "eslint-config-next",
-    "plugin:@next/next/recommended",
+    'next',
+    'next/core-web-vitals',
+    'eslint-config-next',
+    'plugin:@next/next/recommended',
+    'plugin:storybook/recommended'
   ],
   'plugins': [
     'react-hooks',
