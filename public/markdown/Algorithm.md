@@ -110,9 +110,10 @@ console.warn('res', res);
 
 # **BinarySearch**
 
-#### Q704. BinarySearch
-
-- https://leetcode.com/problems/binary-search/
+- 704-BinarySearch: https://leetcode.com/problems/binary-search/
+- 35-SearchInsertPosition: https://leetcode.com/problems/search-insert-position/
+- 33-SearchRotatedSortedArray: https://leetcode.com/problems/search-in-rotated-sorted-array/
+- 2337-MovePiecesObtainString: https://leetcode.com/problems/move-pieces-to-obtain-a-string/
 
 ```js
 const binarySearch = (nums, target) => {
@@ -120,8 +121,8 @@ const binarySearch = (nums, target) => {
   let right = nums.length - 1;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
-    if (nums[mid] === target) return mid;
-    else if (nums[mid] > target) right = mid - 1;
+    if (target ==== nums[mid]) return mid;
+    else if (target < nums[mid]) right = mid - 1;
     else left = mid + 1;
   }
   return -1;
@@ -130,17 +131,10 @@ const binarySearch = (nums, target) => {
 
 # **SliderWindow**
 
-#### Q209 MinSubArraySum
+- 15-ThreeSum: https://leetcode.com/problems/3sum/
+- 18-FourSum: https://leetcode.com/problems/4sum/
 
-- https://leetcode.com/problems/minimum-size-subarray-sum/description/
-
-### Pointer
-
-- Q15 ThreeSum
-- https://leetcode.com/problems/3sum/
-
-- Q18 FourSum
-- https://leetcode.com/problems/4sum/
+- 209-MinSubArraySum: https://leetcode.com/problems/minimum-size-subarray-sum/
 
 # **Greedy**
 
