@@ -1,11 +1,13 @@
 
-
+'use client'
 import React from 'react';
 import _ from 'lodash';
 
 import ButtonLink from './ButtonLink';
 
+
 export default function LinksSection({ title = '', linkMap = {}, ...rest }) {
+
   return (
     <div className="mt-2" {...rest} >
       <h4 className='font-bold'> {title} </h4>
