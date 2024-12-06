@@ -13,7 +13,8 @@ export default function ClientDemo2() {
       <h3>ClientDemo2</h3>
 
 
-      {JSON.stringify(data, null, ' ')}
+        {JSON.stringify(data, null, ' ')}
+
 
     </section>
   );

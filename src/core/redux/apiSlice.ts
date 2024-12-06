@@ -14,8 +14,8 @@ export const apiSlice = createApi({
   reducerPath: 'api',
   // All of our requests will have URLs starting with '/fakeApi'
   baseQuery: fetchBaseQuery({
-    // baseUrl: 'https://rfd3344.vercel.app/markdown/Algorithm.md',
-    baseUrl: 'https://retoolapi.dev/54OSJD/data',
+    baseUrl: 'https://rfd3344.vercel.app',
+    // baseUrl: 'https://retoolapi.dev/54OSJD/data',
 
   }),
   // The "endpoints" represent operations and requests for this server
@@ -29,7 +29,7 @@ export const apiSlice = createApi({
     }),
     getMockUser: builder.query<Post[], void>({
       // The URL for the request is '/fakeApi/posts'
-      query: () => '',
+      query: () => '/mock/users.json',
 
     }),
   }),
