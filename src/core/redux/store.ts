@@ -1,10 +1,12 @@
 'use client';
 import { configureStore } from '@reduxjs/toolkit';
 
-import core from './coreSlice';
 import githubRepo from 'src/sections/githubRepo/githubRepoSlice';
 import markdown from 'src/sections/markdown/markdownSlice';
 import webpage from 'src/sections/webpage/webpageSlice';
+
+import core from './coreSlice';
+import { apiSlice } from './apiSlice';
 
 export const makeStore = () => configureStore({
   reducer: {
@@ -12,16 +14,13 @@ export const makeStore = () => configureStore({
     githubRepo,
     markdown,
     webpage,
+    [apiSlice.reducerPath]: apiSlice.reducer,
   },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware()
+      // .prepend(listenerMiddleware.middleware)
+      .concat(apiSlice.middleware),
 });
-// export const store = configureStore({
-//   reducer: {
-//     core,
-//     githubRepo,
-//     markdown,
-//     webpage,
-//   },
-// });
 
 // Infer the type of makeStore
 export type AppStore = ReturnType<typeof makeStore>;

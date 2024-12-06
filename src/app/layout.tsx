@@ -5,7 +5,7 @@
 import { Suspense, ReactNode } from 'react';
 import type { Metadata } from 'next';
 
-import Provider from 'src/core/Provider';
+import ProviderRedux from 'src/core/redux/ProviderRedux';
 import Initiator from 'src/core/Initiator';
 import Header from 'src/core/navigation/Header';
 import Footer from 'src/core/navigation/Footer';
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontsClassName}>
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>
-        <Provider>
+        <ProviderRedux>
           <Suspense fallback="">
             <Initiator />
             <Header />
@@ -41,7 +41,7 @@ export default function RootLayout({
             <Footer />
           </Suspense>
 
-        </Provider>
+        </ProviderRedux>
 
       </body>
     </html>
