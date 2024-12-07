@@ -29,7 +29,7 @@ export const apiSlice = createApi({
     }),
     getMockUser: builder.query<Post[], void>({
       // The URL for the request is '/fakeApi/posts'
-      query: () => '/mock/users.json',
+      query: () => '/mock/user/index.json',
 
     }),
   }),
