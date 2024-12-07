@@ -69,62 +69,42 @@ const binarySearch = (nums = [], target = 0) => {
 
 # **DFS**
 
-### DemoCode
+- Q22_GenerateParentheses: https://leetcode.com/problems/generate-parentheses/
 
 ```js
-let counter = 0;
-const solution = (arr) => {
-  let res = [];
-  const dfs = (current = []) => {
-    // end conditions
-    if (counter++ > 1_000_000) return; // prevent infinite recursion
+var generateParenthesis = function (n) {
+  const res = [];
 
-    for (let i = 0; i < arr.length; i++) {
-      // loop
-      dfs(current);
-    }
+  const dfs = (prefix, left, right) => {
+    if (left === 0 && right === 0) return res.push(prefix);
+
+    if (left > 0) dfs(`${prefix}(`, left - 1, right);
+    if (left < right) dfs(`${prefix})`, left, right - 1);
   };
-  dfs();
+
+  dfs('', n, n);
   return res;
 };
-
-const test1 = [1, 2, 3];
-const res = solution(test1);
-console.warn('res', res);
 ```
 
-#### Q77 Combinations
+- Q77_Combinations: https://leetcode.com/problems/combinations/
+- Q131_StringPartition: https://leetcode.com/problems/palindrome-partitioning/
 
-- https://leetcode.com/problems/combinations/
-- https://leetcode.com/problems/combinations/solutions/3845903/ex-amazon-explains-a-solution-with-a-video-python-javascript-java-and-c/
+- Q39_CombinationSum: https://leetcode.com/problems/combination-sum/
+- Q40_CombinationSum: https://leetcode.com/problems/combination-sum-ii/
+- Q39，Q40: [2,3,6,7], target=7 => sum [[2,2,3], [7] ]
 
-#### Q131 分割回文串
+- Q46_Permutations: https://leetcode.com/problems/permutations/
+- Q47_Permutations: https://leetcode.com/problems/permutations-ii/
+- Q46, Q47: [1,2] => subset [[], [1], [2], [1,2]]
 
-- https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.md
+- Q78_Permutations: https://leetcode.com/problems/subsets/
+- Q90_Permutations: https://leetcode.com/problems/subsets-ii/
+- Q78, Q90: [1,2,3] => sequence [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]
 
-### Tree structure Traverse - Q39，Q40, Q46, Q47, Q78, Q90
-
--
-
-#### Example:
-
-1. Q39，Q40: [2,3,6,7], target=7 -> sum [[2,2,3], [7] ]
-2. Q46, Q47: [1,2] -> subset [[], [1], [2], [1,2]]
-3. Q78, Q90: [1,2,3] -> sequence [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]
-
-- Q40: https://leetcode.com/problems/combination-sum-ii
-
-### Island
-
-#### Q200 Numbers Islands
-
-- https://leetcode.com/problems/number-of-islands
-- Approach:
-- Solution: https://leetcode.com/problems/number-of-islands/solutions/5044114/beated-number-of-islands/
-
-#### Q695 MaxArea Island
-
-- https://leetcode.com/problems/max-area-of-island
+- Island
+- Q200_NumbersIslands: https://leetcode.com/problems/number-of-islands/
+- Q695_MaxAreaIsland: https://leetcode.com/problems/max-area-of-island/
 
 # **BFS**
 
@@ -154,8 +134,8 @@ var binaryTree = function (root) {
 };
 ```
 
-- 127-WordLadder: https://leetcode.com/problems/word-ladder/
 - 752-OpenLock: https://leetcode.com/problems/open-the-lock/
+- 127-WordLadder: https://leetcode.com/problems/word-ladder/
 
 #### Q126 WordLadderII
 
