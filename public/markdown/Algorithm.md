@@ -14,7 +14,7 @@ i = a[n]; // sapce O(n)
 
 ```
 
-## Summary
+# Summary
 
 - HashMap
 - BinarySearch
@@ -25,7 +25,7 @@ i = a[n]; // sapce O(n)
 - DynanicProgramming
 - Others
 
-# **HashMap (Dictionary)**
+# **HashMap**
 
 - Q1_TwoSum: https://leetcode.com/problems/two-sum/
 - Q454_SomeArraySum：https://leetcode.com/problems/4sum-ii/
