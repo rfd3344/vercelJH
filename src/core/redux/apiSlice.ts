@@ -12,10 +12,10 @@ const apiSlice = createApi({
     baseUrl: publicEnv().VERCEL_SERVER + '/mock/',
   }),
 
-  endpoints: () => ({
-    // endpoints are defined in folder `src/api`
-    // ref: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
-  }),
+  // endpoints are defined in folder `src/api`
+  // ref: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
+  endpoints: () => ({}),
+
 });
 
 

@@ -20,7 +20,6 @@ export default function ClientDemo2() {
 
       {JSON.stringify(data, null, ' ')}
       <pre>
-
         {JSON.stringify(product, null, ' ')}
       </pre>
 

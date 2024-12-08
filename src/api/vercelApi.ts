@@ -9,14 +9,14 @@ const extendedApi = apiSlice.injectEndpoints({
       query: () => '/user/index.json',
     }),
 
-    getUserById: build.query({
+    getUserById: build.query<any, number>({
       query: (id) => `/user/${id}.json`,
     }),
 
     getProductList: build.query<any, void>({
       query: (id) => `/product/index.json`,
     }),
-    getProductById: build.query({
+    getProductById: build.query<any, number>({
       query: (id) => `/product/${id}.json`,
     }),
 

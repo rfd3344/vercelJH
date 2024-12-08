@@ -1,7 +1,5 @@
 # **Resource**
 
-- https://github.com/youngyangyang04/leetcode-master/blob/master/README.md#%E6%95%B0%E7%BB%84
-
 ## 复杂度
 
 随 n 变化
@@ -30,8 +28,8 @@ i = a[n]; // sapce O(n)
 # **HashMap (Dictionary)**
 
 - Q1_TwoSum: https://leetcode.com/problems/two-sum/
-- Q454_SomeArraySum：https://leetcode.com/problems/4sum-ii
-- Q350_IntersectionTwoArrays: https://leetcode.com/problems/intersection-of-two-arrays-ii
+- Q454_SomeArraySum：https://leetcode.com/problems/4sum-ii/
+- Q350_IntersectionTwoArrays: https://leetcode.com/problems/intersection-of-two-arrays-ii/
 
 # **BinarySearch**
 
@@ -193,10 +191,6 @@ var binaryTree = function (root) {
 
 - Connect array values with only +/- sign to reach target
 - eg: arr = [1, 1, 1] target = 1 -> 3 Result (+1+1-1, +1-1+1, -1+1+1)
-
-#### Q121 股票时机
-
--
 
 # **Others**
 
