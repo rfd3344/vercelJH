@@ -29,13 +29,13 @@ i = a[n]; // sapce O(n)
 
 # **HashMap (Dictionary)**
 
-- 1-TwoSum: https://leetcode.com/problems/two-sum/
-- 454-SomeArraySum：https://leetcode.com/problems/4sum-ii
-- 350-IntersectionTwoArrays: https://leetcode.com/problems/intersection-of-two-arrays-ii
+- Q1_TwoSum: https://leetcode.com/problems/two-sum/
+- Q454_SomeArraySum：https://leetcode.com/problems/4sum-ii
+- Q350_IntersectionTwoArrays: https://leetcode.com/problems/intersection-of-two-arrays-ii
 
 # **BinarySearch**
 
-- 704-BinarySearch: https://leetcode.com/problems/binary-search/
+- Q704_BinarySearch: https://leetcode.com/problems/binary-search/
 
 ```js
 const binarySearch = (nums = [], target = 0) => {
@@ -51,21 +51,21 @@ const binarySearch = (nums = [], target = 0) => {
 };
 ```
 
-- 35-SearchInsertPosition: https://leetcode.com/problems/search-insert-position/
-- 33-SearchRotatedSortedArray: https://leetcode.com/problems/search-in-rotated-sorted-array/
-- 2337-MovePiecesObtainString: https://leetcode.com/problems/move-pieces-to-obtain-a-string/
+- Q35_SearchInsertPosition: https://leetcode.com/problems/search-insert-position/
+- Q33_SearchRotatedSortedArray: https://leetcode.com/problems/search-in-rotated-sorted-array/
+- Q2337_MovePiecesObtainString: https://leetcode.com/problems/move-pieces-to-obtain-a-string/
 
 # **TwoPointer**
 
-- 3-LongestSubstring: https://leetcode.com/problems/longest-substring-without-repeating-characters
-- 11-ContainerWater: https://leetcode.com/problems/container-with-most-water/
-- 167-TwoSumSorted: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-- 15-ThreeSum: https://leetcode.com/problems/3sum/
-- 18-FourSum: https://leetcode.com/problems/4sum/
+- Q3_LongestSubstring: https://leetcode.com/problems/longest-substring-without-repeating-characters
+- Q11_ContainerWater: https://leetcode.com/problems/container-with-most-water/
+- Q167_TwoSumSorted: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+- Q15_ThreeSum: https://leetcode.com/problems/3sum/
+- Q18_FourSum: https://leetcode.com/problems/4sum/
 
-- 209-MinSubArraySum: https://leetcode.com/problems/minimum-size-subarray-sum/
+- Q209_MinSubArraySum: https://leetcode.com/problems/minimum-size-subarray-sum/
 
-- 905-SortParity: https://leetcode.com/problems/sort-array-by-parity/
+- Q905_SortParity: https://leetcode.com/problems/sort-array-by-parity/
 
 # **DFS**
 
@@ -108,7 +108,7 @@ var generateParenthesis = function (n) {
 
 # **BFS**
 
-- 102-BinaryTree: https://leetcode.com/problems/binary-tree-level-order-traversal/
+- Q102_BinaryTree: https://leetcode.com/problems/binary-tree-level-order-traversal/
 
 ```js
 var binaryTree = function (root) {
@@ -134,12 +134,10 @@ var binaryTree = function (root) {
 };
 ```
 
-- 752-OpenLock: https://leetcode.com/problems/open-the-lock/
-- 127-WordLadder: https://leetcode.com/problems/word-ladder/
+- Q752_OpenLock: https://leetcode.com/problems/open-the-lock/
+- Q127_WordLadder: https://leetcode.com/problems/word-ladder/
 
-#### Q126 WordLadderII
-
-- https://leetcode.com/problems/word-ladder-ii/
+- Q126_WordLadderII: https://leetcode.com/problems/word-ladder-ii/
 - BFS + DFS
 - Solution: https://leetcode.com/problems/word-ladder-ii/solutions/388875/javascript-easy-to-understand-solution-using-bfs-dfs/
 
@@ -202,7 +200,4 @@ const res = solution([2, 1, 5, 6, 2, 3]);
 console.warn('res', res);
 ```
 
-#### Q59
-
-- https://leetcode.com/problems/spiral-matrix-ii
-- NoAlgorithm
+- Q59_matrix: https://leetcode.com/problems/spiral-matrix-ii
