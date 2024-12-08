@@ -6,7 +6,7 @@ import markdown from 'src/sections/markdown/markdownSlice';
 import webpage from 'src/sections/webpage/webpageSlice';
 
 import core from './coreSlice';
-import { apiSlice } from './apiSlice';
+import apiSlice from './apiSlice';
 
 export const makeStore = () => configureStore({
   reducer: {

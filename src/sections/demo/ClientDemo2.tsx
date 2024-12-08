@@ -1,12 +1,17 @@
 'use client';
 
 
-import { useGetUserListQuery, useGetUserByIdQuery } from 'src/core/redux/apiSlice'
+import {
+  useGetProductListQuery,
+  useGetProductByIdQuery,
+} from 'src/api/vercelApi'
+
+
 
 export default function ClientDemo2() {
 
-  const { data, error, isLoading } = useGetUserListQuery()
-  const { data: user } = useGetUserByIdQuery(2)
+  const { data, error, isLoading } = useGetProductListQuery()
+  const { data: product } = useGetProductByIdQuery(2)
 
   return (
     <section id="ClientDemo2">
@@ -16,7 +21,7 @@ export default function ClientDemo2() {
       {JSON.stringify(data, null, ' ')}
       <pre>
 
-        {JSON.stringify(user, null, ' ')}
+        {JSON.stringify(product, null, ' ')}
       </pre>
 
 

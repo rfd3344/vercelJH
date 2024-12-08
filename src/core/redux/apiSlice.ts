@@ -6,30 +6,17 @@ import { publicEnv } from 'src/core/envManager';
 
 
 
-export const apiSlice = createApi({
+const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: publicEnv().VERCEL_SERVER + '/mock/'
-
+    baseUrl: publicEnv().VERCEL_SERVER + '/mock/',
   }),
-  endpoints: builder => ({
 
-    getUserList: builder.query<any, void>({
-      query: () => '/user/index.json',
-    }),
-
-    getUserById: builder.query({
-      query: (id) => `/user/${id}.json`,
-
-    }),
+  endpoints: () => ({
+    // endpoints are defined in folder `src/api`
+    // ref: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
   }),
 });
 
 
-export const {
-  useGetUserListQuery,
-  useGetUserByIdQuery,
-
-
-
-} = apiSlice;
+export default apiSlice
