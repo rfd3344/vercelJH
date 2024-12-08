@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import { envManager } from 'src/core/envManager';
+import { publicEnv } from 'src/core/envManager';
 
 import { GithubFiles } from 'src/types/githubType';
 
@@ -21,4 +21,4 @@ export const omitRoot = (filePath = '') => {
   return _.slice(pathArr, 1).join('/');
 };
 
-export const getGithubFileUrl = (repoPath = '', filePath = '') => `${envManager().GITHUB_RAW}/${repoPath}/master/${filePath}`;
+export const getGithubFileUrl = (repoPath = '', filePath = '') => `${publicEnv().GITHUB_RAW}/${repoPath}/master/${filePath}`;

@@ -69,6 +69,39 @@ const binarySearch = (nums = [], target = 0) => {
 
 # **DFS**
 
+- Q77_Combinations: https://leetcode.com/problems/combinations/
+
+```js
+var combine = function (n, k) {
+  let res = [];
+
+  const dfs = (arr, start, depth) => {
+    if (arr.length === k) return res.push(arr);
+
+    for (let i = start; i < n; i++) {
+      dfs([...arr, i + 1], i + 1, depth + 1);
+    }
+  };
+
+  dfs([], 0, 0);
+  return res;
+};
+```
+
+- Q131_StringPartition: https://leetcode.com/problems/palindrome-partitioning/
+
+- Q39_CombinationSum: https://leetcode.com/problems/combination-sum/
+- Q40_CombinationSum: https://leetcode.com/problems/combination-sum-ii/
+- Q39，Q40: [2,3,6,7], target=7 => sum [[2,2,3], [7] ]
+
+- Q46_Permutations: https://leetcode.com/problems/permutations/
+- Q47_Permutations: https://leetcode.com/problems/permutations-ii/
+- Q46, Q47: [1,2] => subset [[], [1], [2], [1,2]]
+
+- Q78_Permutations: https://leetcode.com/problems/subsets/
+- Q90_Permutations: https://leetcode.com/problems/subsets-ii/
+- Q78, Q90: [1,2,3] => sequence [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]
+
 - Q22_GenerateParentheses: https://leetcode.com/problems/generate-parentheses/
 
 ```js
@@ -86,21 +119,6 @@ var generateParenthesis = function (n) {
   return res;
 };
 ```
-
-- Q77_Combinations: https://leetcode.com/problems/combinations/
-- Q131_StringPartition: https://leetcode.com/problems/palindrome-partitioning/
-
-- Q39_CombinationSum: https://leetcode.com/problems/combination-sum/
-- Q40_CombinationSum: https://leetcode.com/problems/combination-sum-ii/
-- Q39，Q40: [2,3,6,7], target=7 => sum [[2,2,3], [7] ]
-
-- Q46_Permutations: https://leetcode.com/problems/permutations/
-- Q47_Permutations: https://leetcode.com/problems/permutations-ii/
-- Q46, Q47: [1,2] => subset [[], [1], [2], [1,2]]
-
-- Q78_Permutations: https://leetcode.com/problems/subsets/
-- Q90_Permutations: https://leetcode.com/problems/subsets-ii/
-- Q78, Q90: [1,2,3] => sequence [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]
 
 - Island
 - Q200_NumbersIslands: https://leetcode.com/problems/number-of-islands/

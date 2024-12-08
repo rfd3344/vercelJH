@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import { env } from 'src/core/envManager';
+import { publicEnv } from 'src/core/envManager';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
 export const getFileTyle = (fileName = '') => {

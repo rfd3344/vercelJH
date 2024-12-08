@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import axios, { CreateAxiosDefaults } from 'axios';
 
-import { envManager } from 'src/core/envManager';
+import { publicEnv } from 'src/core/envManager';
 
 export const createInstance = (config: CreateAxiosDefaults) => {
   const instance = axios.create({
@@ -16,7 +16,7 @@ export const createInstance = (config: CreateAxiosDefaults) => {
 
 export const gitStaticApi = (config: CreateAxiosDefaults = {}) => {
   const instance = createInstance({
-    baseURL: envManager().GITHUB_API,
+    baseURL: publicEnv().GITHUB_API,
     ...config,
   });
 
