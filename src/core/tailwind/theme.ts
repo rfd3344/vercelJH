@@ -13,7 +13,7 @@ export const theme = {
     // neutral: colors.gray,
     // gray: colors.neutral[300],
     // lightGray: colors.neutral[100],
-    // white: colors.neutral[50],
+    white: colors.neutral[50],
   },
   fontSize: {
     // https://tailwindcss.com/docs/font-size#using-custom-values

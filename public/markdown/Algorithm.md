@@ -10,7 +10,7 @@ i = 1; // time O(1), space O(1)
 while(i<n){ i = i \* 2; } // time O(logN) 二分法
 for(i=1; i<=n; i++){ } // time O(n)
 for(i=1; i<=n; i++){ for(j=1; j<=n; j++){ } } // time O(n2)
-i = a[n]; // sapce O(n)
+i = a[n]; // space O(n)
 
 ```
 
@@ -22,16 +22,16 @@ i = a[n]; // sapce O(n)
 - DFS (Backtracking)
 - BFS
 - Greedy?
-- DynanicProgramming
+- DynamicProgramming
 - Others
 
-# **HashMap**
+## **HashMap**
 
 - Q1_TwoSum: https://leetcode.com/problems/two-sum/
 - Q454_SomeArraySum：https://leetcode.com/problems/4sum-ii/
 - Q350_IntersectionTwoArrays: https://leetcode.com/problems/intersection-of-two-arrays-ii/
 
-# **BinarySearch**
+## **BinarySearch**
 
 - Q704_BinarySearch: https://leetcode.com/problems/binary-search/
 
@@ -53,7 +53,7 @@ const binarySearch = (nums = [], target = 0) => {
 - Q33_SearchRotatedSortedArray: https://leetcode.com/problems/search-in-rotated-sorted-array/
 - Q2337_MovePiecesObtainString: https://leetcode.com/problems/move-pieces-to-obtain-a-string/
 
-# **TwoPointer**
+## **TwoPointer**
 
 - Q3_LongestSubstring: https://leetcode.com/problems/longest-substring-without-repeating-characters
 - Q11_ContainerWater: https://leetcode.com/problems/container-with-most-water/
@@ -65,7 +65,7 @@ const binarySearch = (nums = [], target = 0) => {
 
 - Q905_SortParity: https://leetcode.com/problems/sort-array-by-parity/
 
-# **DFS**
+## **DFS**
 
 - Q77_Combinations: https://leetcode.com/problems/combinations/
 
@@ -122,7 +122,7 @@ var generateParenthesis = function (n) {
 - Q200_NumbersIslands: https://leetcode.com/problems/number-of-islands/
 - Q695_MaxAreaIsland: https://leetcode.com/problems/max-area-of-island/
 
-# **BFS**
+## **BFS**
 
 - Q102_BinaryTree: https://leetcode.com/problems/binary-tree-level-order-traversal/
 
@@ -157,9 +157,9 @@ var binaryTree = function (root) {
 - BFS + DFS
 - Solution: https://leetcode.com/problems/word-ladder-ii/solutions/388875/javascript-easy-to-understand-solution-using-bfs-dfs/
 
-# **Greedy**
+## **Greedy**
 
-# **Dynamic programming**
+## **Dynamic programming**
 
 #### Q509 斐波那契数
 
@@ -192,7 +192,7 @@ var binaryTree = function (root) {
 - Connect array values with only +/- sign to reach target
 - eg: arr = [1, 1, 1] target = 1 -> 3 Result (+1+1-1, +1-1+1, -1+1+1)
 
-# **Others**
+## **Others**
 
 #### Q121
 

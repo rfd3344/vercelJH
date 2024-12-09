@@ -1,11 +1,13 @@
 # **Javascript**
 
 - Tech Stack:
-- Vite, NextJS, Electron, ReactNative, React, Typescript,
-- Redux-Toolkit, Material-UI, React-Hook-Form, Storybook,
-
-- AWS-Amplify(Coginito, API-GateWay, S3, Lambda-Function), CodePipeline,
-- ButterCMS
+- React, Typescript,
+- Vite, NextJS, Electron, ReactNative,
+- Redux-Toolkit, RTK Query, Material-UI,
+- React-Hook-Form,
+- Storybook
+- jest, playwright
+- AWS Amplify,Cognito, API-GateWay, S3, Lambda-Function, CodePipeline,
 
 - Developed new subscription funnel pages, file upload, including workflow, files management, data storage
 
@@ -54,7 +56,7 @@
 - SourceTree, GithubDesk
 - VScode, Sublime,
 - Docker
-- Anydesk
+- AnyDesk
 
 # **Docker**
 
@@ -109,9 +111,9 @@ docker volume rm $(docker volume ls -q) # Remove volumes
 - list1
 - list2
 - list3
-  1. sublist1
-  2. sublist2
-  3. sublist3
+  1. subList1
+  2. subList2
+  3. subList3
 
 ```code
 Code Sample1
@@ -136,9 +138,9 @@ Code Sample4
 - list1
 - list2
 - list3
-  1. sublist1
-  2. sublist2
-  3. sublist3
+  1. subList1
+  2. subList2
+  3. subList3
 
 ```code
 Code Sample

@@ -3,7 +3,10 @@ import { ButtonProps, CustomFlowbiteTheme } from 'flowbite-react';
 
 import { Button as ButtonFlowbite } from 'src/components/flowbite';
 
-export default function Button(props: ButtonProps) {
+export default function Button({
+  color = 'primary',
+  ...props
+}: ButtonProps) {
   const theme: CustomFlowbiteTheme['button'] = {
     color: {
       primary: 'bg-cyan hover:bg-cyan/50',
@@ -14,6 +17,7 @@ export default function Button(props: ButtonProps) {
   return (
     <ButtonFlowbite
       theme={theme}
+      color={color}
       {...props}
     />
   );

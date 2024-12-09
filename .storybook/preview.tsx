@@ -3,16 +3,16 @@ import type { Preview } from "@storybook/react";
 
 import '../src/core/tailwind/tailwind.css';
 import { fontsClassName } from '../src/libs/next';
-import Provider from '../src/core/Provider';
+import ProviderRedux from '../src/core/redux/ProviderRedux';
 
 export const decorators = [
   (Story) => (
     <div className={fontsClassName}>
-      <Provider >
+      <ProviderRedux >
 
         <Story />
 
-      </Provider>
+      </ProviderRedux>
     </div>
   ),
 ];
