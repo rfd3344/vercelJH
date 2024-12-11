@@ -16,9 +16,11 @@ export default function Header() {
 
   if (pathname === PagePath.test) return null;
 
+
   return (
     <header className='bg-cyan px-2'>
       <section className='container flex justify-between items-center pt-1'>
+
         <div className=''>
           <Clock />
         </div>
@@ -33,8 +35,9 @@ export default function Header() {
 
         </div>
 
+
       </section>
-    </header>
+    </header >
   );
 
 }

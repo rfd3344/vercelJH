@@ -2,7 +2,7 @@
 
 
 
-import { Suspense, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 import ProviderRedux from 'src/core/redux/ProviderRedux';
@@ -29,17 +29,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontsClassName}>
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>
+
         <ProviderRedux>
-          <Suspense fallback="">
-            <Initiator />
-            <Header />
 
-            <div className='auto-rows-auto grid-flow-row px-2'>
-              {children}
-            </div>
+          <Initiator />
+          <Header />
 
-            <Footer />
-          </Suspense>
+          <div className='auto-rows-auto grid-flow-row px-2'>
+            {children}
+          </div>
+
+          <Footer />
 
         </ProviderRedux>
 

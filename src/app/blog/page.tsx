@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 
@@ -21,7 +20,7 @@ export default async function Page() {
     <main id="blog" className='container'>
 
       <h3> blog</h3>
-      {blogs.map(item => (
+      {blogs.map((item: any) => (
         <BlogItem
           key={item._id}
           data={item}

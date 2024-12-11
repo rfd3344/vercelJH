@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import _ from 'lodash';
 import { usePathname } from 'src/libs/next';
 
@@ -22,9 +22,9 @@ export default function NavTitle() {
 
   return (
     <div className='break-all text-center'>
-      <div >
+      <Suspense fallback='Loading' >
         <PageTitle />
-      </div>
+      </Suspense>
     </div>
   );
 }
