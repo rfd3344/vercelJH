@@ -14,7 +14,7 @@ const extendedApi = apiSlice.injectEndpoints({
     }),
 
     getProductList: build.query<any, void>({
-      query: (id) => `/product/index.json`,
+      query: (id) => '/product/index.json',
     }),
     getProductById: build.query<any, number>({
       query: (id) => `/product/${id}.json`,
@@ -23,7 +23,7 @@ const extendedApi = apiSlice.injectEndpoints({
   }),
 
   overrideExisting: 'throw',
-})
+});
 
 
 export const {
@@ -31,4 +31,4 @@ export const {
   useGetUserByIdQuery,
   useGetProductListQuery,
   useGetProductByIdQuery,
-} = extendedApi
+} = extendedApi;

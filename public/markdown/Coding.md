@@ -128,8 +128,8 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 > _OCP - Opened Closed Principle_
 
-- add new function for new requirement, not change exsiting function
-- opent for extension, close for modification
+- add new function for new requirement, not change existing function
+- open for extension, close for modification
 
 > _LSP - Liskov Substitution Principle_
 
@@ -358,7 +358,6 @@ const { exec } = require('node:child_process');
 - grid-column: 1 / span 3;
 - grid-row: 1 / span 2;
 - grid-area: 1 / 1 / span 2 / span 3;
-
 
 # **Regular Expression**
 
