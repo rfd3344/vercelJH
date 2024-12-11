@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import { publicEnv } from 'src/core/envManager';
+import { publicEnv } from 'src/core/envConfig';
 
 import { GithubFiles } from 'src/types/githubType';
 

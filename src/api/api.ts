@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import axios, { CreateAxiosDefaults } from 'axios';
 
-import { publicEnv } from 'src/core/envManager';
+import { publicEnv } from 'src/core/envConfig';
 
 export const createInstance = (config: CreateAxiosDefaults) => {
   const instance = axios.create({

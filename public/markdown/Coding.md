@@ -14,7 +14,7 @@
 
 - underscore and singular
 
-`database_name`, `table_name`, `column_name`, `id`, `forign_key_id`
+`database_name`, `table_name`, `column_name`, `id`, `foreign_key_id`
 
 ## Synonym
 
@@ -29,7 +29,7 @@
 ### Function name
 
 - API
-- Standard Restfull API: getEntityById, getEntities, postEntity, patchEntity, deleteEntity
+- Standard Restful API: getEntityById, getEntities, postEntity, patchEntity, deleteEntity
 - Complex/Combined API: doEntity, performEntity
 
 - Redux
@@ -116,7 +116,7 @@ Eg:
   \*/
 ```
 
-# **Principle**
+# **Interview Questions**
 
 ## Solid Principle
 
@@ -154,6 +154,18 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 结构型：适配器模式、桥接模式、装饰模式、组合模式、外观模式、享元模式、代理模式
 
 行为型：模版方法模式、命令模式、迭代器模式、观察者模式、中介者模式、备忘录模式、解释器模式、状态模式、策略模式、职责链模式(责任链模式)、访问者模式
+
+## JS
+
+### EventLoop
+
+- single thread
+
+#### Step
+
+1. synchronous code
+2. MicroTask, promise
+3. task queue, including callback, timeout, fetch
 
 # **Syntax**
 

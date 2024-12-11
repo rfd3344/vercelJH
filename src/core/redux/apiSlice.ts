@@ -1,7 +1,7 @@
 import type { Action, PayloadAction } from '@reduxjs/toolkit';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { publicEnv } from 'src/core/envManager';
+import { publicEnv } from 'src/core/envConfig';
 import { HYDRATE } from 'next-redux-wrapper';
 
 type RootState = any // normally inferred from state

@@ -6,11 +6,12 @@ module.exports = {
   "extends": [
     'prettier',
     'eslint:recommended',
-    'plugin:react-hooks/recommended',
-    // 'next',
+    'next',
     // "next/babel",
     // "@babel/plugin-transform-private-property-in-object",
     'next/core-web-vitals',
+    'plugin:react-hooks/recommended',
+
     'eslint-config-next',
     'plugin:@next/next/recommended',
     'plugin:storybook/recommended'
@@ -34,10 +35,7 @@ module.exports = {
     'arrow-body-style': ['warn', 'as-needed'],
 
 
-
-
-
-    // temperarily closed
+    // temporarily closed
     'no-unused-vars': 0,
     'no-undef': 0,
     'no-unreachable': 0,

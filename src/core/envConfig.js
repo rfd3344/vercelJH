@@ -10,4 +10,7 @@ export const publicEnv = () => ({
   GITHUB_API: process.env.NEXT_PUBLIC_GITHUB_API || '',
   GITHUB_RAW: process.env.NEXT_PUBLIC_GITHUB_RAW || '',
   VERCEL_SERVER: process.env.NEXT_PUBLIC_VERCEL_SERVER || '',
+
+  SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
+  SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
 });
