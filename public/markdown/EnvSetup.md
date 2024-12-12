@@ -58,6 +58,19 @@
 - Docker
 - AnyDesk
 
+### VsCode
+
+- Auto Rename Tag
+- Code Spell Checker
+- ENV
+- ESLint
+- Git Blame
+- indent-rainbow
+- Path Intellisense
+- Prettier
+- SQLite
+- SVG Preview
+
 # **Docker**
 
 - Docker: https://github.com/docker/awesome-compose
