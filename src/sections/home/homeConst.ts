@@ -5,7 +5,7 @@ export const ToolsLinks = {
   LocalNotes: PagePath.localNotes,
   ColorTable: PagePath.colorTable,
   // Webpage: PagePath.webpage,
-  photopea: 'https://photopea.com',
+  photoPea: 'https://photopea.com',
   ImageOnline: 'https://www.imgonline.com.ua/eng',
   ILovePdf: 'https://www.ilovepdf.com',
   PayCalculator: 'https://paycalculator.com.au',
