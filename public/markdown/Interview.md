@@ -1,34 +1,37 @@
 ## Javascript
 
-- EventLoop: SingleThread
+- closures
+- debounce
 
-  1. SynchronousCode
-  2. MicroTask, promise
-  3. task queue, including callback, timeout, fetch
-
--
+- EventLoop: MicroTask, nextTick, promise
+- TaskQueue, including setTimeout/seInterval, readFileError, setImmediate, readFile
 
 ## Typescript
 
-- Generic
-- interface (object oriented), type(union)
+- Generic Type
+- interface (object oriented), type(union, Intersection)
 - UtilityType, Partial, Required, Record, Omit, Pick, Exclude, Parameters, Readonly
 - any, unknown
-- ?? ?.
+- optional chaining(obj?.prop?.nested) nullish coalescing(value ?? "default")
 
 ## React
 
 - Virtual DOM, diff algorithm, tree-structure,
 - React.memo, useMemo, useCallback
 - useContext, createContext, ContextProvider, useReducer
+- useEffect(async) vs useLayoutEffect(synchronously, before paint screen)
 - Controlled vs Uncontrolled components
 - Suspend, React.lazy, useTransition, useDeferredValue
 - reconciliation algorithm, Keys, default index,
+- HOC, custom hooks, render props
+- use (promise and context)
 
 ## Nextjs
 
 - SSR SSG, Dynamic API, CSR
 - File System-Based Routing, Dynamic Routes, [slug], [...slug], [[...slug]]
+-
+- image
 
 ## System
 
