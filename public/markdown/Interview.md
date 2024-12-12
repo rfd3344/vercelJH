@@ -10,6 +10,9 @@
 
 ## Typescript
 
+- Generic
+- interface (object oriented), type(union)
+- UtilityType, Partial, Required, Record, Omit, Pick, Exclude, Parameters, Readonly
 - any, unknown
 - ?? ?.
 
@@ -25,8 +28,7 @@
 ## Nextjs
 
 - SSR SSG, Dynamic API, CSR
-- File System-Based Routing
-- Dynamic Routes, [slug], [...slug], [[...slug]]
+- File System-Based Routing, Dynamic Routes, [slug], [...slug], [[...slug]]
 
 ## System
 

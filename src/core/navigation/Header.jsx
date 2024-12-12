@@ -14,7 +14,7 @@ import NavTitle from './ui/NavTitle';
 export default function Header() {
   const pathname = usePathname();
 
-  if (pathname === PagePath.test) return null;
+  if (pathname === PagePath.demo) return <header />;
 
 
   return (
