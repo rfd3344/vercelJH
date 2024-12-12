@@ -23,7 +23,7 @@
 - useContext, createContext, ContextProvider, useReducer
 - Controlled vs Uncontrolled components
 - Suspend, React.lazy, useTransition, useDeferredValue
-- Keys, default index,
+- reconciliation algorithm, Keys, default index,
 
 ## Nextjs
 

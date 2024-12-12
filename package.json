@@ -49,6 +49,8 @@
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "@chromatic-com/storybook": "^3.2.2",
     "@next/eslint-plugin-next": "^14.2.5",
+    "@percy/cli": "^1.29.4",
+    "@percy/storybook": "^6.0.2",
     "@storybook/addon-essentials": "^8.4.6",
     "@storybook/addon-interactions": "^8.4.6",
     "@storybook/addon-links": "^8.4.1",
