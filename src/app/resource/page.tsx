@@ -27,6 +27,14 @@ export default function Page({ }) {
       path: 'https://rfd3344.vercel.app/mock/cat/1',
     },
     {
+      name: 'html editor code1',
+      path: 'https://rfd3344.vercel.app/html/code1.html',
+    },
+    {
+      name: 'html editor code2',
+      path: 'https://rfd3344.vercel.app/html/code2.html',
+    },
+    {
       name: 'AWS-SAA-ExamNotes',
       path: 'https://rfd3344.vercel.app/pdf/AWS-SAA-ExamNotes.pdf',
     },
