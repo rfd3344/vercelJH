@@ -3,8 +3,14 @@ import {
   NextResponse,
 } from 'src/libs/next';
 
+import main from 'src/libs/mongodb'
+
+
 export async function GET(request: NextRequest) {
-  const token = request.cookies.get('token');
-  console.warn(request.nextUrl.searchParams.get('token'));
-  return NextResponse.json({ message: 'Hello World' }, { status: 200 });
+
+  const resp = await main()
+
+  console.warn(resp)
+
+  return NextResponse.json({ message: 'cats' }, { status: 200 });
 }
