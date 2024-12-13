@@ -3,11 +3,12 @@ import _ from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
 
 
-import {
-  FormatAlignLeftIcon,
-  FormatAlignCenterIcon,
-  FormatAlignRightIcon,
-} from 'src/core/Icons';
+// import {
+//   FormatAlignLeftIcon,
+//   FormatAlignCenterIcon,
+//   FormatAlignRightIcon,
+// } from 'src/core/Icons';
+import Icon from 'src/components/dataDisplay/Icon';
 
 import { Button, ButtonGroup, RangeSlider } from 'src/components/flowbite';
 
@@ -73,19 +74,20 @@ export default function TitleWebpage() {
             color="gray"
             onClick={() => handleAlignChange('left')}
           >
-            <FormatAlignLeftIcon />
+            {/* <FormatAlignLeftIcon /> */}
+            <Icon />
           </Button>
           <Button
             color="gray"
             onClick={() => handleAlignChange('center')}
           >
-            <FormatAlignCenterIcon />
+            {/* <FormatAlignCenterIcon /> */}
           </Button>
           <Button
             color="gray"
             onClick={() => handleAlignChange('right')}
           >
-            <FormatAlignRightIcon />
+            {/* <FormatAlignRightIcon /> */}
           </Button>
         </ButtonGroup>
 

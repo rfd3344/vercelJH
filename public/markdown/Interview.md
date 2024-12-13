@@ -11,7 +11,7 @@
 - Generic Type
 - interface (object oriented), type(union, Intersection)
 - UtilityType, Partial, Required, Record, Omit, Pick, Exclude, Parameters, Readonly
-- any, unknown
+- any, unknown, never
 - optional chaining(obj?.prop?.nested) nullish coalescing(value ?? "default")
 
 ## React

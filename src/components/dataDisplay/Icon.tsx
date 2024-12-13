@@ -5,6 +5,7 @@
  */
 
 import { FaBeer } from 'react-icons/fa';
+import { FaCalendarAlt } from 'react-icons/fa';
 import { HiArrowCircleDown } from 'react-icons/hi';
 import { GiConfirmed } from 'react-icons/gi';
 

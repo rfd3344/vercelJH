@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 
 export function ProductItem({
-  data = {}
+  data = {},
 }: any) {
   // console.warn('data', data)
 
@@ -17,10 +17,10 @@ export function ProductItem({
       {data}
       test
     </section>
-  )
+  );
 
 }
 
 
-export default ProductItem
+export default ProductItem;
 // export default React.memo(ProductItem)

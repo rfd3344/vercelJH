@@ -4,7 +4,9 @@ import { useSelector } from 'react-redux';
 
 import { Link } from 'src/components/next';
 import { Image } from 'src/components/next';
-import { DescriptionIcon } from 'src/core/Icons';
+// import { DescriptionIcon } from 'src/core/Icons';
+import Icon from 'src/components/dataDisplay/Icon';
+
 import { getFileTyle } from 'src/utils/fileUtils';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
@@ -33,7 +35,8 @@ export default function FielItem({
           <Image src="/icons/markdown.jpg" height={50} width={50} alt="" />
         )}
         {fileType === FileTypeEnum.others && (
-          <DescriptionIcon sx={{ fontSize: 50 }} />
+          // <DescriptionIcon sx={{ fontSize: 50 }} />
+          <Icon />
         )}
       </Link>
 

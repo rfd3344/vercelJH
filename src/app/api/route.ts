@@ -1,7 +1,7 @@
 import {
   type NextRequest,
   NextResponse,
-} from 'next/server';
+} from 'src/libs/next';
 
 // To handle a GET request to /api
 export async function GET(request: NextRequest) {

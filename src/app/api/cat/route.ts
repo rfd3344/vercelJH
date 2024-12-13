@@ -1,7 +1,7 @@
 import {
   type NextRequest,
   NextResponse,
-} from 'next/server';
+} from 'src/libs/next';
 
 export async function GET(request: NextRequest) {
   const token = request.cookies.get('token');

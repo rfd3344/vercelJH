@@ -2,7 +2,8 @@
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
 
-import { CalendarIcon } from 'src/core/Icons';
+// import { CalendarIcon } from 'src/core/Icons';
+import Icon from 'src/components/dataDisplay/Icon';
 
 import { Badge } from 'src/components/flowbite';
 
@@ -28,7 +29,8 @@ export default function Clock() {
 
       <Badge
         color="warning"
-        icon={CalendarIcon}
+        // icon={CalendarIcon}
+        icon={Icon}
         onClick={handleClick}
       >
         {currentTime?.toDateString()}{' '}

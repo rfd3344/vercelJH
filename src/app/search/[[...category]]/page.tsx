@@ -17,7 +17,7 @@ interface IProp {
 
 // http://localhost:3344/search/food/drink?name=111&name=222
 
-export default async function Page({ params, searchParams }: IProp) {
+export default async function Page({ params, searchParams }: any) {
 
 
   return (
