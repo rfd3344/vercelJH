@@ -1,16 +1,12 @@
 
 import _ from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
+import { ButtonGroup, RangeSlider } from 'flowbite-react';
 
+import Button from 'src/components/navigation/Button';
 
-// import {
-//   FormatAlignLeftIcon,
-//   FormatAlignCenterIcon,
-//   FormatAlignRightIcon,
-// } from 'src/core/Icons';
 import Icon from 'src/components/dataDisplay/Icon';
 
-import { Button, ButtonGroup, RangeSlider } from 'src/components/flowbite';
 
 import { updateWebpage } from 'src/sections/webpage/webpageSlice';
 

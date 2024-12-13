@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { PortableText } from '@portabletext/react';
-import { Image } from 'src/components/next';
+import { Image } from 'src/libs/next';
 
 import { getBlogBySlug, getSanityImage } from 'src/libs/sanity';
 

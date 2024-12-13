@@ -20,11 +20,11 @@ export default function Page({ }) {
     },
     {
       name: 'api cat list',
-      path: 'https://rfd3344.vercel.app/mock/cat/',
+      path: 'https://rfd3344.vercel.app/api/cat/',
     },
     {
       name: 'api cat item',
-      path: 'https://rfd3344.vercel.app/mock/cat/1',
+      path: 'https://rfd3344.vercel.app/api/cat/1',
     },
     {
       name: 'html editor code1',

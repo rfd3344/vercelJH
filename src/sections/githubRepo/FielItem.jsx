@@ -2,8 +2,8 @@
 import { useSelector } from 'react-redux';
 
 
-import { Link } from 'src/components/next';
-import { Image } from 'src/components/next';
+import { Link } from 'src/libs/next';
+import { Image } from 'src/libs/next';
 // import { DescriptionIcon } from 'src/core/Icons';
 import Icon from 'src/components/dataDisplay/Icon';
 

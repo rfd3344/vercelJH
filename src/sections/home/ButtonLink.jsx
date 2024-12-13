@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { Link } from 'src/components/next';
+import { Link } from 'src/libs/next';
 import Button from 'src/components/navigation/Button';
 
 import { PagePath } from 'src/constants/pagePath';

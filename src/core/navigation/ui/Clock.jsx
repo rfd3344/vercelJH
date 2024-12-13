@@ -1,10 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
+import { Badge } from 'flowbite-react';
 
 import Icon from 'src/components/dataDisplay/Icon';
 
-import { Badge } from 'src/components/flowbite';
 
 export default function Clock() {
   const [currentTime, setCurrentTime] = useState(

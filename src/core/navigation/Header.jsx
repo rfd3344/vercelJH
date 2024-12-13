@@ -1,11 +1,10 @@
 'use client';
 import React from 'react';
 import _ from 'lodash';
+import { Avatar } from 'flowbite-react';
+
 import { usePathname } from 'src/libs/next';
-
-import { Link } from 'src/components/next';
-import { Avatar } from 'src/components/flowbite';
-
+import { Link } from 'src/libs/next';
 import { PagePath } from 'src/constants/pagePath';
 
 import Clock from './ui/Clock';

@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 
 
-import { Accordion as AccordionFlowbite, AccordionContent, AccordionPanel, AccordionTitle } from 'flowbite-react';
+import {
+  Accordion as AccordionFlowbite,
+  AccordionContent,
+  AccordionPanel,
+  AccordionTitle
+} from 'flowbite-react';
 
 
 export default function Accordion({

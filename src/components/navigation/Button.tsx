@@ -1,7 +1,10 @@
 import React from 'react';
-import { ButtonProps, CustomFlowbiteTheme } from 'flowbite-react';
+import {
+  ButtonProps,
+  CustomFlowbiteTheme,
+  Button as ButtonFlowbite
+} from 'flowbite-react';
 
-import { Button as ButtonFlowbite } from 'src/components/flowbite';
 
 export default function Button({
   color = 'primary',

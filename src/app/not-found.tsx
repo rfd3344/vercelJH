@@ -1,7 +1,7 @@
 
 
 
-import { Link } from 'src/components/next';
+import { Link } from 'src/libs/next';
 
 export default function NotFound() {
   return (
