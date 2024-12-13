@@ -36,18 +36,18 @@ const getLinkType = (to) => {
 export default function LinkButton({ to = '', text = '', ...rest }) {
   const linkType = getLinkType(to);
   const StartIcon = () => {
-    if (_.includes(to, 'keep.google.com')) return <Icon />;
-    if (_.includes(to, 'drive.google.com')) return <Icon />;
-    if (_.includes(to, 'github.com')) return <Icon />;
+    if (_.includes(to, 'keep.google.com')) return <Icon value='PiNotePencilBold' />;
+    if (_.includes(to, 'drive.google.com')) return <Icon value='FaGoogleDrive' />;
+    if (_.includes(to, 'github.com')) return <Icon value='FaGithub' />;
     if (_.includes(to, 'aws')) return <ImgIcon src="/icons/aws.png" />;
-    if (_.includes(to, 'messenger.com')) return <Icon />;
+    if (_.includes(to, 'messenger.com')) return <Icon value='MdOutlineMessage' />;
     if (_.includes(to, 'rfd3344w.github.io'))
       return <ImgIcon src="/icons/storybook.png" />;
-    if (linkType === LinkTypes.external) return <Icon />;
-    if (to === PagePath.calculator) return <Icon />;
-    if (to === PagePath.tempNotes) return <Icon />;
-    if (to === PagePath.colorTable) return <Icon />;
-    if (to === PagePath.repo) return <Icon />;
+    if (linkType === LinkTypes.external) return <Icon value='MdOpenInNew' />;
+    if (to === PagePath.calculator) return <Icon value='MdOutlineCalculate' />;
+    if (to === PagePath.localNotes) return <Icon value='PiNotePencilBold' />;
+    if (to === PagePath.colorTable) return <Icon value='IoIosColorPalette' />;
+    if (to === PagePath.repo) return <Icon value='FaRegImages' />;
     return null;
   };
 
@@ -60,7 +60,7 @@ export default function LinkButton({ to = '', text = '', ...rest }) {
 
     >
       <div className='mr-1 [&_svg]:w-4 [&_svg]:h-4'>
-        <Icon />
+        <StartIcon />
       </div>
       <div>{text}</div>
     </Button>

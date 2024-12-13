@@ -35,8 +35,7 @@ export default function FielItem({
           <Image src="/icons/markdown.jpg" height={50} width={50} alt="" />
         )}
         {fileType === FileTypeEnum.others && (
-          // <DescriptionIcon sx={{ fontSize: 50 }} />
-          <Icon />
+          <Icon value='MdDescription' className='text-[50px]' />
         )}
       </Link>
 

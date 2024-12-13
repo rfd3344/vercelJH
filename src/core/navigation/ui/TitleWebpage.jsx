@@ -75,18 +75,20 @@ export default function TitleWebpage() {
             onClick={() => handleAlignChange('left')}
           >
             {/* <FormatAlignLeftIcon /> */}
-            <Icon />
+            <Icon value='MdFormatAlignLeft' />
           </Button>
           <Button
             color="gray"
             onClick={() => handleAlignChange('center')}
           >
             {/* <FormatAlignCenterIcon /> */}
+            <Icon value='MdFormatAlignCenter' />
           </Button>
           <Button
             color="gray"
             onClick={() => handleAlignChange('right')}
           >
+            <Icon value='MdOutlineFormatAlignLeft' />
             {/* <FormatAlignRightIcon /> */}
           </Button>
         </ButtonGroup>

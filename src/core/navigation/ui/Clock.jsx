@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
 
-// import { CalendarIcon } from 'src/core/Icons';
 import Icon from 'src/components/dataDisplay/Icon';
 
 import { Badge } from 'src/components/flowbite';
@@ -29,11 +28,13 @@ export default function Clock() {
 
       <Badge
         color="warning"
-        // icon={CalendarIcon}
-        icon={Icon}
         onClick={handleClick}
       >
-        {currentTime?.toDateString()}{' '}
+        <div className='flex gap-2'>
+          <Icon value='FaCalendarAlt' />
+          <p> {currentTime?.toDateString()} </p>
+        </div>
+
       </Badge>
 
       <h5>
