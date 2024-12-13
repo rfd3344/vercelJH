@@ -35,19 +35,21 @@ const getLinkType = (to) => {
 
 export default function LinkButton({ to = '', text = '', ...rest }) {
   const linkType = getLinkType(to);
-  const StartIcon = () => {
-    if (_.includes(to, 'keep.google.com')) return <Icon value='PiNotePencilBold' />;
-    if (_.includes(to, 'drive.google.com')) return <Icon value='FaGoogleDrive' />;
-    if (_.includes(to, 'github.com')) return <Icon value='FaGithub' />;
-    if (_.includes(to, 'aws')) return <ImgIcon src="/icons/aws.png" />;
-    if (_.includes(to, 'messenger.com')) return <Icon value='MdOutlineMessage' />;
+  const StartIcon = (props) => {
+
+
+    if (_.includes(to, 'keep.google.com')) return <Icon value='PiNotePencilBold' {...props} />;
+    if (_.includes(to, 'drive.google.com')) return <Icon value='FaGoogleDrive' {...props} />;
+    if (_.includes(to, 'github.com')) return <Icon value='FaGithub' {...props} />;
+    if (_.includes(to, 'aws')) return <ImgIcon src="/icons/aws.png" {...props} />;
+    if (_.includes(to, 'messenger.com')) return <Icon value='MdOutlineMessage' {...props} />;
     if (_.includes(to, 'rfd3344w.github.io'))
-      return <ImgIcon src="/icons/storybook.png" />;
-    if (linkType === LinkTypes.external) return <Icon value='MdOpenInNew' />;
-    if (to === PagePath.calculator) return <Icon value='MdOutlineCalculate' />;
-    if (to === PagePath.localNotes) return <Icon value='PiNotePencilBold' />;
-    if (to === PagePath.colorTable) return <Icon value='IoIosColorPalette' />;
-    if (to === PagePath.repo) return <Icon value='FaRegImages' />;
+      return <ImgIcon src="/icons/storybook.png"  {...props} />;
+    if (linkType === LinkTypes.external) return <Icon value='MdOpenInNew' {...props} />;
+    if (to === PagePath.calculator) return <Icon value='MdOutlineCalculate' {...props} />;
+    if (to === PagePath.localNotes) return <Icon value='PiNotePencilBold'  {...props} />;
+    if (to === PagePath.colorTable) return <Icon value='IoIosColorPalette' {...props} />;
+    if (to === PagePath.repo) return <Icon value='FaRegImages' {...props} />;
     return null;
   };
 
@@ -57,12 +59,13 @@ export default function LinkButton({ to = '', text = '', ...rest }) {
       href={to}
       size="sm"
       color={linkType === LinkTypes.external ? 'primary' : 'secondary'}
-
     >
       <div className='mr-1 [&_svg]:w-4 [&_svg]:h-4'>
-        <StartIcon />
+        <StartIcon className="translate-y-1" />
       </div>
-      <div>{text}</div>
+
+      <p>{text}</p>
+
     </Button>
   );
 }
