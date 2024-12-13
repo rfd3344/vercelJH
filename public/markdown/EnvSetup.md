@@ -58,7 +58,7 @@
 - Docker
 - AnyDesk
 
-### VsCode
+### VSCode
 
 - Auto Rename Tag
 - Code Spell Checker
