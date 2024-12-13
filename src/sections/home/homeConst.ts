@@ -19,6 +19,7 @@ export const CloudLinks = {
     'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J',
   Messenger: 'https://www.messenger.com/t',
   Slack: 'https://rfd3344.slack.com',
+  Resource:  PagePath.resource,
 };
 
 export const GithubLinks = {

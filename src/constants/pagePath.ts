@@ -5,8 +5,8 @@ export const PagePath = {
   colorTable: '/html/colorTable.html',
   repo: '/github-repo',
   markdown: '/markdown',
+  resource: '/resource',
   webpage: '/webpage',
   search: '/search',
-
   demo: '/demo',
 };

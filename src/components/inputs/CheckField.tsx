@@ -2,7 +2,7 @@ import { ReactNode, ChangeEvent } from 'react';
 import _ from 'lodash';
 import { Checkbox, Label } from 'flowbite-react';
 
-import FormContoller from './FormController';
+import FormController from './FormController';
 
 interface IProps {
   name?: string;
@@ -33,7 +33,7 @@ export default function CheckField({
   };
 
   return (
-    <FormContoller
+    <FormController
       name={name}
       rules={rules}
       label={label}

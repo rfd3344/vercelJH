@@ -1,11 +1,16 @@
-import { cookies } from 'next/headers';
+import {
+  type NextRequest,
+  NextResponse,
+} from 'next/server';
 
-// export async function GET(request: Request) {
-//   const cookieStore = await cookies();
-//   const token = cookieStore.get('token');
+// To handle a GET request to /api
+export async function GET(request: NextRequest) {
+  // Do whatever you want
+  return NextResponse.json({ message: 'Hello World' }, { status: 200 });
+}
 
-//   return new Response('Hello, Next.js!', {
-//     status: 200,
-//     headers: { 'Set-Cookie': `token=${token.value}` },
-//   });
-// }
+// To handle a POST request to /api
+export async function POST(request: NextRequest) {
+  // Do whatever you want
+  return NextResponse.json({ message: 'Hello World' }, { status: 200 });
+}

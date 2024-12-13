@@ -1,7 +1,7 @@
 import { ReactNode, ChangeEvent } from 'react';
 import { Select, Label } from 'flowbite-react';
 
-import FormContoller from './FormController';
+import FormController from './FormController';
 
 
 interface IProps {
@@ -46,7 +46,7 @@ export default function SelectField({
 
 
   return (
-    <FormContoller
+    <FormController
       name={name}
       rules={rules}
       label={label}

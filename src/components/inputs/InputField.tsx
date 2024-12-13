@@ -3,7 +3,7 @@ import { ReactNode, ChangeEvent } from 'react';
 
 import { TextInput, Label } from 'flowbite-react';
 
-import FormContoller from './FormController';
+import FormController from './FormController';
 
 
 interface IProps {
@@ -63,7 +63,7 @@ export default function InputField({
 
 
   return (
-    <FormContoller
+    <FormController
       name={name}
       rules={rules}
       label={label}
