@@ -12,5 +12,5 @@ export async function GET(request: NextRequest) {
 
   console.warn(resp)
 
-  return NextResponse.json({ message: 'cats' }, { status: 200 });
+  return NextResponse.json(resp, { status: 200 });
 }

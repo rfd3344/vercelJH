@@ -22,7 +22,7 @@ async function main() {
 
   // the following code examples can be pasted here...
 
-  return collection;
+  return collection.find({}).toArray();
 }
 
 
