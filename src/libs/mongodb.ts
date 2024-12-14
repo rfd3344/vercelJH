@@ -2,28 +2,36 @@
 
 
 import { MongoClient } from 'mongodb';
-// or as an es module:
-// import { MongoClient } from 'mongodb'
 
-// Connection URL
+import { serverEnv } from 'src/core/envConfig';
 
-const url = 'mongodb+srv://admin:admin@cluster0.lph5oow.mongodb.net/';
-const client = new MongoClient(url);
+const initDatabase = async () => {
+  const url = `mongodb+srv://${serverEnv().MONGO_USERNAME}:${serverEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
+  const client = new MongoClient(url);
 
-// Database Name
-const dbName = 'cat';
+  const resp = await client.connect().catch(err => {
+    console.warn('err', err.errorResponse)
+  });
 
-async function main() {
-  // Use connect method to connect to the server
-  await client.connect();
-  console.log('Connected successfully to server');
-  const db = client.db(dbName);
-  const collection = db.collection('documents');
+  const dbName = serverEnv().MONGO_DATABASE;
 
-  // the following code examples can be pasted here...
-
-  return collection.find({}).toArray();
+  return client.db(dbName);
 }
 
+export const getSampleUsers = async () => {
+  const url = `mongodb+srv://${serverEnv().MONGO_USERNAME}:${serverEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
+  const client = new MongoClient(url);
+  await client.connect()
+  const collection = client.db('sample_mflix').collection('users');
 
-export default main
+  return collection.find({}).toArray();
+
+}
+
+export const getDocs = async (collectionName = '', filter = {}) => {
+  const db = await initDatabase()
+  const collection = db.collection(collectionName);
+
+  return collection.find({}).toArray();
+
+}

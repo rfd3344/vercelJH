@@ -6,6 +6,13 @@ module.exports = {
     PORT: 3344,
     NEXT_PUBLIC_BUILD_TIME: Date(),
 
+
+    MONGO_USERNAME: 'admin',
+    MONGO_PASSWORD: 'admin',
+    MONGO_DATABASE: 'vercelDb',
+    PERCY_TOKEN: 'web_e84292824c3ec9d9b49e41d5c4dcc3f3e425d57773165fc997b1b82e45b14092',
+
+
     NEXT_PUBLIC_GITHUB_API: 'https://api.github.com/repos',
     NEXT_PUBLIC_GITHUB_RAW: 'https://raw.githubusercontent.com',
     NEXT_PUBLIC_VERCEL_SERVER: 'https://rfd3344.vercel.app',
@@ -13,7 +20,6 @@ module.exports = {
     NEXT_PUBLIC_SANITY_PROJECT_ID: 'mmv3d3wi',
     NEXT_PUBLIC_SANITY_DATASET: 'production',
 
-    PERCY_TOKEN: 'web_e84292824c3ec9d9b49e41d5c4dcc3f3e425d57773165fc997b1b82e45b14092',
   },
 
   // https: {

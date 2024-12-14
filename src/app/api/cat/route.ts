@@ -3,14 +3,21 @@ import {
   NextResponse,
 } from 'src/libs/next';
 
-import main from 'src/libs/mongodb'
+import { getSampleUsers, getDocs } from 'src/libs/mongodb'
 
 
 export async function GET(request: NextRequest) {
+  const resp = await getDocs('cat').catch(err => {
+    return {
+      ...err,
+      error: 'Fail to connect MongoDB'
+    };
+  })
 
-  const resp = await main()
+  if (resp.error) {
+    return NextResponse.json(resp, { status: 400 });
+  }
 
-  console.warn(resp)
 
   return NextResponse.json(resp, { status: 200 });
 }
