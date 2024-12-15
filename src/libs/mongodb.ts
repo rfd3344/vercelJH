@@ -44,3 +44,11 @@ export const getDocById = async (collectionName = '', id = '') => {
   return collection.findOne({ '_id': new ObjectId(id) });
 
 };
+
+
+export const postDoc = async (collectionName = '', doc = {}) => {
+  const db = await initDatabase();
+  const collection = db.collection(collectionName);
+  return collection.insertOne(doc);
+
+};

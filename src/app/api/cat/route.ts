@@ -3,10 +3,50 @@ import {
   NextResponse,
 } from 'src/libs/next';
 
-import { getSampleUsers, getDocs } from 'src/libs/mongodb';
+import { getSampleUsers, getDocs, postDoc } from 'src/libs/mongodb';
 
 
-export async function GET(request: NextRequest) {
+
+const CollectionName = 'cat';
+
+export async function GET() {
+  const resp = await getDocs(CollectionName).catch(err => {
+    console.error('error', err)
+    return {
+      ...err,
+      error: 'Fail to connect MongoDB',
+    }
+  });
+
+  if (resp.error) {
+    return NextResponse.json(resp, { status: 400 });
+  }
+
+
+  return NextResponse.json(resp, { status: 200 });
+}
+
+
+export async function POST(req: NextRequest) {
+  const body = await req.json()
+  console.warn('reqest', body)
+  const resp = await postDoc(CollectionName, body).catch(err => {
+    console.error('error', err)
+    return {
+      ...err,
+      error: 'Fail to connect MongoDB',
+    }
+  });
+
+  if (resp.error) {
+    return NextResponse.json(resp, { status: 400 });
+  }
+
+
+  return NextResponse.json(resp, { status: 200 });
+}
+
+export async function Patch(req: NextRequest) {
   const resp = await getDocs('cat').catch(err => {
     console.error('error', err)
     return {

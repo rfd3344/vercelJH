@@ -67,6 +67,7 @@
 - Git Blame
 - indent-rainbow
 - Path Intellisense
+- Postman
 - Prettier
 - SQLite
 - SVG Preview
