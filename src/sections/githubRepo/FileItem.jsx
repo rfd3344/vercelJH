@@ -7,22 +7,22 @@ import { Image } from 'src/libs/next';
 // import { DescriptionIcon } from 'src/core/Icons';
 import Icon from 'src/components/dataDisplay/Icon';
 
-import { getFileTyle } from 'src/utils/fileUtils';
+import { getFileType } from 'src/utils/fileUtils';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
 import { omitRoot } from './githubRepoUtils';
 import { getGithubFileUrl } from './githubRepoUtils';
 
-export default function FielItem({
+export default function FileItem({
   file = {},
 }) {
   const { repoPath = '' } = useSelector((state) => state.githubRepo);
 
   const fileRawUrl = getGithubFileUrl(repoPath, file.path);
-  const fileType = getFileTyle(file.path);
+  const fileType = getFileType(file.path);
 
   return (
-    <div id="FielItem" className='flex flex-col items-center flex-wrap' >
+    <div id="FileItem" className='flex flex-col items-center flex-wrap' >
 
       <Link target="_blank" href={fileRawUrl}>
         {fileType === FileTypeEnum.image && (

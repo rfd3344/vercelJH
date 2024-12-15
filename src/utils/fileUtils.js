@@ -3,7 +3,7 @@ import _ from 'lodash';
 import { publicEnv } from 'src/core/envConfig';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
-export const getFileTyle = (fileName = '') => {
+export const getFileType = (fileName = '') => {
   const fileExtension = _.lowerCase(fileName.split('.').pop());
 
   if (fileExtension === 'pdf') {

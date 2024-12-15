@@ -6,7 +6,7 @@ import _ from 'lodash';
 
 import Accordion from 'src/components/dataDisplay/Accordion';
 
-import FielItem from 'src/sections/githubRepo/FielItem';
+import FileItem from 'src/sections/githubRepo/FileItem';
 import { groupByRoot } from 'src/sections/githubRepo/githubRepoUtils';
 import { GitFileType } from 'src/sections/githubRepo/githubRepoConst';
 import { fetchMasterTree } from 'src/sections/githubRepo/githubRepoSlice';
@@ -41,7 +41,7 @@ export default function Page() {
               details: (
                 <div className='grid gap-2 grid-cols-2  md:grid-cols-6' >
                   {groupFiles[key].map((file) => (
-                    <FielItem key={file.path} file={file} />
+                    <FileItem key={file.path} file={file} />
                   ))}
                 </div>
               ),
