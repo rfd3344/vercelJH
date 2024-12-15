@@ -4,7 +4,7 @@ module.exports = {
     // https://create-react-app.dev/docs/advanced-configuration/
 
     PORT: 3344,
-    NEXT_PUBLIC_BUILD_TIME: Date(),
+    NEXT_PUBLIC_BUILD_TIME: new Date().toLocaleString('en-US', { timeZone: "Australia/Sydney" }),
 
 
     MONGO_USERNAME: 'admin',
