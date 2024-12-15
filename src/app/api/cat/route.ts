@@ -11,11 +11,11 @@ const CollectionName = 'cat';
 
 export async function GET() {
   const resp = await getDocs(CollectionName).catch(err => {
-    console.error('error', err)
+    console.error('error', err);
     return {
       ...err,
       error: 'Fail to connect MongoDB',
-    }
+    };
   });
 
   if (resp.error) {
@@ -28,14 +28,14 @@ export async function GET() {
 
 
 export async function POST(req: NextRequest) {
-  const body = await req.json()
-  console.warn('reqest', body)
+  const body = await req.json();
+  console.warn('reqest', body);
   const resp = await postDoc(CollectionName, body).catch(err => {
-    console.error('error', err)
+    console.error('error', err);
     return {
       ...err,
       error: 'Fail to connect MongoDB',
-    }
+    };
   });
 
   if (resp.error) {

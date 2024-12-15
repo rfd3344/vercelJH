@@ -18,11 +18,11 @@ export async function GET(req: NextRequest, options: Options) {
   const params = await options.params;
 
   const resp = await getDocById(CollectionName, params.id).catch(err => {
-    console.error('error', err)
+    console.error('error', err);
     return {
       ...err,
       error: 'Fail to connect MongoDB',
-    }
+    };
   });
 
   if (resp.error) {
