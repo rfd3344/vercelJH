@@ -8,6 +8,10 @@ import { serverEnv } from 'src/core/envConfig';
 
 const initDatabase = async () => {
   const url = `mongodb+srv://${serverEnv().MONGO_USERNAME}:${serverEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
+
+
+  console.warn('url', url)
+  console.warn('serverEnv().MONGO_DATABASE', serverEnv().MONGO_DATABASE)
   const client = new MongoClient(url);
 
   client.connect().catch(err => {
