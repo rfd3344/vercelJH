@@ -19,7 +19,7 @@ export const CloudLinks = {
     'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J',
   Messenger: 'https://www.messenger.com/t',
   Slack: 'https://rfd3344.slack.com',
-  Resource:  PagePath.resource,
+  Resource: PagePath.resource,
 };
 
 export const GithubLinks = {
@@ -41,7 +41,7 @@ export const DevelopLinks = {
   toolfkDevTools: 'https://www.toolfk.com',
   算法总结:
     'https://github.com/youngyangyang04/leetcode-master/tree/master/problems',
-  Leetcode: 'https://leetcode.com/problemset/all/',
+  LeetCode: 'https://leetcode.com/problemset/all/',
   ReactNativeSample: 'https://github.com/ReactNativeNews/React-Native-Apps',
 };
 
@@ -67,15 +67,14 @@ export const HomeLinks = {
 };
 
 export const FunLinks = {
-  Genshin: 'https://wiki.biligame.com/ys',
+  GenShin: 'https://wiki.biligame.com/ys',
   StarRail: 'https://wiki.biligame.com/sr',
   虎牙直播: 'https://www.huya.com/g/wzry',
   爱壹帆: 'https://www.yfsp.tv/',
   Bilibili: 'https://www.bilibili.com',
   Youtube: 'https://www.youtube.com/feed/history',
   PerisherSki: 'https://www.epicaustraliapass.com.au/',
-  HillTennisCourt:
-    'https://hills.bookable.net.au/#!/search?venueTypeId=3&activityTypeId=17',
+  HillTennisCourt: 'https://hills.bookable.net.au/search?categoryId=4',
   HillsLeague: 'https://my.gloryleague.basketball/games',
 };
 
