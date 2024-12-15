@@ -1,7 +1,8 @@
 
 
 
-import { MongoClient } from 'mongodb';
+import { MongoClient, ObjectId } from 'mongodb';
+
 
 import { serverEnv } from 'src/core/envConfig';
 
@@ -9,7 +10,7 @@ const initDatabase = async () => {
   const url = `mongodb+srv://${serverEnv().MONGO_USERNAME}:${serverEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
   const client = new MongoClient(url);
 
-  const resp = await client.connect().catch(err => {
+  client.connect().catch(err => {
     console.warn('err', err.errorResponse);
   });
 
@@ -32,6 +33,14 @@ export const getDocs = async (collectionName = '', filter = {}) => {
   const db = await initDatabase();
   const collection = db.collection(collectionName);
 
-  return collection.find({}).toArray();
+  return collection.find(filter).toArray();
+
+};
+
+export const getDocById = async (collectionName = '', id = '') => {
+  const db = await initDatabase();
+  const collection = db.collection(collectionName);
+
+  return collection.findOne({ '_id': new ObjectId(id) });
 
 };

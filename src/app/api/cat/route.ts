@@ -7,10 +7,13 @@ import { getSampleUsers, getDocs } from 'src/libs/mongodb';
 
 
 export async function GET(request: NextRequest) {
-  const resp = await getDocs('cat').catch(err => ({
-    ...err,
-    error: 'Fail to connect MongoDB',
-  }));
+  const resp = await getDocs('cat').catch(err => {
+    console.error('error', err)
+    return {
+      ...err,
+      error: 'Fail to connect MongoDB',
+    }
+  });
 
   if (resp.error) {
     return NextResponse.json(resp, { status: 400 });

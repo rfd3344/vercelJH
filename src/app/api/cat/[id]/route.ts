@@ -3,20 +3,28 @@ import {
   NextResponse,
 } from 'src/libs/next';
 
+import { getDocs, getDocById } from 'src/libs/mongodb';
+
 interface Options {
   params: Promise<{
     id: string
   }>
 }
 
-
-
 export async function GET(request: NextRequest, options: Options) {
-  // const token = request.cookies.get('token');
-  // console.warn(request.nextUrl.searchParams.get('token'));
   const params = await options.params;
-  console.warn('params', params);
 
+  const resp = await getDocById('cat', params.id).catch(err => {
+    console.error('error', err)
+    return {
+      ...err,
+      error: 'Fail to connect MongoDB',
+    }
+  });
 
-  return NextResponse.json({ message: 'aaaa' }, { status: 200 });
+  if (resp.error) {
+    return NextResponse.json(resp, { status: 400 });
+  }
+
+  return NextResponse.json(resp, { status: 200 });
 }
