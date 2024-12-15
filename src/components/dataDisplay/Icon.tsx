@@ -6,26 +6,26 @@
 
 import { FaBeer } from 'react-icons/fa';
 import { FaCalendarAlt } from 'react-icons/fa';
-import { FaGithub } from "react-icons/fa";
-import { FaGoogleDrive } from "react-icons/fa";
-import { FaRegImages } from "react-icons/fa";
+import { FaGithub } from 'react-icons/fa';
+import { FaGoogleDrive } from 'react-icons/fa';
+import { FaRegImages } from 'react-icons/fa';
 
 
 import { HiArrowCircleDown } from 'react-icons/hi';
 
 import { GiConfirmed } from 'react-icons/gi';
 
-import { MdFormatAlignLeft } from "react-icons/md";
-import { MdFormatAlignCenter } from "react-icons/md";
-import { MdOutlineFormatAlignLeft } from "react-icons/md";
-import { MdDescription } from "react-icons/md";
-import { MdOutlineCalculate } from "react-icons/md";
-import { MdOpenInNew } from "react-icons/md";
-import { MdOutlineMessage } from "react-icons/md";
+import { MdFormatAlignLeft } from 'react-icons/md';
+import { MdFormatAlignCenter } from 'react-icons/md';
+import { MdOutlineFormatAlignLeft } from 'react-icons/md';
+import { MdDescription } from 'react-icons/md';
+import { MdOutlineCalculate } from 'react-icons/md';
+import { MdOpenInNew } from 'react-icons/md';
+import { MdOutlineMessage } from 'react-icons/md';
 
-import { IoIosColorPalette } from "react-icons/io";
+import { IoIosColorPalette } from 'react-icons/io';
 
-import { PiNotePencilBold } from "react-icons/pi";
+import { PiNotePencilBold } from 'react-icons/pi';
 
 const IconsMap = {
   GiConfirmed,

@@ -6,7 +6,7 @@ import { useSearchParams } from 'src/libs/next';
 import { useSelector, useDispatch } from 'react-redux';
 
 // import { OpenInNewIcon } from 'src/core/Icons';
-import Icon from 'src/components/dataDisplay/Icon'
+import Icon from 'src/components/dataDisplay/Icon';
 
 import ReactMarkdown from 'src/libs/ReactMarkdown';
 

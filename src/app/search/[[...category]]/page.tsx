@@ -5,13 +5,13 @@ import _ from 'lodash';
 import SearchFilter from 'src/sections/search/SearchFilter';
 
 interface IProp {
-  params: {
+  params: Promise<{
     category: string[];
-  }
-  searchParams: {
+  }>
+  searchParams: Promise<{
     name?: string | string[];
     price_from?: string;
-  }
+  }>
 }
 
 

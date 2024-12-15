@@ -2,7 +2,7 @@ import React from 'react';
 import {
   ButtonProps,
   CustomFlowbiteTheme,
-  Button as ButtonFlowbite
+  Button as ButtonFlowbite,
 } from 'flowbite-react';
 
 
