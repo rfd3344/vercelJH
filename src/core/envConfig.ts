@@ -12,6 +12,10 @@ export const publicEnv = () => ({
 
   SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
   SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
+
+  MONGO_USERNAME: process.env.NEXT_PUBLIC_MONGO_USERNAME || '',
+  MONGO_PASSWORD: process.env.NEXT_PUBLIC_MONGO_PASSWORD || '',
+  MONGO_DATABASE: process.env.NEXT_PUBLIC_MONGO_DATABASE || '',
 });
 
 /***
@@ -19,7 +23,4 @@ export const publicEnv = () => ({
  */
 export const serverEnv = () => ({
   PERCY_TOKEN: process.env.PERCY_TOKEN || '',
-  MONGO_USERNAME: process.env.MONGO_USERNAME || '',
-  MONGO_PASSWORD: process.env.MONGO_PASSWORD || '',
-  MONGO_DATABASE: process.env.MONGO_DATABASE || '',
 });

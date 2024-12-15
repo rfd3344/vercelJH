@@ -1,31 +1,25 @@
-
-
-
 import { MongoClient, ObjectId } from 'mongodb';
 
+import { publicEnv } from 'src/core/envConfig';
 
-import { serverEnv } from 'src/core/envConfig';
+
+const MONGO_URL = `mongodb+srv://${publicEnv().MONGO_USERNAME}:${publicEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
+const MONGO_DB_Name = publicEnv().MONGO_DATABASE;
+
 
 const initDatabase = async () => {
-  const url = `mongodb+srv://${serverEnv().MONGO_USERNAME}:${serverEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
 
-
-  console.warn('url', url)
-  console.warn('serverEnv().MONGO_DATABASE', serverEnv().MONGO_DATABASE)
-  const client = new MongoClient(url);
-
-  client.connect().catch(err => {
+  const client = new MongoClient(MONGO_URL);
+  await client.connect().catch(err => {
     console.warn('err', err.errorResponse);
   });
 
-  const dbName = serverEnv().MONGO_DATABASE;
-
-  return client.db(dbName);
+  return client.db(MONGO_DB_Name);
 };
 
 export const getSampleUsers = async () => {
-  const url = `mongodb+srv://${serverEnv().MONGO_USERNAME}:${serverEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
-  const client = new MongoClient(url);
+
+  const client = new MongoClient(MONGO_URL);
   await client.connect();
   const collection = client.db('sample_mflix').collection('users');
 

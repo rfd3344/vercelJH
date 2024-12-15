@@ -7,10 +7,10 @@ import { getSampleUsers, getDocs, postDoc } from 'src/libs/mongodb';
 
 
 
-const CollectionName = 'cat';
+const COLLECTION_NAME = 'cat';
 
 export async function GET() {
-  const resp = await getDocs(CollectionName).catch(err => {
+  const resp = await getDocs(COLLECTION_NAME).catch(err => {
     console.error('error', err);
     return {
       ...err,
@@ -29,8 +29,8 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  console.warn('reqest', body);
-  const resp = await postDoc(CollectionName, body).catch(err => {
+
+  const resp = await postDoc(COLLECTION_NAME, body).catch(err => {
     console.error('error', err);
     return {
       ...err,

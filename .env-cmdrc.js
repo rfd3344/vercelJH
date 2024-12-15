@@ -7,9 +7,9 @@ module.exports = {
     NEXT_PUBLIC_BUILD_TIME: new Date().toLocaleString('en-US', { timeZone: "Australia/Sydney" }),
 
 
-    MONGO_USERNAME: 'admin',
-    MONGO_PASSWORD: 'admin',
-    MONGO_DATABASE: 'vercelDb',
+    NEXT_PUBLIC_MONGO_USERNAME: 'admin',
+    NEXT_PUBLIC_MONGO_PASSWORD: 'admin',
+    NEXT_PUBLIC_MONGO_DATABASE: 'vercelDb',
     PERCY_TOKEN: 'web_e84292824c3ec9d9b49e41d5c4dcc3f3e425d57773165fc997b1b82e45b14092',
 
 
