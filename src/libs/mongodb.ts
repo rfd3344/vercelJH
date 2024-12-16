@@ -8,7 +8,6 @@ const MONGO_DB_Name = publicEnv().MONGO_DATABASE;
 
 
 const initDatabase = async () => {
-
   const client = new MongoClient(MONGO_URL);
   await client.connect().catch(err => {
     console.warn('err', err.errorResponse);
@@ -18,7 +17,6 @@ const initDatabase = async () => {
 };
 
 export const getSampleUsers = async () => {
-
   const client = new MongoClient(MONGO_URL);
   await client.connect();
   const collection = client.db('sample_mflix').collection('users');
@@ -40,7 +38,6 @@ export const getDocById = async (collectionName = '', id = '') => {
   const collection = db.collection(collectionName);
 
   return collection.findOne({ '_id': new ObjectId(id) });
-
 };
 
 
@@ -48,5 +45,12 @@ export const postDoc = async (collectionName = '', doc = {}) => {
   const db = await initDatabase();
   const collection = db.collection(collectionName);
   return collection.insertOne(doc);
+
+};
+
+export const deleteDocById = async (collectionName = '', id = '') => {
+  const db = await initDatabase();
+  const collection = db.collection(collectionName);
+  return collection.deleteOne({ '_id': new ObjectId(id) });
 
 };
