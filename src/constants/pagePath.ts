@@ -9,4 +9,5 @@ export const PagePath = {
   webpage: '/webpage',
   search: '/search',
   demo: '/demo',
+  mongo: '/mongo',
 };

@@ -38,7 +38,7 @@ export const DevelopLinks = {
   AWSCheetSheets: 'https://digitalcloud.training/aws-cheat-sheets',
   CodingNConcepts:
     'https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate',
-  oolfkDevTools: 'https://www.toolfk.com',
+  toolFKDevTools: 'https://www.toolfk.com',
   算法总结:
     'https://github.com/youngyangyang04/leetcode-master/tree/master/problems',
   LeetCode: 'https://leetcode.com/problemset/all/',
@@ -71,7 +71,7 @@ export const FunLinks = {
   StarRail: 'https://wiki.biligame.com/sr',
   虎牙直播: 'https://www.huya.com/g/wzry',
   爱壹帆: 'https://www.yfsp.tv/',
-  BiliBili: 'https://www.bilibili.com',
+  BiLiBiLi: 'https://www.bilibili.com',
   Youtube: 'https://www.youtube.com/feed/history',
   PerisherSki: 'https://www.epicaustraliapass.com.au/',
   TennisHill: 'https://hills.bookable.net.au/search?categoryId=4',
@@ -102,4 +102,5 @@ export const OtherLinks = {
   Demo: PagePath.demo,
   Webpage: PagePath.webpage,
   Search: PagePath.search,
+  Mongo: PagePath.mongo,
 };

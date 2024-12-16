@@ -8,21 +8,27 @@ const extendedApi = apiSlice.injectEndpoints({
     getUserList: build.query<any, void>({
       query: () => '/user/index.json',
     }),
-
     getUserById: build.query<any, number>({
       query: (id) => `/user/${id}.json`,
     }),
 
     getProductList: build.query<any, void>({
-      query: (id) => '/product/index.json',
+      query: () => '/product/index.json',
     }),
     getProductById: build.query<any, number>({
       query: (id) => `/product/${id}.json`,
     }),
 
+    getCatList: build.query<any, void>({
+      query: () => `api/cat`,
+    }),
+    getCatItem: build.query<any, number>({
+      query: (id) => `api/cat/${id}`,
+    }),
+
   }),
 
-  overrideExisting: 'throw',
+  // overrideExisting: 'throw',
 });
 
 
@@ -31,4 +37,6 @@ export const {
   useGetUserByIdQuery,
   useGetProductListQuery,
   useGetProductByIdQuery,
+  useGetCatListQuery,
+  useGetCatItemQuery,
 } = extendedApi;

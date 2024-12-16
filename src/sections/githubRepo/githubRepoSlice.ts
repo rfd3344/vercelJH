@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { getMasterTree } from 'src/api/githubRepo';
+import { getMasterTree } from 'src/query/githubRepo';
 
 import { GithubFiles } from 'src/types/githubType';
 

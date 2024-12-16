@@ -15,15 +15,16 @@ function isHydrateAction(action: Action): action is PayloadAction<RootState> {
 
 const apiSlice = createApi({
   reducerPath: 'api',
+
   baseQuery: fetchBaseQuery({
-    baseUrl: `${publicEnv().VERCEL_SERVER}/mock/`,
+    baseUrl: `${publicEnv().VERCEL_SERVER}`,
   }),
   extractRehydrationInfo(action, { reducerPath }): any {
     if (isHydrateAction(action)) {
       return action.payload[reducerPath];
     }
   },
-  // endpoints are defined in folder `src/api`
+  // endpoints are defined in folder `src/query`
   // ref: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
   endpoints: () => ({}),
 
