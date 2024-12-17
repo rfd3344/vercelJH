@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-type ActionType = 'ADD' | 'UPDATE' | 'DELETE';
+type ActionType = '' | 'ADD' | 'UPDATE' | 'DELETE';
 
 const initialState = {
-  actionType: 'ADD',
+  actionType: '',
   id: '',
 
 };

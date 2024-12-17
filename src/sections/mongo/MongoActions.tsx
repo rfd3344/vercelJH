@@ -2,23 +2,19 @@
 import React from 'react';
 import _ from 'lodash';
 
+import { useSelector, useDispatch } from 'react-redux';
+
 import Button from 'src/components/navigation/Button';
 
-
-import {
-  usePostCatMutation,
-} from 'src/query/vercelQuery';
-
+import { updateMongo } from './mongoSlice';
 
 export default function MongoActions({ }) {
-  const [postCat] = usePostCatMutation();
+
+  const dispatch = useDispatch()
   const handleAdd = async (id: any) => {
-    await postCat({
-      name: '111',
-      age: 10,
-    }).then(resp => {
-      console.warn('resp', resp);
-    });
+    dispatch(updateMongo({
+      actionType: 'ADD'
+    }))
   };
 
   return (

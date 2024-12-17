@@ -4,6 +4,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import githubRepo from 'src/sections/githubRepo/githubRepoSlice';
 import markdown from 'src/sections/markdown/markdownSlice';
 import webpage from 'src/sections/webpage/webpageSlice';
+import mongo from 'src/sections/mongo/mongoSlice';
 
 import core from './coreSlice';
 import apiSlice from './apiSlice';
@@ -14,6 +15,7 @@ export const makeStore = () => configureStore({
     githubRepo,
     markdown,
     webpage,
+    mongo,
     [apiSlice.reducerPath]: apiSlice.reducer,
   },
   middleware: getDefaultMiddleware =>

@@ -15,7 +15,7 @@ function isHydrateAction(action: Action): action is PayloadAction<RootState> {
 
 const apiSlice = createApi({
   reducerPath: 'api',
-
+  tagTypes: ['Cats'],
   baseQuery: fetchBaseQuery({
     baseUrl: `${publicEnv().VERCEL_SERVER}`,
   }),

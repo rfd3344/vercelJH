@@ -3,6 +3,7 @@ import apiSlice from 'src/core/redux/apiSlice';
 
 
 const extendedApi = apiSlice.injectEndpoints({
+
   endpoints: (build) => ({
 
     getUserList: build.query<any, void>({
@@ -21,7 +22,8 @@ const extendedApi = apiSlice.injectEndpoints({
 
     getCatList: build.query<any, void>({
       query: () => 'api/cat',
-      // providesTags: (result, error, id) => [{ type: 'Post', id }],
+      // providesTags: (result) => result?.map((item: any) => ({ type: 'Cat', id: item._id }))
+      providesTags: ['Cats'],
     }),
     getCatItem: build.query<any, number>({
       query: (id) => `api/cat/${id}`,
@@ -33,20 +35,15 @@ const extendedApi = apiSlice.injectEndpoints({
         method: 'POST',
         body,
       }),
-      // invalidatesTags: ['Post'],
+      invalidatesTags: ['Cats'],
     }),
 
     deleteCat: build.mutation<any, any>({
-      // query: (body) => ({
-      //   url: `api/cat`,
-      //   method: 'POST',
-      //   body
-      // }),
       query: (id) => ({
         url: `api/cat/${id}`,
         method: 'DELETE',
       }),
-      // invalidatesTags: ['Post'],
+      invalidatesTags: ['Cats'],
     }),
 
 

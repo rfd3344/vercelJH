@@ -24,14 +24,14 @@ interface DataRow {
 
 export default function MongoTable({ }) {
   const { data: catList } = useGetCatListQuery();
-  const res = usePostCatMutation();
+
   const [deleteCat] = useDeleteCatMutation();
 
 
   const handleClick = async (id: any) => {
-    // console.warn('id', id)
+
     const resp = await deleteCat(id);
-    console.warn('res', res);
+    console.warn('res', resp);
   };
 
   return (
@@ -42,7 +42,7 @@ export default function MongoTable({ }) {
         { head: 'age', cell: (row: any) => row.age },
         {
           head: 'action', cell: (row: any) => <div >
-            <Button onClick={() => handleClick(row._id)} >DELETEs</Button>
+            <Button color='red' onClick={() => handleClick(row._id)} >DELETE</Button>
           </div >,
         },
 
