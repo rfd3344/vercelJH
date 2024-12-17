@@ -4,7 +4,7 @@ import { publicEnv } from 'src/core/envConfig';
 
 
 const MONGO_URL = `mongodb+srv://${publicEnv().MONGO_USERNAME}:${publicEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;
-const MONGO_DB_Name = publicEnv().MONGO_DATABASE;
+const MONGO_DB = publicEnv().MONGO_DATABASE;
 
 
 const initDatabase = async () => {
@@ -13,7 +13,7 @@ const initDatabase = async () => {
     console.warn('err', err.errorResponse);
   });
 
-  return client.db(MONGO_DB_Name);
+  return client.db(MONGO_DB);
 };
 
 export const getSampleUsers = async () => {

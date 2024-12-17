@@ -6,7 +6,7 @@ import Button from 'src/components/navigation/Button';
 
 
 
-import { useGetCatListQuery } from 'src/query/vercelApi'
+import { useGetCatListQuery } from 'src/query/vercelQUery'
 
 export default function MongoActions({ }) {
 

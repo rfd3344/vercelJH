@@ -1,10 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
+type ActionType = 'ADD' | 'UPDATE' | 'DELETE';
+
 const initialState = {
-  size: 30,
-  alignment: 'center',
-  webUrl: 'https://www.bilibili.com/index.html',
+  actionType: 'ADD',
+  id: '',
+
 };
 
 const slice = createSlice({
