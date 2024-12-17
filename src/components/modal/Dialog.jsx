@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { Modal } from "flowbite-react";
+import { Modal } from 'flowbite-react';
 
 /*******
  * popup dialog modal

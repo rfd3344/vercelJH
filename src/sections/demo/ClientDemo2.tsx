@@ -4,7 +4,7 @@
 import {
   useGetProductListQuery,
   useGetProductByIdQuery,
-} from 'src/query/vercelQUery';
+} from 'src/query/vercelQuery';
 
 import ClientButtons from './ui/ClientButtons';
 import PlayGround1 from './ui/PlayGround1';

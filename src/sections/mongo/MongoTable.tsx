@@ -8,7 +8,8 @@ import Button from 'src/components/navigation/Button';
 import {
   useGetCatListQuery,
   usePostCatMutation,
-} from 'src/query/vercelQUery'
+  useDeleteCatMutation,
+} from 'src/query/vercelQuery';
 
 interface IProps {
   data: DataRow[];
@@ -22,24 +23,16 @@ interface DataRow {
 }
 
 export default function MongoTable({ }) {
-  const { data: catList } = useGetCatListQuery()
-  const [postCat] = usePostCatMutation()
-  // console.warn('catList', catList)
-  // const catList = [
-  //   { _id: '675d6b79b3316e13039637e9', age: 11, name: 'bbb\n' },
-  //   { _id: '675d6bceb3316e13039637ea', age: 5, name: 'aa' },
-  //   { _id: '675ebc5b79a181f988cdb6c2', name: 'name cat2', age: 11 }
-  // ]
+  const { data: catList } = useGetCatListQuery();
+  const res = usePostCatMutation();
+  const [deleteCat] = useDeleteCatMutation();
 
 
   const handleClick = async (id: any) => {
-    await postCat({
-      name: '111',
-      age: 10
-    }).then(resp => {
-      console.warn('resp', resp)
-    })
-  }
+    // console.warn('id', id)
+    const resp = await deleteCat(id);
+    console.warn('res', res);
+  };
 
   return (
     <TableBasic
@@ -49,13 +42,13 @@ export default function MongoTable({ }) {
         { head: 'age', cell: (row: any) => row.age },
         {
           head: 'action', cell: (row: any) => <div >
-            <Button onClick={(row: any) => handleClick(row?._id)} >DELETEs</Button>
-          </div >
+            <Button onClick={() => handleClick(row._id)} >DELETEs</Button>
+          </div >,
         },
 
       ]}
       data={catList}
     />
-  )
+  );
 
 }

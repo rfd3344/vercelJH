@@ -7,19 +7,19 @@ import Button from 'src/components/navigation/Button';
 
 import {
   usePostCatMutation,
-} from 'src/query/vercelQUery'
+} from 'src/query/vercelQuery';
 
 
 export default function MongoActions({ }) {
-  const [postCat] = usePostCatMutation()
+  const [postCat] = usePostCatMutation();
   const handleAdd = async (id: any) => {
     await postCat({
       name: '111',
-      age: 10
+      age: 10,
     }).then(resp => {
-      console.warn('resp', resp)
-    })
-  }
+      console.warn('resp', resp);
+    });
+  };
 
   return (
     <section id="MongoActions">

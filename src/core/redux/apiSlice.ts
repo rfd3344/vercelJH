@@ -18,7 +18,7 @@ const apiSlice = createApi({
 
   baseQuery: fetchBaseQuery({
     // baseUrl: `${publicEnv().VERCEL_SERVER}`,
-    baseUrl: `http://localhost:3344`,
+    baseUrl: 'http://localhost:3344',
   }),
   extractRehydrationInfo(action, { reducerPath }): any {
     if (isHydrateAction(action)) {

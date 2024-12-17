@@ -20,7 +20,8 @@ const extendedApi = apiSlice.injectEndpoints({
     }),
 
     getCatList: build.query<any, void>({
-      query: () => `api/cat`,
+      query: () => 'api/cat',
+      // providesTags: (result, error, id) => [{ type: 'Post', id }],
     }),
     getCatItem: build.query<any, number>({
       query: (id) => `api/cat/${id}`,
@@ -28,12 +29,28 @@ const extendedApi = apiSlice.injectEndpoints({
 
     postCat: build.mutation<any, any>({
       query: (body) => ({
-        url: `api/cat`,
+        url: 'api/cat',
         method: 'POST',
-        body
+        body,
       }),
       // invalidatesTags: ['Post'],
     }),
+
+    deleteCat: build.mutation<any, any>({
+      // query: (body) => ({
+      //   url: `api/cat`,
+      //   method: 'POST',
+      //   body
+      // }),
+      query: (id) => ({
+        url: `api/cat/${id}`,
+        method: 'DELETE',
+      }),
+      // invalidatesTags: ['Post'],
+    }),
+
+
+
   }),
 
   // overrideExisting: 'throw',
@@ -49,5 +66,6 @@ export const {
   useGetCatListQuery,
   useGetCatItemQuery,
   usePostCatMutation,
+  useDeleteCatMutation,
 
 } = extendedApi;
