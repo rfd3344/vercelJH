@@ -6,7 +6,6 @@ module.exports = {
     PORT: 3344,
     NEXT_PUBLIC_BUILD_TIME: new Date().toLocaleString('en-US', { timeZone: "Australia/Sydney" }),
 
-    NEXT_PUBLIC_VERCEL_SERVER: 'https://rfd3344.vercel.app',
     NEXT_PUBLIC_GITHUB_API: 'https://api.github.com/repos',
     NEXT_PUBLIC_GITHUB_RAW: 'https://raw.githubusercontent.com',
 
@@ -27,11 +26,13 @@ module.exports = {
   dev: {
     NEXT_PUBLIC_STAGE: 'dev',
 
+    NEXT_PUBLIC_VERCEL_SERVER: 'http://localhost:3344',
   },
 
   prod: {
     NEXT_PUBLIC_STAGE: 'prod',
     GENERATE_SOURCEMAP: false, // disabled create source map
 
+    NEXT_PUBLIC_VERCEL_SERVER: 'https://rfd3344.vercel.app',
   },
 };
