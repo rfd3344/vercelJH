@@ -46,9 +46,9 @@ export default function TableBasic({
           ))}
         </Table.Head>
 
-        <Table.Body className="divide-y">
+        <Table.Body className="divide-y text-black">
           {data?.map((row: any, rowIndex) => (
-            <Table.Row key={row?.name || rowIndex}>
+            <Table.Row key={row?._id || rowIndex}>
               {columnProps?.map((item: ColumProps) => (
                 <Table.Cell key={item.head}>
                   {_.isFunction(item.cell) ? item.cell(row, rowIndex) : item.cell}

@@ -26,6 +26,14 @@ const extendedApi = apiSlice.injectEndpoints({
       query: (id) => `api/cat/${id}`,
     }),
 
+    postCat: build.mutation<any, any>({
+      query: (body) => ({
+        url: `api/cat`,
+        method: 'POST',
+        body
+      }),
+      // invalidatesTags: ['Post'],
+    }),
   }),
 
   // overrideExisting: 'throw',
@@ -37,6 +45,9 @@ export const {
   useGetUserByIdQuery,
   useGetProductListQuery,
   useGetProductByIdQuery,
+
   useGetCatListQuery,
   useGetCatItemQuery,
+  usePostCatMutation,
+
 } = extendedApi;

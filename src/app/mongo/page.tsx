@@ -12,7 +12,7 @@ export default async function Page() {
   // const data = await (await fetch(`${publicEnv().VERCEL_SERVER}/api/cat`)).json()
   // console.warn('data', data)
   return (
-    <main id="mongo">
+    <main id="mongo" className='container'>
       <MongoActions />
       <MongoTable />
       <MongoDialog />
