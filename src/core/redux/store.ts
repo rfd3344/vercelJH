@@ -1,4 +1,4 @@
-'use client';
+
 import { configureStore } from '@reduxjs/toolkit';
 
 import githubRepo from 'src/sections/githubRepo/githubRepoSlice';
@@ -9,7 +9,7 @@ import mongo from 'src/sections/mongo/mongoSlice';
 import core from './coreSlice';
 import apiSlice from './apiSlice';
 
-export const makeStore = () => configureStore({
+export const store = configureStore({
   reducer: {
     core,
     githubRepo,
@@ -25,7 +25,7 @@ export const makeStore = () => configureStore({
 });
 
 // Infer the type of makeStore
-export type AppStore = ReturnType<typeof makeStore>;
+// export type AppStore = ReturnType<typeof store.getState>;
 // Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<AppStore['getState']>;
-export type AppDispatch = AppStore['dispatch'];
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch

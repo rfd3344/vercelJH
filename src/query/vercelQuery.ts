@@ -59,10 +59,12 @@ export const {
   useGetUserByIdQuery,
   useGetProductListQuery,
   useGetProductByIdQuery,
-
+  // getCatList,
   useGetCatListQuery,
   useGetCatItemQuery,
   usePostCatMutation,
   useDeleteCatMutation,
 
 } = extendedApi;
+
+export default extendedApi;
