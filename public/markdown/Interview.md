@@ -16,7 +16,7 @@
 
 ## React
 
-- Virtual DOM, diff algorithm, tree-structure,
+- Virtual DOM, diff algorithm, tree-structure
 - React.memo, useMemo, useCallback
 - useContext, createContext, ContextProvider, useReducer
 - useEffect(async) vs useLayoutEffect(synchronously, before paint screen)
@@ -28,14 +28,19 @@
 
 ## Nextjs
 
-- SSR SSG, Dynamic API, CSR
+- SSR, SSG, Dynamic API, CSR
 - File System-Based Routing, Dynamic Routes, [slug], [...slug], [[...slug]]
 -
 - image
 
-## System
+## AWS
 
-### Solid Principle
+- SQS, SNS
+
+- SQL, CID properties, indexing, sharding
+- NoSQL, Caching,
+
+## Solid Principle
 
 ref1: https://learnku.com/articles/4160/solid-notes-on-object-oriented-design-and-programming-oodoop
 
@@ -64,7 +69,11 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 - high-level class depends on abstract/interface, not low-level classes
 
-### Design Pattern
+## System Design
+
+- Design Patterns: Event-driven architecture, pub/sub, database replication
+
+## Design Pattern
 
 创建型：单例模式、抽象工厂模式、建造者模式、工厂模式、原型模式
 
