@@ -4,7 +4,7 @@ import { STORAGE_CHANGE, getStorage } from 'src/utils/localStorage.utils';
 
 export const useStorage = (name = '', isSessionStorage = false) => {
   const [value, setValue] = useState<string | Storage | null>(() =>
-    getStorage(name, isSessionStorage)
+    getStorage(name, isSessionStorage),
   );
 
   useEffect(() => {

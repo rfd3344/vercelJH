@@ -21,7 +21,7 @@ export const useNav = () => {
       const url = `${pathname}?${queryString}`;
       router.push(url);
     },
-    [router]
+    [router],
   );
 
   return nav;

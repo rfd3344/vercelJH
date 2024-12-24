@@ -1,27 +1,32 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import _ from 'lodash';
 
 import { useSelector, useDispatch } from 'react-redux';
 
 import Button from 'src/components/navigation/Button';
+import {
+  useGetCatListQuery,
+} from 'src/query/vercelQuery';
 
 import { updateMongo } from './mongoSlice';
 
 export default function MongoActions({ }) {
+  const [count, setCount] = useState(111);
+  const { data: catList } = useGetCatListQuery();
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const handleAdd = async (id: any) => {
     dispatch(updateMongo({
-      actionType: 'ADD'
-    }))
+      actionType: 'ADD',
+    }));
   };
 
   return (
     <section id="MongoActions">
       <div className='flex justify-between mt-2'>
         <div>
-
+          {JSON.stringify(catList, null, '')}
         </div>
         <div>
           <Button color="secondary" onClick={handleAdd}>Add New Cat</Button>

@@ -8,7 +8,7 @@ import { cookie, getCookie } from 'src/utils/cookie.utils';
  */
 export function useCookie(key = '') {
   const [value, setValue] = useState<string | null>(
-    () => getCookie(key) || null
+    () => getCookie(key) || null,
   );
 
   useEffect(() => {

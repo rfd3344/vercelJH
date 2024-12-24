@@ -7,7 +7,7 @@ import Dialog from 'src/components/modal/Dialog';
 import InputField from 'src/components/inputs/InputField';
 import Button from 'src/components/navigation/Button';
 import { RootState } from 'src/core/redux/store';
-import { useForm } from 'src/hooks/useForm'
+import { useForm } from 'src/hooks/useForm';
 
 import { updateMongo } from './mongoSlice';
 
@@ -24,37 +24,37 @@ interface DataRow {
 export default function MongoDialog({
 
 }: any) {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const [postCat] = usePostCatMutation();
 
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({});
   const {
     handleSubmit,
     formObj,
   } = useForm(form);
 
-  const { actionType = '' } = useSelector((state: RootState) => state.mongo)
+  const { actionType = '' } = useSelector((state: RootState) => state.mongo);
 
   const handleChange = (value: string, name: string) => {
     setForm({
       ...form,
-      [name]: value
-    })
-  }
+      [name]: value,
+    });
+  };
 
   const handleAddNew = () => {
     postCat(form).then(resp => {
       console.warn('resp', resp);
     }).then(() => {
-      handleClose()
-    })
-  }
+      handleClose();
+    });
+  };
 
   const handleClose = () => {
     dispatch(updateMongo({
-      actionType: ''
-    }))
-  }
+      actionType: '',
+    }));
+  };
 
   return (
     <section id="MongoDialog">

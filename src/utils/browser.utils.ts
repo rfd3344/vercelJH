@@ -14,7 +14,7 @@ export const scrollToDom = (
   selector = 'body',
   options = {
     offset: -70,
-  }
+  },
 ) => {
   const scrollDom = document.querySelector(selector);
   if (!scrollDom) return;

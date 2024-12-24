@@ -50,7 +50,7 @@ export const getBlogList = () => {
   if (!client) return null;
 
   const postsQuery = defineQuery(
-    '*[_type == "post" && defined(slug.current)]{_id, title, subtitle, excerpt, slug, publishedAt}'
+    '*[_type == "post" && defined(slug.current)]{_id, title, subtitle, excerpt, slug, publishedAt}',
   );
 
   return client?.fetch(postsQuery);
@@ -59,7 +59,7 @@ export const getBlogList = () => {
 export const getBlogBySlug = (slug = '') => {
   const client = getClient();
   const postBySlugQuery = defineQuery(
-    '*[_type == "post" && slug.current == $slug][0]'
+    '*[_type == "post" && slug.current == $slug][0]',
   );
 
   return client?.fetch(postBySlugQuery, { slug });

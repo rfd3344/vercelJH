@@ -7,15 +7,8 @@ import Button from 'src/components/navigation/Button';
 
 import {
   useGetCatListQuery,
-  usePostCatMutation,
   useDeleteCatMutation,
 } from 'src/query/vercelQuery';
-
-interface IProps {
-  data: DataRow[];
-}
-
-
 
 interface DataRow {
   name: string;
@@ -29,7 +22,6 @@ export default function MongoTable({ }) {
 
 
   const handleClick = async (id: any) => {
-
     const resp = await deleteCat(id);
     console.warn('res', resp);
   };
