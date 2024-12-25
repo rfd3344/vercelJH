@@ -3,20 +3,20 @@ import {
   NextResponse,
 } from 'src/libs/next';
 
-import { ApolloServer, gql } from 'apollo-server';
+// import { ApolloServer, gql } from 'apollo-server';
 
-const typeDefs = gql`
-  type Query {
-    hello: String
-  }
-`;
+// const typeDefs = gql`
+//   type Query {
+//     hello: String
+//   }
+// `;
 
-const resolvers = {
-  Query: {
-    hello: () => 'Hello, GraphQL!',
-  },
-};
-const server = new ApolloServer({ typeDefs, resolvers });
+// const resolvers = {
+//   Query: {
+//     hello: () => 'Hello, GraphQL!',
+//   },
+// };
+// const server = new ApolloServer({ typeDefs, resolvers });
 
 export async function GET(request: NextRequest) {
   // Do whatever you want
