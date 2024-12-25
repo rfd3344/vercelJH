@@ -20,6 +20,7 @@ export const CloudLinks = {
   Messenger: 'https://www.messenger.com/t',
   Slack: 'https://rfd3344.slack.com',
   Resource: PagePath.resource,
+  expressJH: 'https://express-jh.vercel.app/',
 };
 
 export const GithubLinks = {
