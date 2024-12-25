@@ -32,6 +32,7 @@
     "next-redux-wrapper": "^8.1.0",
     "next-sanity": "^9.8.27",
     "numeral": "^2.0.6",
+    "openai": "^4.77.0",
     "query-string": "^9.1.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",

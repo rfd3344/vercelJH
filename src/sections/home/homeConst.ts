@@ -103,5 +103,6 @@ export const OtherLinks = {
   Webpage: PagePath.webpage,
   Search: PagePath.search,
   Mongo: PagePath.mongo,
-  GraphQL: PagePath.graphql,
+  GraphQL: '/graphql',
+  OpenAI: '/openai',
 };
