@@ -17,13 +17,16 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
+    "@apollo/client": "^3.12.4",
     "@portabletext/react": "^3.2.0",
     "@reduxjs/toolkit": "^2.5.0",
     "@sanity/image-url": "^1.1.0",
+    "apollo-server": "^3.13.0",
     "axios": "^1.7.9",
     "dayjs": "^1.11.13",
     "env-cmd": "^10.1.0",
     "flowbite-react": "^0.10.2",
+    "graphql": "^16.10.0",
     "lodash": "^4.17.21",
     "mongodb": "^6.12.0",
     "next": "15.1.0",

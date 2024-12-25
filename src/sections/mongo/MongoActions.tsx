@@ -12,8 +12,6 @@ import {
 import { updateMongo } from './mongoSlice';
 
 export default function MongoActions({ }) {
-  const [count, setCount] = useState(111);
-  const { data: catList } = useGetCatListQuery();
 
   const dispatch = useDispatch();
   const handleAdd = async (id: any) => {
@@ -26,7 +24,7 @@ export default function MongoActions({ }) {
     <section id="MongoActions">
       <div className='flex justify-between mt-2'>
         <div>
-          {JSON.stringify(catList, null, '')}
+
         </div>
         <div>
           <Button color="secondary" onClick={handleAdd}>Add New Cat</Button>

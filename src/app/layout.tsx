@@ -5,6 +5,7 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
+import Provider from 'src/core/Provider';
 import ProviderRedux from 'src/core/redux/ProviderRedux';
 import Initiator from 'src/core/Initiator';
 import Header from 'src/core/navigation/Header';
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={fontsClassName}>
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>
 
-        <ProviderRedux>
+        <Provider>
 
           <Initiator />
           <Header />
@@ -41,7 +42,7 @@ export default function RootLayout({
 
           <Footer />
 
-        </ProviderRedux>
+        </Provider>
 
       </body>
     </html>
