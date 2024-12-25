@@ -10,4 +10,5 @@ export const PagePath = {
   search: '/search',
   demo: '/demo',
   mongo: '/mongo',
+  graphql: '/graphql',
 };
