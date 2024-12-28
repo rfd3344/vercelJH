@@ -2,9 +2,8 @@
 
 
 import {
-  useGetProductListQuery,
-  useGetProductByIdQuery,
-} from 'src/query/vercelQuery';
+  useGetDemoQuery,
+} from 'src/query/expressQuery';
 
 import ClientButtons from './ui/ClientButtons';
 import PlayGround1 from './ui/PlayGround1';
@@ -14,11 +13,12 @@ import PlayGround3 from './ui/PlayGround3';
 
 export default function ClientDemo2() {
 
-
+  const { data } = useGetDemoQuery();
+  console.warn('data', data);
   return (
     <section id="ClientDemo2">
       <h3>ClientDemo2</h3>
-
+      {JSON.stringify(data)}
       <ClientButtons />
       <PlayGround1 />
       <PlayGround2 />

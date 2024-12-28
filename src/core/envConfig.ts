@@ -8,6 +8,8 @@ export const publicEnv = () => ({
   BUILD_TIME: process.env.NEXT_PUBLIC_BUILD_TIME || '',
   GITHUB_API: process.env.NEXT_PUBLIC_GITHUB_API || '',
   GITHUB_RAW: process.env.NEXT_PUBLIC_GITHUB_RAW || '',
+
+  EXPRESS_SERVER: process.env.NEXT_PUBLIC_EXPRESS_SERVER || '',
   VERCEL_SERVER: process.env.NEXT_PUBLIC_VERCEL_SERVER || '',
 
   SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',

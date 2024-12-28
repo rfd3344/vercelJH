@@ -6,6 +6,8 @@ module.exports = {
     PORT: 3344,
     NEXT_PUBLIC_BUILD_TIME: new Date().toLocaleString('en-US', { timeZone: 'Australia/Sydney' }),
 
+    NEXT_PUBLIC_EXPRESS_SERVER: 'https://express-jh.vercel.app',
+
     NEXT_PUBLIC_GITHUB_API: 'https://api.github.com/repos',
     NEXT_PUBLIC_GITHUB_RAW: 'https://raw.githubusercontent.com',
 

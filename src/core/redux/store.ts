@@ -8,20 +8,24 @@ import mongo from 'src/sections/mongo/mongoSlice';
 
 import core from './coreSlice';
 import apiSlice from './apiSlice';
+import expressSlice from './expressSlice';
 
 export const store = configureStore({
   reducer: {
-    core,
     githubRepo,
     markdown,
     webpage,
     mongo,
+
+    core,
     [apiSlice.reducerPath]: apiSlice.reducer,
+    [expressSlice.reducerPath]: expressSlice.reducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware()
       // .prepend(listenerMiddleware.middleware)
-      .concat(apiSlice.middleware),
+      .concat(apiSlice.middleware)
+      .concat(expressSlice.middleware),
 });
 
 // Infer the type of makeStore

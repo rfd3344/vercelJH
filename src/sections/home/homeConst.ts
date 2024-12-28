@@ -1,9 +1,9 @@
 import { PagePath } from 'src/constants/pagePath';
 
 export const ToolsLinks = {
-  Calculator: PagePath.calculator,
-  LocalNotes: PagePath.localNotes,
-  ColorTable: PagePath.colorTable,
+  Calculator: '/html/calculator.html',
+  LocalNotes: '/html/localNotes.html?notes=2',
+  ColorTable: '/html/colorTable.html',
   // Webpage: PagePath.webpage,
   photoPea: 'https://photopea.com',
   ImageOnline: 'https://www.imgonline.com.ua/eng',
@@ -19,13 +19,13 @@ export const CloudLinks = {
     'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J',
   Messenger: 'https://www.messenger.com/t',
   Slack: 'https://rfd3344.slack.com',
-  Resource: PagePath.resource,
+  Resource: '/resource',
   expressJH: 'https://express-jh.vercel.app/',
 };
 
 export const GithubLinks = {
   rfd3344: 'https://github.com/rfd3344?tab=repositories',
-  RepoFiles: PagePath.repo,
+  RepoFiles: '/github-repo',
   StaticJH: 'https://github.com/rfd3344/staticJH',
   Storybook: 'https://rfd3344w.github.io',
 
@@ -36,7 +36,7 @@ export const DevelopLinks = {
   ChatGPT: 'https://chat.openai.com',
   APIGenerator: 'https://retool.com/api-generator',
   DBDiagram: 'https://dbdiagram.io/d/demo-6724a1c7b1b39dd8582997d4',
-  AWSCheetSheets: 'https://digitalcloud.training/aws-cheat-sheets',
+  AWSCheatSheets: 'https://digitalcloud.training/aws-cheat-sheets',
   CodingNConcepts:
     'https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate',
   toolFKDevTools: 'https://www.toolfk.com',
@@ -100,10 +100,10 @@ export const ShopLinks = {
 };
 
 export const OtherLinks = {
-  Demo: PagePath.demo,
-  Webpage: PagePath.webpage,
-  Search: PagePath.search,
-  Mongo: PagePath.mongo,
+  Demo: '/demo',
+  Webpage: '/webpage',
+  Search: '/search',
+  Mongo: '/mongo',
   GraphQL: '/graphql',
   OpenAI: '/openai',
 };
