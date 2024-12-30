@@ -71,7 +71,7 @@ export const FunLinks = {
   GenShin: 'https://wiki.biligame.com/ys',
   StarRail: 'https://wiki.biligame.com/sr',
   虎牙直播: 'https://www.huya.com/g/wzry',
-  爱壹帆: 'https://www.yfsp.tv/',
+  爱壹帆: 'https://www.yfsp.tv/list',
   BiLiBiLi: 'https://www.bilibili.com',
   Youtube: 'https://www.youtube.com/feed/history',
   PerisherSki: 'https://www.epicaustraliapass.com.au/',
