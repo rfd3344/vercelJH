@@ -2,6 +2,7 @@
 import _ from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
 
+import InputField from 'src/components/inputs/InputField';
 
 import { updateGithubRepo } from 'src/sections/githubRepo/githubRepoSlice';
 
@@ -22,11 +23,12 @@ export default function TitleGithubRepo() {
   };
 
   return (
-    <div className='flex flex-wrap justify-center'>
+    <div className='flex flex-wrap justify-center items-baseline'>
       <div >https://github.com/</div>
       <div >
-        <input
-          defaultValue={repoPath}
+        <InputField
+          className="[&_input]:p-0"
+          value={repoPath}
           onKeyUp={handleKeyUp}
           onBlur={handleChange}
         />
