@@ -8,6 +8,7 @@ import mongo from 'src/sections/mongo/mongoSlice';
 
 import core from './coreSlice';
 import apiSlice from './apiSlice';
+import githubSlice from './githubSlice';
 import expressSlice from './expressSlice';
 
 export const store = configureStore({
@@ -19,12 +20,14 @@ export const store = configureStore({
 
     core,
     [apiSlice.reducerPath]: apiSlice.reducer,
+    [githubSlice.reducerPath]: githubSlice.reducer,
     [expressSlice.reducerPath]: expressSlice.reducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware()
       // .prepend(listenerMiddleware.middleware)
       .concat(apiSlice.middleware)
+      .concat(githubSlice.middleware)
       .concat(expressSlice.middleware),
 });
 

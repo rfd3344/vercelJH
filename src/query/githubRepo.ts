@@ -3,19 +3,47 @@ import _ from 'lodash';
 import { gitStaticApi } from './api';
 import { GithubFiles } from 'src/types/githubType';
 
-export const getMasterTree = async (repoPath = '') => {
-  type GetMasterTreeResponse = {
-    sha?: string;
-    tree?: GithubFiles[];
-    truncated?: boolean;
-    url?: string;
-  };
+import githubSlice from 'src/core/redux/githubSlice';
 
-  const resp = await gitStaticApi().get<never, GetMasterTreeResponse>(
-    `${repoPath}/git/trees/main?recursive=1`,
-  );
-  return resp;
+type GetMasterTreeResponse = {
+  sha?: string;
+  tree?: GithubFiles[];
+  truncated?: boolean;
+  url?: string;
 };
+
+const extendedApi = githubSlice.injectEndpoints({
+
+  endpoints: (build) => ({
+    getMasterTree: build.query<GetMasterTreeResponse, string>({
+      query: (repoPath = '') => `${repoPath}/git/trees/main?recursive=1`,
+    }),
+
+  }),
+});
+
+
+export const {
+  useGetMasterTreeQuery,
+
+} = extendedApi;
+
+export default extendedApi;
+
+
+// export const getMasterTree = async (repoPath = '') => {
+//   type GetMasterTreeResponse = {
+//     sha?: string;
+//     tree?: GithubFiles[];
+//     truncated?: boolean;
+//     url?: string;
+//   };
+
+//   const resp = await gitStaticApi().get<never, GetMasterTreeResponse>(
+//     `${repoPath}/git/trees/main?recursive=1`,
+//   );
+//   return resp;
+// };
 
 // export const getMarkdownFiles = async () => {
 //   const resp = await gitStaticApi().get(

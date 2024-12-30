@@ -1,25 +1,25 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { getMasterTree } from 'src/query/githubRepo';
+// import { getMasterTree } from 'src/query/githubRepo';
 
 import { GithubFiles } from 'src/types/githubType';
 
-export const fetchMasterTree = createAsyncThunk(
-  'githubRepo/fetchMasterTree',
-  (repoPath: string) => getMasterTree(repoPath),
-);
+// export const fetchMasterTree = createAsyncThunk(
+//   'githubRepo/fetchMasterTree',
+//   (repoPath: string) => getMasterTree(repoPath),
+// );
 
 type GithubRepoState = {
   repoPath: string;
-  isValidRepo: boolean;
-  masterFiles: GithubFiles[];
+  // isValidRepo: boolean;
+  // masterFiles: GithubFiles[];
 };
 
 const initialState: GithubRepoState = {
   repoPath: 'rfd3344/staticJH',
-  isValidRepo: false,
-  masterFiles: [],
+  // isValidRepo: false,
+  // masterFiles: [],
 };
 
 const slice = createSlice({
@@ -32,16 +32,16 @@ const slice = createSlice({
     }),
   },
   extraReducers: ({ addCase }) => {
-    addCase(fetchMasterTree.fulfilled, (state, action) => {
-      const { payload = {} } = action;
+    // addCase(fetchMasterTree.fulfilled, (state, action) => {
+    //   const { payload = {} } = action;
 
-      state.isValidRepo = true;
-      state.masterFiles = payload?.tree || [];
-    });
-    addCase(fetchMasterTree.rejected, (state, action) => {
-      state.isValidRepo = false;
-      state.masterFiles = [];
-    });
+    //   state.isValidRepo = true;
+    //   state.masterFiles = payload?.tree || [];
+    // });
+    // addCase(fetchMasterTree.rejected, (state, action) => {
+    //   state.isValidRepo = false;
+    //   state.masterFiles = [];
+    // });
   },
 });
 
