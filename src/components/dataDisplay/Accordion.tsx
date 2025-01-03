@@ -19,7 +19,7 @@ export default function Accordion({
 
 
   return (
-    <AccordionFlowbite>
+    <AccordionFlowbite {...rest}>
       {data.map((item: any) => (
         <AccordionPanel key={item.summary}>
           <AccordionTitle className='py-3 [&_h2]:text-h5' >{item?.summary}</AccordionTitle>

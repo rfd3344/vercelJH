@@ -1,4 +1,4 @@
-
+'use client';
 import _ from 'lodash';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -16,9 +16,9 @@ export default function TitleGithubRepo() {
     }
   };
 
-  const handleChange = (e) => {
-    const { value } = e.target;
+  const handleBlur = (value) => {
     if (repoPath === value) return;
+
     dispatch(updateGithubRepo({ repoPath: value }));
   };
 
@@ -30,7 +30,7 @@ export default function TitleGithubRepo() {
           className="[&_input]:p-0"
           value={repoPath}
           onKeyUp={handleKeyUp}
-          onBlur={handleChange}
+          onBlur={handleBlur}
         />
       </div>
     </div>
