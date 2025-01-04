@@ -17,6 +17,7 @@ export default function TitleGithubRepo() {
   };
 
   const handleBlur = (value) => {
+
     if (repoPath === value) return;
 
     dispatch(updateGithubRepo({ repoPath: value }));

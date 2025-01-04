@@ -8,6 +8,7 @@ import {
 
 export default function IconSpinner({
   className = '',
+  color='cyan',
   ...rest
 }: SpinnerProps) {
 
@@ -15,7 +16,8 @@ export default function IconSpinner({
 
   const theme: CustomFlowbiteTheme['spinner'] = {
     color: {
-      info: 'fill-primary',
+      cyan: 'fill-cyan',
+      salmon: 'fill-salmon',
     },
   };
 
@@ -23,6 +25,7 @@ export default function IconSpinner({
     <SpinnerFlowbite
       className={className}
       theme={theme}
+      color={color}
       {...rest}
     />
 
