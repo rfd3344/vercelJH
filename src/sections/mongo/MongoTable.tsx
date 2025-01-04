@@ -20,7 +20,6 @@ export default function MongoTable({ }) {
 
   const [deleteCat] = useDeleteCatMutation();
 
-
   const handleClick = async (id: any) => {
     const resp = await deleteCat(id);
     console.warn('res', resp);
@@ -28,14 +27,19 @@ export default function MongoTable({ }) {
 
   return (
     <TableBasic
+      className="my-2"
       columnProps={[
-        { head: 'id', cell: (row: any) => row._id },
-        { head: 'name', cell: (row: any) => row.name },
-        { head: 'age', cell: (row: any) => row.age },
+        { head: 'ID', cell: (row: any) => row._id },
+        { head: 'Name', cell: (row: any) => row.name },
+        { head: 'Age', cell: (row: any) => row.age },
         {
-          head: 'action', cell: (row: any) => <div >
-            <Button color='red' onClick={() => handleClick(row._id)} >DELETE</Button>
-          </div >,
+          head: 'Action',
+          align: 'text-right',
+          cell: (row: any) => (
+            <div className='flex justify-end'>
+              <Button color='red' onClick={() => handleClick(row._id)} >DELETE</Button>
+            </div >
+          ),
         },
 
       ]}

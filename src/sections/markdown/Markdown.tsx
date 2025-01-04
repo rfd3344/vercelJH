@@ -42,9 +42,8 @@ export default function Page({ }) {
           code: ({ node, ...props }: any) => <code className='px-1' style={{ background: 'lightgray' }} {...props} />,
           pre: ({ node, ...props }: any) => <pre className='pl-2 my-2 border-l-4 border-green-500 overflow-x-auto max-w-[calc(100vw-15px)]' style={{ background: 'lightgray' }} {...props} />,
           blockquote: ({ node, ...props }: any) => <blockquote className='px-2 border-l-8 border-indigo-500 font-bold my-2' style={{ background: 'whitesmoke' }} {...props} />,
-          a: ({ node, children, ...props }: any) => <span >{children} <a {...props} target='_blank'><Icon /></a></span>,
+          a: ({ node, children, ...props }: any) => <span >{children} <a {...props} target='_blank'><Icon value='FcLink' size='xl' className='inline' /></a></span>,
         }}
-
       >
         {content}
       </ReactMarkdown>

@@ -11,6 +11,7 @@ import { FaGoogleDrive } from 'react-icons/fa';
 import { FaRegImages } from 'react-icons/fa';
 
 
+
 import { HiArrowCircleDown } from 'react-icons/hi';
 
 import { GiConfirmed } from 'react-icons/gi';
@@ -26,6 +27,8 @@ import { MdOutlineMessage } from 'react-icons/md';
 import { IoIosColorPalette } from 'react-icons/io';
 
 import { PiNotePencilBold } from 'react-icons/pi';
+import { PiLinkFill } from 'react-icons/pi';
+import { FcLink } from 'react-icons/fc';
 
 const IconsMap = {
   GiConfirmed,
@@ -50,6 +53,8 @@ const IconsMap = {
   IoIosColorPalette,
 
   PiNotePencilBold,
+  PiLinkFill,
+  FcLink,
 };
 
 

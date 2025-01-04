@@ -7,6 +7,7 @@ import { Table } from 'flowbite-react';
 interface IProps {
   columnProps: ColumProps[];
   data: any[];
+  className: string;
 };
 
 
@@ -14,9 +15,7 @@ interface IProps {
 export type ColumProps = {
   head: string;
   cell: ReactNode | Function;
-  // cell: React.ReactNode;
-  align?: string;
-  // align?: 'left' | 'right' | 'center';
+  align?: 'text-left' | 'text-right' | 'text-center';
 }
 
 
@@ -31,34 +30,34 @@ export type ColumProps = {
 export default function TableBasic({
   columnProps = [],
   data = [],
-
+  className = '',
 }: IProps) {
 
 
   return (
-    <section id="TableBasic">
-      <Table>
-        <Table.Head>
-          {columnProps?.map((item: ColumProps) => (
-            <Table.HeadCell key={item.head}>
-              {item.head}
-            </Table.HeadCell>
-          ))}
-        </Table.Head>
 
-        <Table.Body className="divide-y text-black">
-          {data?.map((row: any, rowIndex) => (
-            <Table.Row key={row?._id || rowIndex}>
-              {columnProps?.map((item: ColumProps) => (
-                <Table.Cell key={item.head}>
-                  {_.isFunction(item.cell) ? item.cell(row, rowIndex) : item.cell}
-                </Table.Cell>
-              ))}
-            </Table.Row>
-          ))}
-        </Table.Body>
-      </Table>
-    </section>
+    <Table id="TableBasic" className={className}>
+      <Table.Head>
+        {columnProps?.map((item: ColumProps) => (
+          <Table.HeadCell key={item.head} className={`bg-cyan normal-case ${item.align ?? 'text-left'}`} >
+            {item.head}
+          </Table.HeadCell>
+        ))}
+      </Table.Head>
+
+      <Table.Body className="divide-y text-black">
+        {data?.map((row: any, rowIndex) => (
+          <Table.Row key={row?._id || rowIndex}>
+            {columnProps?.map((item: ColumProps) => (
+              <Table.Cell key={item.head} className={`${item.align ?? 'text-left'}`} >
+                {_.isFunction(item.cell) ? item.cell(row, rowIndex) : item.cell}
+              </Table.Cell>
+            ))}
+          </Table.Row>
+        ))}
+      </Table.Body>
+    </Table>
+
   );
 
 }
