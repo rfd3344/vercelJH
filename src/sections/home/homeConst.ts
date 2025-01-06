@@ -77,7 +77,7 @@ export const FunLinks = {
   PerisherSki: 'https://www.epicaustraliapass.com.au/',
   TennisHill: 'https://hills.bookable.net.au/search?categoryId=4',
   TennisParramatta: 'https://www.cityofparramatta.nsw.gov.au/recreation/tennis-courts',
-  TennisAustralia: 'https://play.tennis.com.au/search?location=STRATHFIELD,%20NSW%202135&time=510&maxDistance=15000&orderBy=DISTANCE&activities=RESOURCE&quickbook=true',
+  TennisAustralia: 'https://play.tennis.com.au/search?location=KELLYVILLE,%20NSW%202135&dateDisplay=Today&time=1230&orderBy=DISTANCE&activities=RESOURCE&quickbook=true',
   HillsLeague: 'https://my.gloryleague.basketball/games',
 };
 

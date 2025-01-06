@@ -7,7 +7,7 @@ import { Table } from 'flowbite-react';
 interface IProps {
   columnProps: ColumProps[];
   data: any[];
-  className: string;
+  className?: string;
 };
 
 

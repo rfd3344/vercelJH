@@ -9,6 +9,13 @@ export const GET_USERS = gql`
         id
         name
         email
+        posts {
+          data {
+            id
+            # title
+            # body
+          }
+        }
         address {
           street
           suite
@@ -65,7 +72,7 @@ export const GET_USER = gql`
   }
 `;
 
-export const GET_POSTS = gql`
+export const GET_POSTS_BY_USER_ID = gql`
   query User($id: ID!){
     user(id: $id) {
       id
@@ -98,6 +105,30 @@ export const GET_POSTS = gql`
         meta {
           totalCount
         }
+      }
+    }
+  }
+`;
+
+
+export const GET_POSTS = gql`
+  query {
+    posts (options: { paginate: { page: 1, limit: 10 } }) {
+      data {
+        id
+        title
+        body
+        comments {
+          data {
+            id
+            name
+            email
+            body
+          }
+        }
+      }
+      meta {
+        totalCount
       }
     }
   }
