@@ -7,6 +7,7 @@ import {
 } from '@apollo/client';
 
 export { useQuery } from '@apollo/client';
+export { useMutation } from '@apollo/client';
 export { gql } from '@apollo/client';
 
 

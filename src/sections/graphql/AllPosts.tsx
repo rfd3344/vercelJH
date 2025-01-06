@@ -1,7 +1,7 @@
 
-import React, { useCallback, useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-import { useQuery } from 'src/libs/apollo';
+import { useQuery, useMutation } from 'src/libs/apollo';
 import { useForm } from 'src/hooks/useForm';
 import InputField from 'src/components/inputs/InputField';
 import TableBasic from 'src/components/dataDisplay/TableBasic';
@@ -11,11 +11,14 @@ import Dialog from 'src/components/modal/Dialog';
 
 import {
   GET_POSTS,
+  ADD_POST,
 } from './query';
 
 export default function AllPosts() {
 
   const { loading, error, data } = useQuery(GET_POSTS);
+  const [addPost] = useMutation(ADD_POST);
+
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const {
     handleSubmit,
@@ -25,7 +28,11 @@ export default function AllPosts() {
 
 
   const handleAddNew = (data: any) => {
-    console.warn(data);
+
+    addPost({ variables: { input: data } }).then(resp => {
+      console.warn('PostAdded', resp);
+      setIsDialogOpen(false);
+    });
   };
 
   if (loading) return <Loading />;
@@ -52,6 +59,7 @@ export default function AllPosts() {
         columnProps={[
           { head: 'id', cell: (row: any) => row.id },
           { head: 'title', cell: (row: any) => row.title },
+          { head: 'body', cell: (row: any) => row.body },
         ]}
         data={data?.posts?.data}
       />
@@ -61,13 +69,13 @@ export default function AllPosts() {
         onClose={() => setIsDialogOpen(false)}
       >
         <InputField
-          name="name"
+          name="title"
           formObj={formObj}
           rules={{ required: 'Name is a required field' }}
 
         />
         <InputField
-          name="age"
+          name="body"
           formObj={formObj}
           rules={{ required: 'Age a required field' }}
 
