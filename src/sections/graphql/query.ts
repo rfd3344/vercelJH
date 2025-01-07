@@ -2,37 +2,37 @@
 import { gql } from 'src/libs/apollo';
 
 
-// export const GET_USERS = gql`
-//   query {
-//     users (options: { paginate: { page: 1, limit: 10 } }) {
-//       data {
-//         id
-//         name
-//         email
-//         posts {
-//           data {
-//             id
-//             # title
-//             # body
-//           }
-//         }
-//         address {
-//           street
-//           suite
-//           city
-//           zipcode
-//           geo {
-//             lat
-//             lng
-//           }
-//         }
-//       }
-//       meta {
-//         totalCount
-//       }
-//     }
-//   }
-// `;
+export const GET_USERS = gql`
+  query {
+    users (options: { paginate: { page: 1, limit: 10 } }) {
+      data {
+        id
+        name
+        email
+        posts {
+          data {
+            id
+            # title
+            # body
+          }
+        }
+        address {
+          street
+          suite
+          city
+          zipcode
+          geo {
+            lat
+            lng
+          }
+        }
+      }
+      meta {
+        totalCount
+      }
+    }
+  }
+`;
 
 // export const GET_USER = gql`
 //   query User($id: ID!){
