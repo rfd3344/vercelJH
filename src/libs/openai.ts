@@ -2,18 +2,25 @@ import OpenAI from 'openai';
 
 import { publicEnv } from 'src/core/envConfig';
 
+// ref1: https://platform.openai.com/docs/guides/rate-limits?context=tier-free#usage-tiers
 
 
-const openai = new OpenAI({ apiKey: publicEnv().OPENAI_KEY });
+const openai = new OpenAI({
+  apiKey: publicEnv().OPENAI_KEY,
+  dangerouslyAllowBrowser: true,
+});
 
 
 export const example = async () => {
 
   const completion = await openai.chat.completions.create({
-    model: 'text-embedding-ada-002',
+    model: 'gpt-4o-mini',
+    // model: 'text-embedding-3-small',
+    // model: 'o1-preview',
+
     // store: true,
     messages: [
-      {'role': 'user', 'content': 'write a haiku about ai'},
+      { 'role': 'user', 'content': 'write a haiku about ai' },
     ],
   });
 

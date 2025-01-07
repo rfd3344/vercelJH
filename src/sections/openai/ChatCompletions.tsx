@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react';
+import Button from 'src/components/navigation/Button';
 
 
 
@@ -8,15 +9,17 @@ import { example } from 'src/libs/openai';
 
 export default function ChatCompletions() {
 
-  // useEffect(() => {
-  //   example().then(resp => {
-  //     console.warn('resp', resp);
-  //   });
-  // });
+  const handleChatCompletions = () => {
+    example().then(resp => {
+      console.warn('resp', resp);
+    });
+  };
 
   return (
     <section id="ChatCompletions">
       ChatCompletions
+
+      <Button onClick={handleChatCompletions}> ChatCompletions</Button>
     </section>
   );
 

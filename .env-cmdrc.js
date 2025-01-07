@@ -18,7 +18,8 @@ module.exports = {
 
     NEXT_PUBLIC_SANITY_PROJECT_ID: 'mmv3d3wi',
     NEXT_PUBLIC_SANITY_DATASET: 'production',
-    NEXT_PUBLIC_OPENAI_KEY: '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',
+
+    NEXT_PUBLIC_OPENAI_KEY: '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',
 
 
 
