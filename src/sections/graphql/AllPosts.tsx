@@ -35,6 +35,22 @@ export default function AllPosts() {
     });
   };
 
+  const handleUpdate = (data: any) => {
+
+    // addPost({ variables: { input: data } }).then(resp => {
+    //   console.warn('PostAdded', resp);
+    //   setIsDialogOpen(false);
+    // });
+  };
+
+  const handleDelete = (data: any) => {
+
+    // addPost({ variables: { input: data } }).then(resp => {
+    //   console.warn('PostAdded', resp);
+    //   setIsDialogOpen(false);
+    // });
+  };
+
   if (loading) return <Loading />;
   if (error) return <p>Error: {error.message}</p>;
 
@@ -60,6 +76,13 @@ export default function AllPosts() {
           { head: 'id', cell: (row: any) => row.id },
           { head: 'title', cell: (row: any) => row.title },
           { head: 'body', cell: (row: any) => row.body },
+          {
+            head: 'Action', cell: (row: any) => <div className='flex gap-2'>
+              <Button onClick={() => handleUpdate(row)}>Update</Button>
+              <Button onClick={() => handleDelete(row.id)}>Delete</Button>
+            </div>,
+          },
+
         ]}
         data={data?.posts?.data}
       />
