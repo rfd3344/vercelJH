@@ -77,25 +77,24 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 #### Creation Patterns
 
-- deal with Object Creation
-- SFBP
-
+- Creation
+-
 - Singleton (GlobalInstance)
-- Factory
-- Builder
-- Prototype
+- Factory (MostCommon, ReactComponent)
+- Builder (ComplexObject, Flexible, Multi-Step)
+- Prototype (ReuseObject, ExpensiveToCreate)
 
 #### Structural Patterns
 
-- deal with Object Inherence
-
+- Assemble to large Object
+-
 - Adapter (IncompatibleInterface)
-- Bridge Separates an object’s abstraction from its implementation.
-- Composite (ReactComponent)
+- Bridge (DecoupleAbstraction)
+- Composite (ReactChildComponent)
 - Decorator (HighOrderComponent)
-- Facade (Combination)
-- Flyweight Reduces memory usage by sharing as much data as possible between similar objects.
-- Proxy Provides a surrogate or placeholder for another object to control access to it.
+- Facade (CombineMultiStep)
+- Flyweight (ReduceMemoryByShareProperty)
+- Proxy (ControlAccess)
 
 #### Behavioral Patterns
 
@@ -103,12 +102,11 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 - Observer (ReactHooks)
 - Strategy: Allows a family of algorithms to be defined and swapped interchangeably at runtime.
-- Command: Encapsulates a request as an object, thereby allowing users to parameterize clients with queues, requests, and operations.
-- Chain of Responsibility Passes a request along a chain of handlers until one of them handles it.
+- Command (Undo/Redo )
+- Chain of Responsibility (ReduxMiddleware)
 - Mediator (Redux)
-- State Allows an object to alter its behavior when its internal state changes.
+- State (SwitchMode)
 - Visitor: Separates an algorithm from the objects it operates on.
 - Template Method Defines the skeleton of an algorithm in a base class but lets subclasses override specific steps of the algorithm.
-
 
 # Projects
