@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import _ from 'lodash';
 
 import { useQuery, useMutation } from 'src/libs/apollo';
 import { useForm } from 'src/hooks/useForm';
@@ -12,12 +13,16 @@ import Dialog from 'src/components/modal/Dialog';
 import {
   GET_POSTS,
   ADD_POST,
+  UPDATE_POST,
+  DELETE_POST,
 } from './query';
 
 export default function AllPosts() {
 
   const { loading, error, data } = useQuery(GET_POSTS);
   const [addPost] = useMutation(ADD_POST);
+  const [updatePost] = useMutation(UPDATE_POST);
+  const [deletePost] = useMutation(DELETE_POST);
 
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const {
@@ -27,28 +32,33 @@ export default function AllPosts() {
   } = useForm({});
 
 
-  const handleAddNew = (data: any) => {
+  const handleSave = ({ id, ...data }: any) => {
 
-    addPost({ variables: { input: data } }).then(resp => {
-      console.warn('PostAdded', resp);
-      setIsDialogOpen(false);
-    });
+    if (id) {
+      updatePost({ variables: { input: data, id } }).then(resp => {
+        console.warn('updatePost', resp);
+        setIsDialogOpen(false);
+      });
+    } else {
+      addPost({ variables: { input: data } }).then(resp => {
+        console.warn('addPost', resp);
+        setIsDialogOpen(false);
+      });
+    }
+
   };
 
   const handleUpdate = (data: any) => {
+    reset(_.pick(data, ['id', 'body', 'title']));
+    setIsDialogOpen(true);
 
-    // addPost({ variables: { input: data } }).then(resp => {
-    //   console.warn('PostAdded', resp);
-    //   setIsDialogOpen(false);
-    // });
   };
 
-  const handleDelete = (data: any) => {
+  const handleDelete = (id: string) => {
+    deletePost({ variables: { id: id } }).then(resp => {
+      console.warn('deletePost', resp);
+    });
 
-    // addPost({ variables: { input: data } }).then(resp => {
-    //   console.warn('PostAdded', resp);
-    //   setIsDialogOpen(false);
-    // });
   };
 
   if (loading) return <Loading />;
@@ -78,8 +88,8 @@ export default function AllPosts() {
           { head: 'body', cell: (row: any) => row.body },
           {
             head: 'Action', cell: (row: any) => <div className='flex gap-2'>
-              <Button onClick={() => handleUpdate(row)}>Update</Button>
-              <Button onClick={() => handleDelete(row.id)}>Delete</Button>
+              <Button color="green" onClick={() => handleUpdate(row)}>Update</Button>
+              <Button color="red" onClick={() => handleDelete(row.id)}>Delete</Button>
             </div>,
           },
 
@@ -104,7 +114,7 @@ export default function AllPosts() {
 
         />
         <div className='flex justify-end mt-2'>
-          <Button color="secondary" onClick={handleSubmit(handleAddNew)}>Add New</Button>
+          <Button color="secondary" onClick={handleSubmit(handleSave)}>Save</Button>
         </div>
       </Dialog>
     </section>

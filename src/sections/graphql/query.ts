@@ -113,7 +113,7 @@ export const GET_POSTS_BY_USER_ID = gql`
 
 export const GET_POSTS = gql`
   query {
-    posts (options: { paginate: { page: 1, limit: 10 } }) {
+    posts (options: { paginate: { page: 1, limit: 30 } }) {
       data {
         id
         title
@@ -149,7 +149,7 @@ export const ADD_POST = gql`
 
 export const UPDATE_POST = gql`
   mutation($id: ID!, $input: UpdatePostInput!) {
-    createPost(id: $id, input: $input) {
+    updatePost(id: $id, input: $input) {
       id
       title
       body
