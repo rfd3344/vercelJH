@@ -7,8 +7,23 @@ import { publicEnv } from 'src/core/envConfig';
 
 const openai = new OpenAI({
   apiKey: publicEnv().OPENAI_KEY,
-  dangerouslyAllowBrowser: true,
+  // dangerouslyAllowBrowser: true,
 });
+
+
+export const openAiChat = async (messages: any) => {
+
+  const completion = await openai.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages,
+  }).catch(e => {
+    console.warn('OpenAI chat', e);
+    return e;
+  });
+
+
+  return completion;
+};
 
 
 export const example = async () => {

@@ -15,11 +15,16 @@ export default function ChatCompletions() {
     });
   };
 
+  const handlePostChat = () => {
+
+  };
+
   return (
     <section id="ChatCompletions">
       ChatCompletions
 
       <Button onClick={handleChatCompletions}> ChatCompletions</Button>
+      <Button onClick={handlePostChat}> Post Chat</Button>
     </section>
   );
 

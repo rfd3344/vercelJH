@@ -110,6 +110,8 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - Template Method Defines the skeleton of an algorithm in a base class but lets subclasses override specific steps of the algorithm.
 
 # Projects
+- STAR: Situation, Task, Action, Result
+
 
 ## CarSearchRefactor
 
@@ -125,7 +127,7 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 - id verification
 - bank statement check
-- payment integration
+- payment integration, illion
 
 ## CarlyNow
 - dealertools, sales and dealer
