@@ -7,7 +7,7 @@ import { publicEnv } from 'src/core/envConfig';
 
 const openai = new OpenAI({
   apiKey: publicEnv().OPENAI_KEY,
-  // dangerouslyAllowBrowser: true,
+  dangerouslyAllowBrowser: true,
 });
 
 
