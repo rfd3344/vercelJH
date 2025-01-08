@@ -24,7 +24,7 @@ export default function ChatCompletions() {
       ChatCompletions
 
       <Button onClick={handleChatCompletions}> ChatCompletions</Button>
-      <Button onClick={handlePostChat}> Post Chat</Button>
+      <Button onClick={handlePostChat}> Call Chat</Button>
     </section>
   );
 
