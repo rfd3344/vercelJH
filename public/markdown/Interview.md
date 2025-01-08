@@ -110,3 +110,38 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - Template Method Defines the skeleton of an algorithm in a base class but lets subclasses override specific steps of the algorithm.
 
 # Projects
+
+## CarSearchRefactor
+
+- UI component consistency, follow Figma design, user experience
+- state management, challenge for debug and feature updates
+- Speed from 5s to 2s,
+- dynamic filter based on location
+- infinite scroll
+- image lazy loading
+- data cache, using RTK query
+
+## SubscriptionFunnel
+
+- id verification
+- bank statement check
+- payment integration
+
+## CarlyNow
+- dealertools, sales and dealer
+
+
+
+## NextCarly
+
+- Nextjs
+- Tailwind, Flowbite
+- RTK Query
+- Heaps, google analytics
+- AWS Lambda, Amplify, Cognito, Codepipeline
+
+## Maxamation
+
+- airline revenue management
+- Electron, internal desktop app
+- ElasticSearch, data import and query
