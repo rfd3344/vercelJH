@@ -7,7 +7,7 @@
 ## Todos:
 
 - GraphQL
-- OpenAI (AI platform)
+- OpenAI (AI platform) 11
 
 
 - Sanity CMS
