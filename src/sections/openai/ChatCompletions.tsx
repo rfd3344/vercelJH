@@ -8,6 +8,7 @@ import calculator from './data/calculator.json';
 import { example, openAiChat } from 'src/libs/openai';
 
 import ReactMarkdown from 'src/libs/ReactMarkdown';
+import Icon from 'src/components/dataDisplay/Icon';
 
 export default function ChatCompletions() {
   const [chats, setChats] = useState<any>([]);
