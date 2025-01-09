@@ -39,6 +39,6 @@ export const example = async () => {
     ],
   });
 
-  console.log(completion.choices[0].message);
+  // console.log(completion.choices[0].message);
   return completion;
 };
