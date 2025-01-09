@@ -9,11 +9,11 @@ import { example } from 'src/libs/openai';
 
 export default function ChatCompletions() {
 
-  // const handleChatCompletions = () => {
-  //   example().then(resp => {
-  //     console.warn('resp', resp);
-  //   });
-  // };
+  const handleChatCompletions = () => {
+    example().then(resp => {
+      console.warn('resp', resp);
+    });
+  };
 
   const handlePostChat = () => {
 
@@ -23,7 +23,7 @@ export default function ChatCompletions() {
     <section id="ChatCompletions">
       ChatCompletions
 
-      {/* <Button onClick={handleChatCompletions}> ChatCompletions</Button> */}
+      <Button onClick={handleChatCompletions}> ChatCompletions</Button>
       <Button onClick={handlePostChat}> Post Chat</Button>
     </section>
   );

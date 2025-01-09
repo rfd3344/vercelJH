@@ -7,7 +7,7 @@ import { publicEnv } from 'src/core/envConfig';
 
 const openai = new OpenAI({
   apiKey: publicEnv().OPENAI_KEY,
-  // dangerouslyAllowBrowser: true,
+  dangerouslyAllowBrowser: true,
 });
 
 
@@ -35,7 +35,7 @@ export const example = async () => {
 
     // store: true,
     messages: [
-      { 'role': 'user', 'content': 'write a haiku about ai' },
+      { 'role': 'user', 'content': 'describe sydney' },
     ],
   });
 
