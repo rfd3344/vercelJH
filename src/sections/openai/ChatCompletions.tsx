@@ -24,13 +24,13 @@ export default function ChatCompletions() {
   };
 
   const handleChat = async () => {
-    const question = input;
+
+
     setInput('');
-    console.warn('input', input);
     const resp = await openAiChat([
       { 'role': 'user', 'content': input },
     ]);
-    console.warn('input2', input);
+
     setChats([
       {
         question: input,
