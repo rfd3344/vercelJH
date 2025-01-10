@@ -10,7 +10,7 @@ export default function Supabase() {
 
 
   React.useEffect(() => {
-    supabase.from('product').select('id,name').then(resp => {
+    supabase.from('product').select().then(resp => {
 
       console.warn('supabase', resp);
     });
