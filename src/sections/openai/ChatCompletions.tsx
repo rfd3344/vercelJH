@@ -12,13 +12,6 @@ export default function ChatCompletions() {
   const [input, setInput] = useState('');
   const [chats, setChats] = useState<any>([]);
 
-  // useEffect(() => {
-  //   setChats([...chats, {
-  //     question: 'write a calculator in javascript',
-  //     result: calculator.choices[0].message.content,
-  //   }]);
-  // }, []);
-
   const handleInputChange = (value = '') => {
     setInput(value);
   };
@@ -47,8 +40,8 @@ export default function ChatCompletions() {
       <div className='flex items-baseline gap-2'>
         <div className='flex-1'>
           <InputField
-            name="input"
-            label=""
+            // name="input"
+            // label=""
             value={input}
             onChange={handleInputChange}
           />
