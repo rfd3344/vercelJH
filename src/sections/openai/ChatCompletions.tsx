@@ -24,6 +24,11 @@ export default function ChatCompletions() {
       { 'role': 'user', 'content': input },
     ]);
 
+    if (resp.error) {
+      console.error('Fail:openAiChat ', resp.error);
+      return;
+    }
+
     setChats([
       {
         question: input,

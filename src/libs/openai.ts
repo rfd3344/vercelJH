@@ -15,7 +15,7 @@ export const openAiChat = async (messages: any) => {
 
   const completion = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
-    max_tokens: 150,
+    max_tokens: 100,
     messages,
   }).catch(e => {
     console.warn('OpenAI chat', e);

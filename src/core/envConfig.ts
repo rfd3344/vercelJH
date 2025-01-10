@@ -20,6 +20,9 @@ export const publicEnv = () => ({
   MONGO_DATABASE: process.env.NEXT_PUBLIC_MONGO_DATABASE || '',
   OPENAI_KEY: process.env.NEXT_PUBLIC_OPENAI_KEY?.replace('rfd3344-', '') || '',
 
+  SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL|| '',
+  SUPABASE_KEY: process.env.NEXT_PUBLIC_SUPABASE_KEY || '',
+
 
 });
 
