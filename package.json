@@ -1,6 +1,6 @@
 {
   "name": "next-jh",
-  "version": "1.03.01",
+  "version": "1.10.11",
   "private": true,
   "scripts": {
     "dev": "env-cmd -e base,dev  next dev",
