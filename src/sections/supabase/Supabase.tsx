@@ -2,36 +2,21 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { supabase } from 'src/libs/supabase';
-import Button from 'src/components/navigation/Button';
 
+import Account from './ui/Account';
+import ProductFilter from './ui/ProductFilter';
+import ProductList from './ui/ProductList';
 
 export default function Supabase() {
 
 
-  React.useEffect(() => {
-    supabase.from('product').select().then(resp => {
-
-      console.warn('supabase', resp);
-    });
-  });
-
-  const handleAddNew = async () => {
-
-    const { data, error } = await supabase
-      .from('product')
-      .insert([
-        { name: 'Denmark'},
-      ])
-      .select();
-
-
-  };
 
   return (
     <section id="Supabase" className=''>
-      Supabase
-      <Button onClick={handleAddNew}> Add new</Button>
+
+      <Account />
+      <ProductFilter />
+      <ProductList />
     </section>
   );
 }
