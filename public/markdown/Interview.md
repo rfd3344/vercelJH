@@ -35,10 +35,10 @@
 
 ## Postgres
 
-- indexing:
--  data types
+- indexing: B-tree, Hash, GIN, GiST, and BRIN
+- data types, JSONB, JSON,
 - schema, tables and views
-- JSON and JSONB
+
 - sequences SERIAL or BIGSERIAL
 - handle transactions BEGIN, COMMIT, ROLLBACK.
 
