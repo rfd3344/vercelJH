@@ -15,6 +15,7 @@ export const openAiChat = async (messages: any) => {
 
   const completion = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
+    max_tokens: 100,
     messages,
   }).catch(e => {
     console.warn('OpenAI chat', e);
@@ -27,18 +28,12 @@ export const openAiChat = async (messages: any) => {
 
 
 export const example = async () => {
-
   const completion = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
-    // model: 'text-embedding-3-small',
-    // model: 'o1-preview',
-
-    // store: true,
     messages: [
       { 'role': 'user', 'content': 'describe sydney' },
     ],
   });
 
-  console.log(completion.choices[0].message);
   return completion;
 };

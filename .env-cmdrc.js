@@ -21,6 +21,9 @@ module.exports = {
 
     NEXT_PUBLIC_OPENAI_KEY: 'rfd3344-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',
 
+    NEXT_PUBLIC_SUPABASE_URL: 'https://lptzasniijvqdaztkxgc.supabase.co',
+    NEXT_PUBLIC_SUPABASE_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxwdHphc25paWp2cWRhenRreGdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY0ODUwNDAsImV4cCI6MjA1MjA2MTA0MH0.fC2xCTvu3Ba1SEOhHsjTElcO2Vxvl6wy_kXLud2YOEI',
+
 
 
   },

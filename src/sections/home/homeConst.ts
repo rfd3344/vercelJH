@@ -106,4 +106,5 @@ export const OtherLinks = {
   Mongo: '/mongo',
   GraphQL: '/graphql',
   OpenAI: '/openai',
+  Supabase: '/supabase',
 };

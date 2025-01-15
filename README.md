@@ -8,7 +8,7 @@
 
 - GraphQL
 - OpenAI (AI platform) 11
-
+- Datadog
 
 - Sanity CMS
 - Supabase (Postgres database + auth platform)

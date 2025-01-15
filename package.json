@@ -1,6 +1,6 @@
 {
   "name": "next-jh",
-  "version": "1.03.01",
+  "version": "1.10.11",
   "private": true,
   "scripts": {
     "dev": "env-cmd -e base,dev  next dev",
@@ -21,6 +21,7 @@
     "@portabletext/react": "^3.2.0",
     "@reduxjs/toolkit": "^2.5.0",
     "@sanity/image-url": "^1.1.0",
+    "@supabase/supabase-js": "^2.47.12",
     "dayjs": "^1.11.13",
     "env-cmd": "^10.1.0",
     "flowbite-react": "^0.10.2",

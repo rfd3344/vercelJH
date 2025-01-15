@@ -275,6 +275,11 @@ const { exec } = require('node:child_process');
 
 ### EventLoop
 
+- process.nextTick()
+- setImmediate()
+- setTimeout()
+
+
 ```
      ┌───────────────────────────┐
   ┌─>│           poll            │ ---> synchronous Code

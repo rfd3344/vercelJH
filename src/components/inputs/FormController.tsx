@@ -13,7 +13,7 @@ interface IProps {
   [key: string]: any;
 }
 
-export default function FormContoller({
+export default function FormController({
   name = '',
   label,
   rules,
