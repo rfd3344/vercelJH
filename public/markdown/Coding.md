@@ -261,7 +261,7 @@ REVOKE: cancel previously granted or denied permissions.
 
 ## Nodejs
 
-### Childprocess
+### ChildProcess
 
 - child_process.exec()
 - child_process.execFile()
