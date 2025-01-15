@@ -33,6 +33,15 @@
 -
 - image
 
+## Postgres
+
+- indexing:
+-  data types
+- schema, tables and views
+- JSON and JSONB
+- sequences SERIAL or BIGSERIAL
+- handle transactions BEGIN, COMMIT, ROLLBACK.
+
 ## AWS
 
 - SQS, SNS
@@ -110,8 +119,8 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - Template Method Defines the skeleton of an algorithm in a base class but lets subclasses override specific steps of the algorithm.
 
 # Projects
-- STAR: Situation, Task, Action, Result
 
+- STAR: Situation, Task, Action, Result
 
 ## CarSearchRefactor
 
@@ -130,9 +139,8 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - payment integration, illion
 
 ## CarlyNow
+
 - dealertools, sales and dealer
-
-
 
 ## NextCarly
 
