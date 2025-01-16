@@ -10,7 +10,7 @@ export default function ProductList() {
   const [products, setProducts] = useState([]);
 
   React.useEffect(() => {
-    supabase.from('product').select().then((resp: any) => {
+    supabase.from('product').select('*, category(*), brand(*)').then((resp: any) => {
       setProducts(resp.data);
       // console.warn('supabase', resp);
     });
@@ -27,11 +27,11 @@ export default function ProductList() {
         columnProps={[
           { head: 'id', cell: (row: any) => row.id },
           { head: 'name', cell: (row: any) => row.name },
-          { head: 'category', cell: (row: any) => row.category_id },
-          { head: 'brand', cell: (row: any) => row.brand_id },
+          { head: 'category', cell: (row: any) => row.category.name },
+          { head: 'brand', cell: (row: any) => row.brand.name },
           {
             head: 'Action',
-            align:'text-right',
+            align: 'text-right',
             cell: (row: any) => <div className='flex justify-end gap-2'>
               <Button color="success" onClick={() => handleUpdate(row.id)}>Update</Button>
               <Button color="red" onClick={() => handleUpdate(row.id)}>Delete</Button>

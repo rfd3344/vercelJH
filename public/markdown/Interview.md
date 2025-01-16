@@ -35,14 +35,15 @@
 
 ## Postgres
 
-- schema, tables and views
+- schema, tables,
+- views, materialized views, WITH CHECK OPTION
 - data types, JSONB, JSON,
 - indexing: B-tree, Hash, GIN, GiST, and BRIN
-
-- handle transactions BEGIN, COMMIT, ROLLBACK
-- trigger
-- HAVING and WHERE
-
+- JOIN: LEFT, RIGHT, INNER,
+- GROUP BY, HAVING/WHERE
+- ExecutionOrder: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
+- transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
+- trigger，OtherWay, last_modified
 
 ## AWS
 

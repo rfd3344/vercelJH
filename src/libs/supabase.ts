@@ -2,6 +2,7 @@
 /*************
  *
  * docs: https://supabase.com/docs/reference/javascript/introduction
+ * query joins: https://supabase.com/docs/guides/database/joins-and-nesting
  *
  * project: https://supabase.com/dashboard/project/lptzasniijvqdaztkxgc
  */
