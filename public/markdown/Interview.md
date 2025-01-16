@@ -35,12 +35,14 @@
 
 ## Postgres
 
-- indexing: B-tree, Hash, GIN, GiST, and BRIN
-- data types, JSONB, JSON,
 - schema, tables and views
+- data types, JSONB, JSON,
+- indexing: B-tree, Hash, GIN, GiST, and BRIN
 
-- sequences SERIAL or BIGSERIAL
-- handle transactions BEGIN, COMMIT, ROLLBACK.
+- handle transactions BEGIN, COMMIT, ROLLBACK
+- trigger
+- HAVING and WHERE
+
 
 ## AWS
 

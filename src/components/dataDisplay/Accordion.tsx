@@ -11,7 +11,7 @@ import {
 
 
 export default function Accordion({
-  defaultExpandIndex,
+  // defaultExpandIndex,
   data = [], // [{ summary: 'summary', details: 'details' }]
   onChange = (index = 0) => { },
   ...rest
@@ -19,7 +19,7 @@ export default function Accordion({
 
 
   return (
-    <AccordionFlowbite {...rest}>
+    <AccordionFlowbite  {...rest}>
       {data.map((item: any) => (
         <AccordionPanel key={item.summary}>
           <AccordionTitle className='py-3 [&_h2]:text-h5' >{item?.summary}</AccordionTitle>
