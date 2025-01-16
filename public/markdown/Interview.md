@@ -39,7 +39,7 @@
 - views, materialized views, WITH CHECK OPTION
 - data types, JSONB, JSON,
 - indexing: B-tree, Hash, GIN, GiST, and BRIN
-- JOIN: LEFT, RIGHT, INNER,
+- JOIN: LEFT, RIGHT, INNER, FULL,
 - GROUP BY, HAVING/WHERE
 - ExecutionOrder: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
 - transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
