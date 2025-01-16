@@ -47,6 +47,8 @@
 - transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
 - trigger，OtherWay, last_modified
 
+- Streaming Replication，Logical Replication
+
 ## AWS
 
 - SQS, SNS
@@ -86,6 +88,10 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 ## System Design
 
 - Design Patterns: Event-driven architecture, pub/sub, database replication
+
+-
+
+
 
 ## Design Pattern
 

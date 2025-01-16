@@ -3,26 +3,34 @@ import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 import { Tabs, Textarea } from 'flowbite-react';
 
-import Accordion from 'src/components/dataDisplay/Accordion';
 import { supabase } from 'src/libs/supabase';
-
-
 
 
 export default function Note() {
 
   const [notes, setNotes] = useState([]);
 
-  const handleBlur = (id: any, content = '') => {
 
-    supabase.from('note').update({ content }).eq('id', id);
-  };
   useEffect(() => {
     supabase.from('note').select().order('id').then((resp: any) => {
       setNotes(resp.data);
     });
   }, []);
 
+  const handleChange = (id = 0, content = '') => {
+    console.warn('id', content, id);
+    supabase.from('note').update({ content }).eq('id', id);
+  };
+
+
+  const handleInput = (e: any) => {
+    const target = e.target;
+    console.warn(target.scrollHeight);
+    if (target.scrollHeight < 500 || target.scrollHeight > 800) {
+      return;
+    }
+    target.style.height = `${target.scrollHeight}px`;
+  };
 
   return (
 
@@ -32,9 +40,11 @@ export default function Note() {
           {notes.map((item: any) => (
             <Tabs.Item key={item.id} title={item.title} >
               <Textarea
-                rows={16}
+                rows={20}
                 defaultValue={item.content}
-                onBlur={(e) => handleBlur(item.id, e.target.value)}
+                onInput={handleInput}
+                // onChange={_.debounce((e) => handleChange(item.id, e.target.value), 2000)}
+                onBlur={(e) => handleChange(item.id, e.target.value)}
               />
             </Tabs.Item>
           ))}
