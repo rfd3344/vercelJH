@@ -3,7 +3,7 @@
 
 
 import { ReactNode } from 'react';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 import Provider from 'src/core/Provider';
 import ProviderRedux from 'src/core/redux/ProviderRedux';
@@ -14,6 +14,14 @@ import { fontsClassName } from 'src/libs/next';
 import 'src/core/tailwind/tailwind.css';
 
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  // Also supported but less commonly used
+  // interactiveWidget: 'resizes-visual',
+};
 export const metadata: Metadata = {
   title: 'RFD3344',
   description: 'https://rfd3344.vercel.app/',
