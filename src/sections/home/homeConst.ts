@@ -15,7 +15,6 @@ export const ToolsLinks = {
 
 export const CloudLinks = {
   Notes: '/supabase/note',
-  GoogleKeep: 'https://keep.google.com/u/0/#NOTE/1Ru2iNIjIhwwUoHFKdBm79KO-TxXl9E8vmHThSAZz8Al7oqE7OsRsd_rtSFF_xWE',
   DriveNotes:
     'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J',
   Messenger: 'https://www.messenger.com/c/9078176158941259/t/9786179018063448',
