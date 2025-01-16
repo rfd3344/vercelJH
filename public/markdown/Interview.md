@@ -35,13 +35,15 @@
 
 ## Postgres
 
-- schema, tables,
+- schema, tables
 - views, materialized views, WITH CHECK OPTION
 - data types, JSONB, JSON,
 - indexing: B-tree, Hash, GIN, GiST, and BRIN
 - JOIN: LEFT, RIGHT, INNER, FULL,
 - GROUP BY, HAVING/WHERE
 - ExecutionOrder: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
+- EXPLAIN/EXPLAIN ANALYZE
+- table partitioning
 - transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
 - trigger，OtherWay, last_modified
 
@@ -50,7 +52,7 @@
 - SQS, SNS
 
 - SQL, CID properties, indexing, sharding
-- NoSQL, Caching,
+- NoSQL, Caching
 
 ## Solid Principle
 
@@ -143,7 +145,7 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 ## CarlyNow
 
-- dealertools, sales and dealer
+- DealerTools, sales and dealer
 
 ## NextCarly
 

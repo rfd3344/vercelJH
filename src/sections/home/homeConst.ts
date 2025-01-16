@@ -35,6 +35,7 @@ export const GithubLinks = {
 
 export const DevelopLinks = {
   ChatGPT: 'https://chat.openai.com',
+  Copilot: 'https://github.com/copilot',
   APIGenerator: 'https://retool.com/api-generator',
   DBDiagram: 'https://dbdiagram.io/d/demo-6724a1c7b1b39dd8582997d4',
   AWSCheatSheets: 'https://digitalcloud.training/aws-cheat-sheets',
