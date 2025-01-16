@@ -18,14 +18,14 @@ export default function Note() {
   }, []);
 
   const handleChange = (id = 0, content = '') => {
-    console.warn('id', content, id);
+    // console.warn('id', content, id);
     supabase.from('note').update({ content }).eq('id', id);
   };
 
 
   const handleInput = (e: any) => {
     const target = e.target;
-    console.warn(target.scrollHeight);
+    // console.warn(target.scrollHeight);
     if (target.scrollHeight < 500 || target.scrollHeight > 800) {
       return;
     }
