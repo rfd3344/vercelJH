@@ -1,8 +1,8 @@
 import { PagePath } from 'src/constants/pagePath';
 
 export const ToolsLinks = {
-  Calculator: '/html/calculator.html',
   LocalNotes: '/html/localNotes.html?notes=2',
+  Calculator: '/html/calculator.html',
   ColorTable: '/html/colorTable.html',
   // Webpage: PagePath.webpage,
   photoPea: 'https://photopea.com',
