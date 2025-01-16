@@ -13,8 +13,9 @@ export default function Note() {
   const [notes, setNotes] = useState([]);
 
   const handleBlur = (id: any, content = '') => {
+
     supabase.from('note').update({ content }).eq('id', id).then(resp => {
-      console.warn(resp);
+      // console.warn(resp);
     });
   };
   useEffect(() => {
@@ -24,8 +25,8 @@ export default function Note() {
         summary: item.title,
         details: (
           <Textarea
+            rows={16}
             defaultValue={item.content}
-            rows={8}
             onBlur={(e) => handleBlur(item.id, e.target.value)}
           />
         ),
@@ -36,17 +37,16 @@ export default function Note() {
 
 
   return (
-    <div>
 
-      <section id="Note" className=' mt-2'>
-        <Accordion
-          defaultExpandIndex={3}
-          data={notes}
-        />
+    <section id="Note" className=' mt-2'>
+      <Accordion
+        // defaultExpandIndex={3}
+        data={notes}
+      />
 
 
-      </section>
-    </div>
+    </section>
+
 
   );
 }
