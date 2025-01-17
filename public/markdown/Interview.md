@@ -40,7 +40,7 @@
 - data types, JSONB, JSON,
 - indexing: B-tree, Hash, GIN, GiST, and BRIN
 - JOIN: LEFT, RIGHT, INNER, FULL,
-- GROUP BY, HAVING/WHERE
+- GRUP BY, HAVING/WHERE
 - ExecutionOrder: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
 - EXPLAIN/EXPLAIN ANALYZE
 - table partitioning
@@ -55,6 +55,46 @@
 
 - SQL, CID properties, indexing, sharding
 - NoSQL, Caching
+
+## System Design
+
+- Design Patterns: Monolith, Microservices, Service-Oriented Architecture, Event-driven architecture
+- CAP Theorem and eventual consistency
+- database partition and sharding
+
+- Example
+  1. URL shorteners
+  2. chat system
+  3. file storage systems
+  4. ATM system
+
+```
+  Step 5: Practice System Design
+
+  Gradually move to more complex systems like e-commerce platforms, video streaming services, or social media platforms.
+  Use whiteboard tools or system design interview books to simulate real-world scenarios.
+
+  Step 6: Learn from Real-World Systems
+  Study the architecture of real-world systems like Uber, Netflix, Amazon, etc.
+  Read case studies and blog posts from tech companies to understand how they scale their systems.
+
+```
+
+-  Common questions 11, https://igotanoffer.com/blogs/tech/system-design-interviews
+
+```
+How would you design a social media app?
+How would you design X game?
+How would you design a parking lot?
+How would you design a URL-shortening service?
+How would you design a web cache?
+How would you design autocomplete for a search engine?
+How would you design an API?
+How would you design a messaging app?
+How would you design an online file-sharing system
+How would you design an e-commerce store
+How would you design a ride-hailing / delivery app
+```
 
 ## Solid Principle
 
@@ -84,14 +124,6 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 > _DIP Dependency Inversion Principle_
 
 - high-level class depends on abstract/interface, not low-level classes
-
-## System Design
-
-- Design Patterns: Event-driven architecture, pub/sub, database replication
-
--
-
-
 
 ## Design Pattern
 
