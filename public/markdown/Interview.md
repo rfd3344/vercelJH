@@ -49,10 +49,10 @@
 - trigger, NotRecommended, last_modified
 
 ## NoSQL
+
 - ChatMessages
 - indexing, explain, Partitioning, Replication
 - Aggregation Framework in MongoDB
-
 
 ## AWS
 
@@ -108,7 +108,7 @@
 9. Notification System
    Problem: Design a notification system like the one used by Facebook or LinkedIn.
    Key Concepts: Push notifications, user preferences, delivery guarantees, and throttling.
-10.
+10. Online Booking System
     Problem: Design a system for hotel or flight booking.
     Key Concepts: Inventory management, booking engine, concurrency handling, and payment gateways.
 ```
@@ -216,6 +216,6 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - Electron, internal desktop app
 - ElasticSearch, data import and query
 
-
 ## sunixvision
+
 - https://www.sunixvision.com.au/
