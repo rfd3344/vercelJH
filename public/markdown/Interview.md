@@ -1,7 +1,7 @@
 ## Javascript
 
-- closures
-- debounce
+- Closures
+- Debounce
 
 - EventLoop: MicroTask, nextTick, promise
 - TaskQueue, including setTimeout/seInterval, readFileError, setImmediate, readFile
@@ -39,15 +39,19 @@
 - views, materialized views, WITH CHECK OPTION
 - data types, JSONB, JSON,
 - indexing: B-tree, Hash, GIN, GiST, and BRIN
-- JOIN: LEFT, RIGHT, INNER, FULL,
-- GRUP BY, HAVING/WHERE
+- JOIN: LEFT, RIGHT, INNER, FULL
+- GROUP BY, HAVING/WHERE
 - ExecutionOrder: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
 - EXPLAIN/EXPLAIN ANALYZE
-- table partitioning
+- partitioning, Sharding
+- Streaming Replication, Logical Replication
 - transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
-- trigger，OtherWay, last_modified
+- trigger, NotRecommended, last_modified
 
-- Streaming Replication，Logical Replication
+## NoSQL
+- ChatMessages
+- Aggregation Framework in MongoDB
+
 
 ## AWS
 
@@ -58,42 +62,54 @@
 
 ## System Design
 
+- Scalability: LoadBalance, Microservice, database sharding and replication
+- Availability: HealthCheck, MultiInstance
+- Reliability: MessageQueue, Backup
+- Performance: Cache, CDN, DatabaseQuery
+-
 - Design Patterns: Monolith, Microservices, Service-Oriented Architecture, Event-driven architecture
-- CAP Theorem and eventual consistency
-- database partition and sharding
+- CAP Theorem, Consistency, Availability, Partition Tolerance(always in distributed system)
 
 - Example
-  1. URL shorteners
-  2. chat system
-  3. file storage systems
-  4. ATM system
 
-```
-  Step 5: Practice System Design
+  1. URL Shortener - API Gateway, URLShortening Service, Database, Redirection Service, Cache, Analytics Service
+  2. Chat System,
+  3. Social Media Platform
+  4. E-Commerce Platform
+  5. File Storage System
+  6. Video Streaming Service
 
-  Gradually move to more complex systems like e-commerce platforms, video streaming services, or social media platforms.
-  Use whiteboard tools or system design interview books to simulate real-world scenarios.
-
-  Step 6: Learn from Real-World Systems
-  Study the architecture of real-world systems like Uber, Netflix, Amazon, etc.
-  Read case studies and blog posts from tech companies to understand how they scale their systems.
-
-```
-
--  Common questions 11, https://igotanoffer.com/blogs/tech/system-design-interviews
-
-```
-How would you design a social media app?
-How would you design X game?
-How would you design a parking lot?
-How would you design a URL-shortening service?
-How would you design a web cache?
-How would you design autocomplete for a search engine?
-How would you design an API?
-How would you design a messaging app?
-How would you design an online file-sharing system
-How would you design an e-commerce store
-How would you design a ride-hailing / delivery app
+```md
+1. URL Shortener
+   Problem: Design a service like TinyURL that takes a long URL and returns a shorter, unique one.
+   Key Concepts: Database design, hashing, handling collisions, scalability, availability, and expiration of URLs.
+2. Chat System
+   Problem: Design a real-time chat application like WhatsApp or Slack.
+   Key Concepts: Real-time messaging, message queues, database schema, handling offline messages, and scaling chat servers.
+3. Social Media Platform
+   Problem: Design a system like Facebook or Twitter.
+   Key Concepts: User profiles, posts, comments, likes, news feed generation, followers, and content caching.
+4. E-Commerce Platform
+   Problem: Design an online shopping system like Amazon.
+   Key Concepts: Product catalog, search functionality, user cart, order management, payment processing, and inventory management.
+5. File Storage System
+   Problem: Design a system like Google Drive or Dropbox.
+   Key Concepts: File storage, file sharing, data replication, synchronization, and version control.
+6. Video Streaming Service
+   Problem: Design a system like YouTube or Netflix.
+   Key Concepts: Video storage, streaming protocols, content delivery networks (CDN), load balancing, and user recommendations.
+7. Ride-Sharing Service
+   Problem: Design a system like Uber or Lyft.
+   Key Concepts: Real-time location tracking, matching algorithms, dynamic pricing, and dispatch systems.
+8. Search Engine
+   Problem: Design a search engine like Google.
+   Key Concepts: Web crawling, indexing, ranking algorithms, query processing, and distributed systems.
+9. Notification System
+   Problem: Design a notification system like the one used by Facebook or LinkedIn.
+   Key Concepts: Push notifications, user preferences, delivery guarantees, and throttling.
+10.
+    Problem: Design a system for hotel or flight booking.
+    Key Concepts: Inventory management, booking engine, concurrency handling, and payment gateways.
 ```
 
 ## Solid Principle
@@ -146,7 +162,7 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - Decorator (HighOrderComponent)
 - Facade (CombineMultiStep)
 - Flyweight (ReduceMemoryByShareProperty)
-- Proxy (ControlAccess)
+- Proxy (AccessControl)
 
 #### Behavioral Patterns
 
@@ -198,3 +214,7 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - airline revenue management
 - Electron, internal desktop app
 - ElasticSearch, data import and query
+
+
+## sunixvision
+- https://www.sunixvision.com.au/

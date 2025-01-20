@@ -21,6 +21,7 @@
 
 - Windows:
 - https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm
+- node version: https://nodejs.org/en/download
 
 ## Global Packages
 
@@ -114,29 +115,7 @@ docker volume rm $(docker volume ls -q) # Remove volumes
 
 # **Markdown Header1**
 
-## Markdown Header2
-
-### Markdown Header3
-
-#### Markdown Header4
-
-> _Markdown Subtitle_
-
-- list1
-- list2
-- list3
-  1. subList1
-  2. subList2
-  3. subList3
-
-```code
-Code Sample1
-Code Sample2
-Code Sample3
-Code Sample4
-```
-
-## Markdown Code Sample
+- Code Support Language: https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md
 
 ````md
 # **Header1**
@@ -157,7 +136,10 @@ Code Sample4
   3. subList3
 
 ```code
-Code Sample
+Code Sample1
+Code Sample2
+Code Sample3
+Code Sample4
 ```
 ````
 
