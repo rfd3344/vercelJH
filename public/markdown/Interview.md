@@ -41,15 +41,16 @@
 - indexing: B-tree, Hash, GIN, GiST, and BRIN
 - JOIN: LEFT, RIGHT, INNER, FULL
 - GROUP BY, HAVING/WHERE
-- ExecutionOrder: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
+- ExecutionOrder: FROM/JOIN, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
 - EXPLAIN/EXPLAIN ANALYZE
-- partitioning, Sharding
+- Partitioning, Sharding
 - Streaming Replication, Logical Replication
 - transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
 - trigger, NotRecommended, last_modified
 
 ## NoSQL
 - ChatMessages
+- indexing, explain, Partitioning, Replication
 - Aggregation Framework in MongoDB
 
 
