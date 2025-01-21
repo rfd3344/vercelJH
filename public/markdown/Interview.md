@@ -33,6 +33,17 @@
 -
 - image
 
+## Nodejs
+- Core Modules: Knowledge of built-in modules like fs, http, path, etc.
+- Event Loop: Understanding of how Node.js handles asynchronous operations.
+- Streams and Buffers: Working with streams for efficient data handling.
+- Error Handling: Best practices for managing errors in a Node.js application.
+
+- Middleware: How middleware works and creating custom middleware.
+- Routing: Setting up routes and handling different HTTP methods.
+- Error Handling: Implementing global error handling in Express.
+- Authentication: Understanding session-based and token-based authentication.
+
 ## Postgres
 
 - schema, tables
