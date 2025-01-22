@@ -22,6 +22,7 @@
 - reconciliation algorithm, Keys, default index,
 - HOC, custom hooks, render props
 - use (promise and context)
+- ShareComponents: NPMPrivatePackage, MicroFrontend
 
 ## Nextjs
 
@@ -36,8 +37,6 @@
 - MacroTask: setImmediate, setTimeout, IO task(fetchAPI, readFile)
 - Express Middleware, app/router level, error handler
 - router: express.Router()
-
-
 
 ## Postgres
 
