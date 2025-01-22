@@ -3,9 +3,6 @@
 - Closures
 - Debounce
 
-- EventLoop: MicroTask, nextTick, promise
-- TaskQueue, including setTimeout/seInterval, readFileError, setImmediate, readFile
-
 ## Typescript
 
 - Generic Type
@@ -34,15 +31,11 @@
 - image
 
 ## Nodejs
-- Core Modules: Knowledge of built-in modules like fs, http, path, etc.
-- Event Loop: Understanding of how Node.js handles asynchronous operations.
-- Streams and Buffers: Working with streams for efficient data handling.
-- Error Handling: Best practices for managing errors in a Node.js application.
 
-- Middleware: How middleware works and creating custom middleware.
-- Routing: Setting up routes and handling different HTTP methods.
-- Error Handling: Implementing global error handling in Express.
-- Authentication: Understanding session-based and token-based authentication.
+- EventLoop MicroTask: nextTick, promise
+- MacroTask: setImmediate, setTimeout, IO task(fetchAPI, readFile)
+- Express Middleware, app/router level, error handler
+- router: express.Router()
 
 ## Postgres
 
@@ -227,6 +220,6 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 - Electron, internal desktop app
 - ElasticSearch, data import and query
 
-## sunixvision
+## SunixVision
 
 - https://www.sunixvision.com.au/
