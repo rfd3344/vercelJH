@@ -7,6 +7,7 @@ import Button from 'src/components/navigation/Button';
 
 import Login from './Login';
 import Signup from './Signup';
+import LoginGoogle from './LoginGoogle';
 
 export default function Account() {
   const [user, setUser] = useState<any>(null);
@@ -21,6 +22,9 @@ export default function Account() {
     supabase.auth.signOut();
   };
 
+
+
+
   return (
     <section id="Account" className='mt-2'>
       <div className='flex items-center justify-between'>
@@ -31,9 +35,13 @@ export default function Account() {
         <div className='flex gap-2'>
           <Login />
           <Signup />
-          <Button onClick={handleLogout}>Logout</Button>
-        </div>
+          <LoginGoogle />
+          <div>
+            <Button onClick={handleLogout}>Logout</Button>
 
+          </div>
+
+        </div>
       </div>
 
     </section>

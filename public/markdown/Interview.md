@@ -19,7 +19,7 @@
 - useEffect(async) vs useLayoutEffect(synchronously, before paint screen)
 - Controlled vs Uncontrolled components
 - Suspend, React.lazy, useTransition, useDeferredValue
-- reconciliation algorithm, Keys, default index,
+- reconciliation algorithm, Keys, default index
 - HOC, custom hooks, render props
 - use (promise and context)
 - ShareComponents: NPMPrivatePackage, MicroFrontend
@@ -48,13 +48,14 @@
 - GROUP BY, HAVING/WHERE
 - ExecutionOrder: FROM/JOIN, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT/OFFSET
 - EXPLAIN/EXPLAIN ANALYZE
-- Partitioning, Sharding
+- Partitioning
 - Streaming Replication, Logical Replication
 - transactions: BEGIN, COMMIT, ROLLBACK, SAVEPOINT
 - trigger, NotRecommended, last_modified
 
 ## NoSQL
 
+- Diff SQL: Schemaless, Sharding
 - ChatMessages
 - indexing, explain, Partitioning, Replication
 - Aggregation Framework in MongoDB
@@ -76,10 +77,14 @@
 - Design Patterns: Monolith, Microservices, Service-Oriented Architecture, Event-driven architecture
 - CAP Theorem, Consistency, Availability, Partition Tolerance(always in distributed system)
 
+- React, Node
+- Postgres, Mongodb, Redis, ElasticSearch, S3
+- SQS, SNS
+
 - Example
 
   1. URL Shortener - API Gateway, URLShortening Service, Database, Redirection Service, Cache, Analytics Service
-  2. Chat System,
+  2. Chat System
   3. Social Media Platform
   4. E-Commerce Platform
   5. File Storage System
