@@ -3,11 +3,11 @@
 - Personal website
 - Notice: This is public repo. vercel requires pro version to build private repo.
 
-
 ## Todos:
 
 - GraphQL
-- OpenAI (AI platform) 11
+- NextAuth: https://www.npmjs.com/package/next-auth
+
 - Datadog
 
 - Sanity CMS

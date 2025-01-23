@@ -194,13 +194,14 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 
 ## CarSearchRefactor
 
-- UI component consistency, follow Figma design, user experience
-- state management, challenge for debug and feature updates
-- Speed from 5s to 2s,
-- dynamic filter based on location
-- infinite scroll
-- image lazy loading
-- data cache, using RTK query
+- Design Consistency for UI component, follow Figma design
+- State Management, challenge for debug and feature updates
+- API refactor, dynamic filter based on location
+- data cache, Compare RTKQuery/ReactQuery
+- Infinite Scroll
+- Image/components lazy loading
+- render optimization, Memo, key list
+- Speed from 5s to 2s, user experience
 
 ## SubscriptionFunnel
 

@@ -7,7 +7,7 @@ import Button from 'src/components/navigation/Button';
 
 import Login from './Login';
 import Signup from './Signup';
-import LoginGoogle from './LoginGoogle';
+import LoginOAuth from './LoginOAuth';
 
 export default function Account() {
   const [user, setUser] = useState<any>(null);
@@ -35,7 +35,7 @@ export default function Account() {
         <div className='flex gap-2'>
           <Login />
           <Signup />
-          <LoginGoogle />
+          <LoginOAuth />
           <div>
             <Button onClick={handleLogout}>Logout</Button>
 
