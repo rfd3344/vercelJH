@@ -5,13 +5,17 @@
 
 ## Todos:
 
-- GraphQL
-- NextAuth: https://www.npmjs.com/package/next-auth
+- UILibrary: Tailwind, ShadCN, Flowbite, DaisyUi, MaterialUi,
+- Supabase (Postgres database + auth platform)
+
+- Auth: NextAuth,
+- Pay: Stripe
+- ORM: Prisma, Drizzle, Sequelize, TypeORM
+- CMS: HeadlessCMS, Sanity, Strapi
 
 - Datadog
 
 - Sanity CMS
-- Supabase (Postgres database + auth platform)
 - PGvector (Open-source vector similarity search for Postgres)
 - Inngest (Queuing and orchestration)
 - Sentry (Application performance and error tracking)

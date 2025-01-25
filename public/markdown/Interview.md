@@ -216,7 +216,7 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 ## NextCarly
 
 - Nextjs
-- Tailwind, Flowbite
+- Tailwind, shandcn
 - RTK Query
 - Heaps, google analytics
 - AWS Lambda, Amplify, Cognito, Codepipeline
