@@ -14,7 +14,7 @@ export default function Note() {
 
 
   useEffect(() => {
-    supabase.from('note').select().order('id').then((resp: any) => {
+    supabase.from('note').select().eq('active', true).order('id').then((resp: any) => {
       const nextNotes = _.keyBy(resp.data, 'id');
       setNotes(nextNotes);
     });
@@ -45,6 +45,7 @@ export default function Note() {
 
   return (
     <section id="Note" className='mt-2'>
+
       <div>
         <Tabs defaultValue="✍️ Temp" className='[&_button]:px-1 gap-0'>
           <TabsList className="flex w-full justify-between [&_button]:w-full ">
@@ -57,14 +58,12 @@ export default function Note() {
 
           {_.values(notes).map((item: any) => (
             <TabsContent key={item.title} value={item.title}>
-
               <Textarea
                 rows={20}
                 defaultValue={item.content}
                 onInput={handleInput}
                 onBlur={(e) => handleBlur(item.id, e.target.value)}
               />
-
             </TabsContent>
           ))}
         </Tabs>

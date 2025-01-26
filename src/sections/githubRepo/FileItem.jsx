@@ -28,10 +28,10 @@ export default function FileItem({
           <Image src={fileRawUrl} alt="" width={100} height={100} />
         )}
         {fileType === FileTypeEnum.pdf && (
-          <Image src="/icons/pdf.png" height={50} width={50} alt="" />
+          <Image src="/icon/pdf.png" height={50} width={50} alt="" />
         )}
         {fileType === FileTypeEnum.md && (
-          <Image src="/icons/markdown.jpg" height={50} width={50} alt="" />
+          <Image src="/icon/markdown.jpg" height={50} width={50} alt="" />
         )}
         {fileType === FileTypeEnum.others && (
           <Icon value='MdDescription' className='text-[50px]' />
