@@ -6,7 +6,7 @@
     "dev": "env-cmd -e base,dev  next dev",
     "dev:prod": "env-cmd -e base,prod next dev",
     "build": "env-cmd -e base,prod next build",
-    "shadcn": "npx shadcn add alert -o -p test/aaa ",
+    "shadcn": "npx shadcn add  -a ",
     "serve": "next start",
     "start": "npm run dev",
     "lint": "next lint ",

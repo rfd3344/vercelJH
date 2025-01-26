@@ -81,7 +81,7 @@
  * https://tailwindcss.com/docs/preflight#extending-preflight
  *
  */
-@layer base {
+/* @layer base {
   h1 {
     @apply text-h1;
   }
@@ -101,6 +101,14 @@
     @apply text-h6;
   }
 }
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
 @layer base {
   * {
     @apply border-border;

@@ -14,7 +14,7 @@ interface IProps {
 
 export type ColumProps = {
   head: string;
-  cell: ReactNode | Function;
+  cell: ReactNode | ((row: any, rowIndex: number) => ReactNode);
   align?: 'text-left' | 'text-right' | 'text-center';
 }
 
