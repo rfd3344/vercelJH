@@ -5,7 +5,7 @@ import Note from 'src/sections/supabase/note/Note';
 
 export const metadata: Metadata = {
   title: 'Note',
-  description: 'My notepad',
+  description: 'My Notepad',
   manifest: '/manifest-note.json',
 };
 export default async function Page() {
