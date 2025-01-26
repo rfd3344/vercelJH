@@ -3,8 +3,17 @@ import React from 'react';
 import _ from 'lodash';
 
 import { Link } from 'src/libs/next';
-import { Table } from 'flowbite-react';
+// import { Table } from 'flowbite-react';
 
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@shadcn/ui/table';
 
 interface IProps {
   data: DataRow[];
@@ -24,30 +33,29 @@ export default function ResourceTable({
   return (
     <section id="ResourceTable">
       <Table>
-        <Table.Head>
+        <TableHeader>
+          <TableRow>
+            <TableHead >Name</TableHead>
+            <TableHead>Path</TableHead>
+          </TableRow>
 
-          <Table.HeadCell>Name</Table.HeadCell>
-          <Table.HeadCell>Path</Table.HeadCell>
-
-        </Table.Head>
-        <Table.Body className="divide-y">
+        </TableHeader>
+        <TableBody className="divide-y">
           {data.map((item) => (
-            <Table.Row key={item?.name} className="bg-white dark:border-gray-700 dark:bg-gray-800">
-              <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+            <TableRow  key={item?.name} className="bg-white dark:border-gray-700 dark:bg-gray-800">
+              <TableCell  className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                 {item?.name}
-              </Table.Cell>
-              <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              </TableCell>
+              <TableCell  className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                 <Link href={item.path} target="_blank">
                   {item.path}
                 </Link>
-              </Table.Cell>
-
-
-            </Table.Row>
+              </TableCell>
+            </TableRow>
           ))}
 
 
-        </Table.Body>
+        </TableBody>
       </Table>
 
     </section>

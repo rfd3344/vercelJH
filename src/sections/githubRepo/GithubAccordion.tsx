@@ -5,7 +5,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import _ from 'lodash';
 
 import Loading from 'src/components/dataDisplay/Loading';
-import Accordion from 'src/components/dataDisplay/Accordion';
+// import Accordion from 'src/components/dataDisplay/Accordion';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@shadcn/ui/accordion';
 
 import FileItem from 'src/sections/githubRepo/FileItem';
 import { groupByRoot } from 'src/sections/githubRepo/githubRepoUtils';
@@ -36,21 +42,26 @@ export default function GithubAccordion() {
 
   return (
     <section id="GithubAccordion" className='mt-2'>
-      <Accordion
-        defaultExpandIndex={0}
-        data={_.keys(groupFiles)
+      <Accordion type="single" collapsible className="w-full" defaultValue='/'>
+        {_.keys(groupFiles)
           .sort()
-          .map((key) => ({
-            summary: key,
-            details: (
-              <div className='grid gap-2 grid-cols-2  md:grid-cols-6' >
-                {groupFiles[key].map((file) => (
-                  <FileItem key={file.path} file={file} />
-                ))}
-              </div>
-            ),
-          }))}
-      />
+          .map((key) => (
+            <AccordionItem key={key} value={key}>
+              <AccordionTrigger >{key}</AccordionTrigger>
+              <AccordionContent>
+                <div className='grid gap-2 grid-cols-2  md:grid-cols-6' >
+                  {groupFiles[key].map((file) => (
+                    <FileItem key={file.path} file={file} />
+                  ))}
+                </div>
+              </AccordionContent>
+
+            </AccordionItem>
+          ))}
+
+
+      </Accordion>
+
     </section>
   );
 }

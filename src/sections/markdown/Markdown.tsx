@@ -10,6 +10,7 @@ import Icon from 'src/components/dataDisplay/Icon';
 
 import ReactMarkdown from 'src/libs/ReactMarkdown';
 
+import Typography from 'src/components/dataDisplay/typography';
 
 export default function Page({ }) {
   const searchParams = useSearchParams();
@@ -32,10 +33,10 @@ export default function Page({ }) {
 
       <ReactMarkdown
         components={{
-          h1: ({ node, ...props }: any) => <h2 className='text-center' style={{ color: 'red' }} {...props} />,
-          h2: ({ node, ...props }: any) => <h3 className="my-2 border-b-2" style={{ color: '#49aac5' }}  {...props} />,
-          h3: ({ node, ...props }: any) => <h4 className="my-2 pl-2" style={{ color: '#ffa500' }} {...props} />,
-          h4: ({ node, ...props }: any) => <h5 className="my-2 pl-2" style={{ color: 'green' }} {...props} />,
+          h1: ({ node, ...props }: any) => <Typography variant='h2' className='text-center' style={{ color: 'red' }} {...props} />,
+          h2: ({ node, ...props }: any) => <Typography variant='h3' className="my-2 border-b-2" style={{ color: '#49aac5' }}  {...props} />,
+          h3: ({ node, ...props }: any) => <Typography variant='h4' className="my-2 pl-2" style={{ color: '#ffa500' }} {...props} />,
+          h4: ({ node, ...props }: any) => <Typography variant='h5' className="my-2 pl-2" style={{ color: 'green' }} {...props} />,
           ul: ({ node, ...props }: any) => <ul role="list" className=" list-disc pl-6" {...props} />,
           ol: ({ node, ...props }: any) => <ul role="list" className="  list-decimal pl-4" {...props} />,
 
