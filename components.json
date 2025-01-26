@@ -12,15 +12,11 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "zzzzz/adsadas/asaa/aaa",
-    "components/*": "qqq/aaa/components/*",
-    "components/**": "qqq/aaa/components/**",
-    "components/lib": "ggg/libs/components",
-    "components/lib/utils": "ggg/libs/components/utils",
-    "utils": "bbb/aaa/utils",
-    "ui": "ccc/aaa/components/ui",
-    "lib": "ddd/aaa/lib",
-    "lib/utils": "eee/aaa/lib",
-    "hooks": "fff/aaa/hooks"
+    "components": "@shadcn/components",
+    "utils": "@shadcn/utils",
+    "ui": "@shadcn/ui",
+    "lib": "@shadcn/lib",
+    "lib/utils": "@shadcn/lib",
+    "hooks": "@shadcn/hooks"
   }
 }
