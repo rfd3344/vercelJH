@@ -6,18 +6,13 @@ import Note from 'src/sections/supabase/note/Note';
 export const metadata: Metadata = {
   title: 'Note',
   description: 'My notepad',
-  manifest: '',
+  manifest: '/manifest-note.json',
 };
 export default async function Page() {
 
   return (
     <section id="note" className='container'>
-      <link
-        rel="icon"
-        href="/image/write.jpg"
-        type="image/jpg"
-        sizes="jpg"
-      />
+
       <Note />
     </section>
   );
