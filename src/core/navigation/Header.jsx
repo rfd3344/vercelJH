@@ -17,7 +17,7 @@ export default function Header() {
 
 
   return (
-    <header className='bg-cyan px-2'>
+    <header className='bg-primary px-2'>
       <section className='container flex justify-between items-center pt-1'>
 
         <div className=''>

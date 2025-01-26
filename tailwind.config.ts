@@ -1,13 +1,16 @@
-// import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 // import flowbite from 'flowbite-react/tailwind';
 
 // import { theme } from './src/core/tailwind/theme';
 
-const config: any = {
+const config: Config = {
   darkMode: ['class'],
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      container: {
+        center: true,
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

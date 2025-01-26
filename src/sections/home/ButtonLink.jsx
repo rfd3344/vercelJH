@@ -2,7 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 
 import { Link } from 'src/libs/next';
-import Button from 'src/components/navigation/Button';
+// import Button from 'src/components/navigation/Button';
+import { Button } from '@shadcn/ui/button';
 
 import { PagePath } from 'src/constants/pagePath';
 // import {
@@ -55,16 +56,19 @@ export default function LinkButton({ to = '', text = '', ...rest }) {
 
   return (
     <Button
-      as={Link}
-      href={to}
-      size="sm"
-      color={linkType === LinkTypes.external ? 'primary' : 'secondary'}
-    >
-      <div className='mr-1 [&_svg]:w-4 [&_svg]:h-4'>
-        <StartIcon className="translate-y-1" />
-      </div>
+      // as={Link}
+      // href={to}
+      // size="sm"
+      asChild
+      variant={linkType === LinkTypes.external ? 'default' : 'secondary'}
 
-      <p>{text}</p>
+    // variants={'primary' }
+    >
+      <Link href={to} className='mr-1 [&_svg]:w-4 [&_svg]:h-4'>
+        <StartIcon className="translate-y-0" />
+        <p>{text}</p>
+      </Link>
+
 
     </Button>
   );
