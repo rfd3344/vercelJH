@@ -11,7 +11,7 @@ import { supabase } from 'src/libs/supabase';
 export default function Note() {
 
   const [notes, setNotes] = useState<any>({});
-
+  const [tab, setTab] = useState('✍️ Temp');
 
   useEffect(() => {
     supabase.from('note').select().eq('active', true).order('id').then((resp: any) => {
@@ -47,7 +47,11 @@ export default function Note() {
     <section id="Note" className='mt-2'>
 
       <div>
-        <Tabs defaultValue="✍️ Temp" className='[&_button]:px-1 gap-0'>
+        <Tabs
+          value={tab}
+          className='[&_button]:px-1 gap-0'
+          onValueChange={(value: any) => setTab(value)}
+        >
           <TabsList className="flex w-full justify-between [&_button]:w-full ">
             {_.values(notes).map((item: any) => (
               <TabsTrigger key={item.title} value={item.title}>
@@ -57,7 +61,10 @@ export default function Note() {
           </TabsList>
 
           {_.values(notes).map((item: any) => (
-            <TabsContent key={item.title} value={item.title}>
+            <TabsContent key={item.title} value={item.title}
+              forceMount
+              hidden={item.title !== tab}
+            >
               <Textarea
                 rows={20}
                 defaultValue={item.content}
