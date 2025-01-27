@@ -1,14 +1,14 @@
 import React from 'react';
-import type { Metadata } from 'next';
+// import type { Metadata } from 'next';
 
 import Note from 'src/sections/supabase/note/Note';
 
-export const metadata: Metadata = {
-  title: 'Note',
-  description: 'My Notepad',
-  icons:'/image/note.ico',
-  manifest: '/manifest-note.json',
-};
+// export const metadata: Metadata = {
+//   title: 'Note',
+//   description: 'My Notepad',
+//   icons:'/image/note.ico',
+//   manifest: '/manifest-note.json',
+// };
 export default async function Page() {
 
   return (
