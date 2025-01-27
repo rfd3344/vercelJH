@@ -68,11 +68,6 @@ export default function Note() {
           ))}
         </Tabs>
 
-        <h1>1111</h1>
-        <textarea id="w3review" name="w3review"  defaultValue='' />
-
-        <input defaultValue='222' />
-        <input type="checkbox" />
 
       </div>
     </section>
