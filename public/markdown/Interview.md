@@ -216,7 +216,7 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 ## NextCarly
 
 - Nextjs
-- Tailwind, shandcn
+- Tailwind, Flowbite
 - RTK Query
 - Heaps, google analytics
 - AWS Lambda, Amplify, Cognito, Codepipeline
@@ -230,3 +230,12 @@ ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-S
 ## SunixVision
 
 - https://www.sunixvision.com.au/
+-
+- desktop app,
+- booking, consultation, inventory, payment
+- essilor, optical shop, eyecare, lens, glasses
+
+## TyrrellsInspection
+
+- reactNative, salesforce
+- property inspection, report , defects
