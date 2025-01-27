@@ -67,7 +67,9 @@ export default function Note() {
             </TabsContent>
           ))}
         </Tabs>
+        <Textarea
 
+        />
       </div>
     </section>
   );
