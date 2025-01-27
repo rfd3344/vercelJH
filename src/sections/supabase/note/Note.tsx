@@ -69,10 +69,9 @@ export default function Note() {
         </Tabs>
 
         <h1>1111</h1>
-        <textarea id="w3review" name="w3review" rows="4" cols="50">
-          At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-        </textarea>
-        <input />
+        <textarea id="w3review" name="w3review"  defaultValue='' />
+
+        <input defaultValue='222' />
         <input type="checkbox" />
 
       </div>
