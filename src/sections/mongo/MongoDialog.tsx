@@ -55,7 +55,13 @@ export default function MongoDialog({
       actionType: '',
     }));
   };
-
+  const handleOpenChange = (isOpen: any) => {
+    console.warn('aa', isOpen);
+    if (isOpen) return;
+    dispatch(updateMongo({
+      actionType: '',
+    }));
+  };
   return (
     <section id="MongoDialog">
 
@@ -63,7 +69,8 @@ export default function MongoDialog({
         open={actionType === 'ADD'}
         title="Add New Cat"
         dismissible
-        onClose={handleClose}
+        // onClose={handleClose}
+        onOpenChange={handleOpenChange}
       >
         <InputField
           name="name"

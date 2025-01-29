@@ -1,8 +1,16 @@
 import React, { useState, useEffect, useMemo, ReactNode } from 'react';
 import _ from 'lodash';
 
-import { Table } from 'flowbite-react';
-
+// import { Table } from 'flowbite-react';
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@shadcn/ui/table';
 
 interface IProps {
   columnProps: ColumProps[];
@@ -37,25 +45,31 @@ export default function TableBasic({
   return (
 
     <Table id="TableBasic" className={className}>
-      <Table.Head>
-        {columnProps?.map((item: ColumProps) => (
-          <Table.HeadCell key={item.head} className={`bg-cyan normal-case ${item.align ?? 'text-left'}`} >
-            {item.head}
-          </Table.HeadCell>
-        ))}
-      </Table.Head>
+      <TableHeader>
+        <TableRow>
 
-      <Table.Body className="divide-y text-black">
+          {columnProps?.map((item: ColumProps) => (
+            <TableHead
+              key={item.head}
+              className={`bg-primary text-black ${item.align ?? 'text-left'}`}
+            >
+              {item.head}
+            </TableHead>
+          ))}
+        </TableRow>
+      </TableHeader>
+
+      <TableBody >
         {data?.map((row: any, rowIndex) => (
-          <Table.Row key={row?._id || rowIndex}>
+          <TableRow key={row?._id || rowIndex}>
             {columnProps?.map((item: ColumProps) => (
-              <Table.Cell key={item.head} className={`${item.align ?? 'text-left'}`} >
+              <TableCell key={item.head} className={`${item.align ?? 'text-left'}`} >
                 {_.isFunction(item.cell) ? item.cell(row, rowIndex) : item.cell}
-              </Table.Cell>
+              </TableCell>
             ))}
-          </Table.Row>
+          </TableRow>
         ))}
-      </Table.Body>
+      </TableBody>
     </Table>
 
   );
