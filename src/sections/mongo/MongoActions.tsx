@@ -23,11 +23,10 @@ export default function MongoActions({ }) {
   return (
     <section id="MongoActions">
       <div className='flex justify-between mt-2'>
-        <div>
-
+        <div >
         </div>
         <div>
-          <Button color="secondary" onClick={handleAdd}>Add New Cat</Button>
+          <Button variant="secondary" onClick={handleAdd}>Add New Cat</Button>
         </div>
       </div>
 

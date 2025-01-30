@@ -3,6 +3,16 @@ import React from 'react';
 
 import { Modal } from 'flowbite-react';
 
+import {
+  Dialog as DialogCN,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@shadcn/ui/dialog';
+
 /*******
  * popup dialog modal
  *
@@ -12,21 +22,29 @@ export default function Dialog({
   size = 'md',
   open = false,
   dismissible = false,
-  onClose = null,
+  onOpenChange = null,
   children,
+  trigger,
   ...rest
 }: any) {
 
   return (
-    <section>
-      <Modal show={open} onClose={onClose} dismissible={dismissible} {...rest} >
-        <Modal.Header className='ml-4 [&_h3]:text-h4'>
-          {title}
-        </Modal.Header>
-        <Modal.Body>
+    <section id="Dialog" >
+
+      <DialogCN open={open} onOpenChange={onOpenChange} dismissible={dismissible} {...rest} >
+        <DialogTrigger asChild>
+          {trigger}
+        </DialogTrigger>
+        <DialogContent  >
+          <DialogHeader >
+            <DialogTitle> {title} </DialogTitle>
+            <DialogDescription></DialogDescription>
+          </DialogHeader>
           {children}
-        </Modal.Body>
-      </Modal>
+          <DialogFooter></DialogFooter>
+        </DialogContent>
+
+      </DialogCN>
     </section>
   );
 
