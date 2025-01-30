@@ -37,43 +37,43 @@
 
 # **Database**
 
-## RDS (Relational Database Service)
+### RDS (Relational Database Service)
 
 - Relational Database - PostgreSQL, MySQL, MariaDB, Oracle, and SQL Server
 
-## Amazon Aurora
+### Amazon Aurora
 
 - Relational Database - Amazon-Owned
 
-## DynamoDB
+### DynamoDB
 
 - Serverless, key-value NoSQL Database - Amazon-Owned
 
-## DynamoDB
+### DocumentDB
 
 - Document Database, JSON documents - MongoDB
 
-## ElastiCache
+### ElastiCache
 
 - Redis and Memcached, In-memory Cache
 
-## Redshift
+### Redshift
 
 - Columnar Database
 
-## ElasticSearch
+### ElasticSearch
 
 - Elasticsearch, ELK
 
-## Amazon Kinesis
+### Amazon Kinesis
 
 - real-time data
 
-## Amazon EMR
+### Amazon EMR
 
 - Elastic MapReduce, Big Data - Apache Hadoop, Spark, Hive, Hbase, Flink, Hudi
 
-## Neptune
+### Neptune
 
 - Graph Database, Social Media Relationship
 
@@ -84,48 +84,48 @@
 
 # **Storage**
 
-## S3 (Simple Storage Service)
+### S3 (Simple Storage Service)
 
 - Serverless, Block Storage - Photos & Videos, Website Hosting
 
 - Transfer Acceleration
 
-#### Amazon Athena
+### Amazon Athena
 
 - Query data in S3 using SQL
 
-## EBS (Elastic Block Store)
+### EBS (Elastic Block Store)
 
 - Block Storage Volume for EC2
 
-## EFS (Elastic File System)
+### EFS (Elastic File System)
 
 - Network File System for EC2, Concurrent access
 
-## Instance Store
+### Instance Store
 
-## FSx for Windows
+### FSx for Windows
 
-## FSx for Lustre
+### FSx for Lustre
 
 ## Others
 
 # **AppIntegration**
 
-## SNS (Amazon Simple Notification Service)
+### SNS (Amazon Simple Notification Service)
 
 - Serverless, Decoupled, Queue, Fan-out
 
-## SQS (Amazon Simple Queue Service)
+### SQS (Amazon Simple Queue Service)
 
 - Serverless, PubSub, Fan-out
 
-## Amazon MQ
+### Amazon MQ
 
-## Step Function
+### Step Function
 
 - workflow using Lambda Function, containers
 
 # **WebApp**
 
-- Amplify
+### Amplify

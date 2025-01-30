@@ -2,29 +2,29 @@
 
 # **Migration**
 
-## AWS Snow Family
+### AWS Snow Family
 
 - Offline Data Migration, Petabyte to exabyte Scale
 
-## AWS Storage Gateway
+### AWS Storage Gateway
 
 - Hybrid Storage b/w On-premise and AWS
 
-## AWS DataSync
+### AWS DataSync
 
 - Online Data Transfer, Immediate One-time transfer
 
-## AWS Backup
+### AWS Backup
 
-## Database Migration Service (DMS)
+### Database Migration Service (DMS)
 
-## AWS Application Migration Service (MGN)
+### AWS Application Migration Service (MGN)
 
-## Transfer Family
+### Transfer Family
 
 # **AI**
 
-## SageMaker
+### SageMaker
 
 - Model training, tuning, and deployment.
 
@@ -33,7 +33,7 @@
 - Rekognition, Comprehend, Polly
 - AI services for image, text, and speech processing.
 
-# **6. Other Services - 10 Category**
+# **Others**
 
 ## Blockchain
 

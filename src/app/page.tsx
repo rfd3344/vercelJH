@@ -6,6 +6,7 @@ import fs from 'fs';
 
 import { PagePath } from 'src/constants/pagePath';
 import LinksSection from 'src/sections/home/LinksSection';
+import InputLink from 'src/sections/home/InputLink';
 import {
   ToolsLinks,
   CloudLinks,
@@ -46,6 +47,7 @@ export default function Page({ }) {
       <LinksSection title="Shop" linkMap={ShopLinks} />
 
       <LinksSection title="Other" linkMap={OtherLinks} />
+      <InputLink />
 
     </main>
   );

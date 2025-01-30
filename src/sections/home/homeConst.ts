@@ -4,13 +4,11 @@ export const ToolsLinks = {
   LocalNotes: '/html/localNotes.html?notes=2',
   Calculator: '/html/calculator.html',
   ColorTable: '/html/colorTable.html',
-  // Webpage: PagePath.webpage,
   photoPea: 'https://photopea.com',
   ImageOnline: 'https://www.imgonline.com.ua/eng',
+  jsPaint: 'https://jspaint.app',
   ILovePdf: 'https://www.ilovepdf.com',
   PayCalculator: 'https://paycalculator.com.au',
-  jsPaint: 'https://jspaint.app',
-  Google: 'https://www.google.com',
 };
 
 export const CloudLinks = {
@@ -75,7 +73,6 @@ export const FunLinks = {
   虎牙直播: 'https://www.huya.com/g/wzry',
   爱壹帆: 'https://www.yfsp.tv/list',
   BiLiBiLi: 'https://www.bilibili.com',
-  Youtube: 'https://www.youtube.com/feed/history',
   PerisherSki: 'https://www.epicaustraliapass.com.au/',
   TennisHill: 'https://hills.bookable.net.au/search?categoryId=4',
   TennisParramatta: 'https://www.cityofparramatta.nsw.gov.au/recreation/tennis-courts',
