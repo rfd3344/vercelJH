@@ -1,6 +1,6 @@
-# **1. Analytics**
+# **Analytics**
 
-# **2. Migration & Transfer**
+# **Migration**
 
 ## AWS Snow Family
 
@@ -22,7 +22,7 @@
 
 ## Transfer Family
 
-# **3. Machine Learning**
+# **AI**
 
 ## SageMaker
 

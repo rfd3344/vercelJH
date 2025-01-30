@@ -1,22 +1,5 @@
 # **Javascript**
 
-- Tech Stack:
-- React, Typescript,
-- Vite, NextJS, Electron, ReactNative,
-- Redux-Toolkit, RTK Query, Material-UI,
-- React-Hook-Form,
-- Storybook
-- jest, playwright
-- AWS Amplify,Cognito, API-GateWay, S3, Lambda-Function, CodePipeline,
-
-- Developed new subscription funnel pages, file upload, including workflow, files management, data storage
-
-- Refactored car search page code, especially the filters adjustment, redux data flow
-- Set up the storybook, which is great for style and components check. And also, can be tested easily and effectively
-
-- build code pipeline
-- update node version and migrate from Create React App to Vite
-
 ## nvm setup
 
 - Windows:
@@ -52,7 +35,7 @@
 
 ### depcheck
 
-# **PC setup App**
+# **PCSetup**
 
 - SourceTree, GithubDesk
 - VScode, Sublime,
@@ -113,7 +96,7 @@ docker volume rm $(docker volume ls -q) # Remove volumes
 - docker Sample: https://github.com/dockersamples
 - nextjs Boilerplate: https://github.com/ixartz/Next-js-Boilerplate
 
-# **Markdown Header1**
+# **Markdown**
 
 - Code Support Language: https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md
 
@@ -142,31 +125,3 @@ Code Sample3
 Code Sample4
 ```
 ````
-
-```
-  ┌────────┴───────┐
-  ┫   rectangle    ┣
-  └───────┬────────┘
-
-
-━ ┏ ┛ ┗ ┓ ┃ ┫ ╋ ┣ ︱ ┻ ┳
-
-
-  ╔═══════╩═════════╗
-  ║                 ║ ║
-  ╣    BIG RECT     ╠═╬═
-  ║                 ║ ║
-  ╚═══════╦═════════╝
-
-
-═ ╔ ╝ ╚ ╗ ║ ╣ ╬ ╠ ─ ╩ ╦
-
-
-╭ ╮ ╰ ╯
-
-  --------------->
-  ^              |
-  |              |
-  |              v
-  <---------------
-```

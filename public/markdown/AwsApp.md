@@ -1,6 +1,6 @@
-# **1. Compute**
+# **Compute**
 
-## EC2 (Elastic Compute Cloud)
+### EC2 (Elastic Compute Cloud)
 
 - Amazon Machine Image (AMI)
 
@@ -9,21 +9,23 @@
     - Web Application Firewall (WAF)
   - Network Load Balancer (NLB)
 
-## Lambda
+### Lambda
 
 - Serverless, FaaS
 
 ## Containers
 
-#### Elastic Container Registry (ECR)
+### Elastic Container Registry (ECR)
 
 - Docker image repository, DockerHub
 
-#### Elastic Container Service (ECS)
+### Elastic Container Service (ECS)
 
 - Docker container management system
 
-#### Fargate
+### Amazon Elastic Kubernetes Service (EKS)
+
+### Fargate
 
 - Serverless ECS
 
@@ -33,7 +35,7 @@
 
 - ActiveMQ
 
-# **2. Database**
+# **Database**
 
 ## RDS (Relational Database Service)
 
@@ -80,7 +82,7 @@
 - Quicksight
 - Amazon Timestream: Time Series Database
 
-# **3. Storage**
+# **Storage**
 
 ## S3 (Simple Storage Service)
 
@@ -108,7 +110,7 @@
 
 ## Others
 
-# **4. Application Integration**
+# **AppIntegration**
 
 ## SNS (Amazon Simple Notification Service)
 
@@ -124,14 +126,6 @@
 
 - workflow using Lambda Function, containers
 
-# **5. Containers**
+# **WebApp**
 
-## Amazon Elastic Container Registry
-
-## Amazon Elastic Container Service (ECS)
-
-## Amazon Elastic Kubernetes Service (EKS)
-
-## AWS Fargate
-
-# **6. Front-end Web & Mobile**
+- Amplify

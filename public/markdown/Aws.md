@@ -1,4 +1,35 @@
-# **Infrastructure**
+# **Summary**
+
+### AWS.md
+
+- Management: Billing, CloudWatch,
+- Networking: Route53, VPC, Cloudfront
+- Security: IAM, Cognito, Firewall
+- DeveloperTools: CloudShell, CodePipeline
+- End-User Computing: WorkSpace, AppStream
+
+### AWSApp.md
+
+- Compute: EC2, Container, Lambda
+- Database: SQL, noSQL, ElasticSearch
+- Storage: S3, EFS
+- AppIntegration: MessageQueue,
+- WebApp: Amplify,
+
+### AWSPro.md
+
+- Analytics: Stream, BigData, BI
+- Migration: Snowball, Glue
+- AI: SageMaker
+- Others: Blockchain, Iot
+
+## Docs
+
+- https://digitalcloud.training/category/aws-cheat-sheets/aws-solutions-architect-professional/
+- https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/
+- https://www.devopsmadness.com/aws_solutions_architect_proffesional_cheat_sheet/
+- https://gist.github.com/Tiduster/b73937eaaaa3b0267875ff7fcc3b7c60
+- https://gist.github.com/selcukcihan/b33484cae52bc0a3fe1c067e8662d985
 
 ## AWS Region
 
@@ -30,15 +61,13 @@
 
 ## AZ (Availability zones)
 
-# **1. Cloud Financial Management**
+# **Management**
 
 ### Billing and Cost Management
 
 ### AWS Marketplace
 
 ### AWS Billing Conductor
-
-# **2. Management & Governance**
 
 ### Amazon CloudWatch
 
@@ -76,7 +105,7 @@
 
 - Data ETL (extract, transform, load), Crawler, Data Catalogue
 
-# **3. Networking & Content Delivery**
+# **Networking**
 
 ### Amazon API Gateway
 
@@ -105,7 +134,7 @@
 
 ### AWS Global Accelerator
 
-# **4. Security, Identity, & Compliance**
+# **Security**
 
 ### IAM (Identity and Accessg Management)
 
@@ -151,5 +180,12 @@
 
 ### VPN
 
+# **Developer Tools**
 
-# **5. Developer Tools**
+- CodePipeline
+- CloudShell
+
+# **End-User Computing**
+
+- WorkSpace,
+- AppStream
