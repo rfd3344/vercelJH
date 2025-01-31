@@ -21,11 +21,11 @@ export default function URLAction() {
           defaultValue="https://www.google.com/"
           style={{
             border: '3px solid',
-            margin: 10,
+            margin: 5,
             minWidth: 250,
           }}
         />
-        <button type="submit" style={{ background: 'DodgerBlue', padding: 5 }}>Navigate</button>
+        <button type="submit" style={{ background: 'DodgerBlue', padding: 7 }}>Navigate</button>
       </form>
     </div>
   );
