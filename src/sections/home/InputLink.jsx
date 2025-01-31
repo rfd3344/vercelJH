@@ -3,12 +3,14 @@
 import React from 'react';
 import _ from 'lodash';
 
+import { useRouter } from 'src/libs/next';
 
 export default function URLAction() {
+  const router = useRouter();
 
   const handleSubmit = (data) => {
     const url = data.get("url");
-    console.warn(data.get("url"));
+    router.push(url);
   };
 
   return (
@@ -20,7 +22,7 @@ export default function URLAction() {
           style={{
             border: '3px solid',
             margin: 10,
-            minWidth: 300,
+            minWidth: 280,
           }}
         />
         <button type="submit" style={{ background: 'DodgerBlue', padding: 5 }}>Reach</button>
