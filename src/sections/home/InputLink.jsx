@@ -22,10 +22,10 @@ export default function URLAction() {
           style={{
             border: '3px solid',
             margin: 10,
-            minWidth: 280,
+            minWidth: 250,
           }}
         />
-        <button type="submit" style={{ background: 'DodgerBlue', padding: 5 }}>Reach</button>
+        <button type="submit" style={{ background: 'DodgerBlue', padding: 5 }}>Navigate</button>
       </form>
     </div>
   );
