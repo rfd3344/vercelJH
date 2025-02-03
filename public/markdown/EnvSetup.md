@@ -55,6 +55,7 @@
 - Prettier
 - SQLite
 - SVG Preview
+- Terraform
 
 # **Docker**
 
