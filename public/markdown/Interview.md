@@ -29,7 +29,7 @@
 - SSR, SSG, Dynamic API, CSR
 - File System-Based Routing, Dynamic Routes, [slug], [...slug], [[...slug]]
 -
-- image
+- Image
 
 ## Nodejs
 
@@ -63,7 +63,6 @@
 ## AWS
 
 - SQS, SNS
-
 - SQL, CID properties, indexing, sharding
 - NoSQL, Caching
 
@@ -125,13 +124,12 @@
 
 ## Solid Principle
 
-ref1: https://learnku.com/articles/4160/solid-notes-on-object-oriented-design-and-programming-oodoop
-
-ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
+- ref1: https://learnku.com/articles/4160/solid-notes-on-object-oriented-design-and-programming-oodoop
+- ref2: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
 
 > _SRP - Single Responsibility Principle_
 
-> _OCP - Opened Closed Principle_·
+> _OCP - Opened Closed Principle_
 
 - add new function for new requirement, not change existing function
 - open for extension, close for modification

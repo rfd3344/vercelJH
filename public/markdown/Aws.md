@@ -6,20 +6,20 @@
 - Networking: Route53, VPC, Cloudfront
 - Security: IAM, Cognito, Firewall
 - DeveloperTools: CloudShell, CodePipeline
-- End-User Computing: WorkSpace, AppStream
+- EndUserComputing: WorkSpace, AppStream
 
 ### AWSApp.md
 
 - Compute: EC2, Container, Lambda
 - Database: SQL, noSQL, ElasticSearch
 - Storage: S3, EFS
-- AppIntegration: MessageQueue,
+- AppIntegration: SNS, SQS
 - WebApp: Amplify,
 
 ### AWSPro.md
 
-- Analytics: Stream, BigData, BI
-- Migration: Snowball, Glue
+- Analytics: Kinesis, Glue, Athena, OpenSearch, EMR
+- Migration: Snowball, DataSync
 - AI: SageMaker
 - Others: Blockchain, Iot
 
