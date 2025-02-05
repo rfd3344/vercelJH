@@ -83,11 +83,12 @@
 - Example
 
   1. URL Shortener - API Gateway, URLShortening Service, Database, Redirection Service, Cache, Analytics Service
-  2. Chat System
-  3. Social Media Platform
-  4. E-Commerce Platform
-  5. File Storage System
-  6. Video Streaming Service
+  1. Chat System
+  1. Social Media Platform
+  1. E-Commerce Platform
+  1. File Storage System
+  1. Video Streaming Service
+  1. Bank System
 
 ```md
 1. URL Shortener
