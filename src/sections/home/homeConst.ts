@@ -6,7 +6,6 @@ export const ToolsLinks = {
   ColorTable: '/html/colorTable.html',
   photoPea: 'https://photopea.com',
   ImageOnline: 'https://www.imgonline.com.ua/eng',
-  jsPaint: 'https://jspaint.app',
   ILovePdf: 'https://www.ilovepdf.com',
   PayCalculator: 'https://paycalculator.com.au',
 };
@@ -33,7 +32,7 @@ export const GithubLinks = {
 
 export const DevelopLinks = {
   ChatGPT: 'https://chat.openai.com',
-  Copilot: 'https://github.com/copilot',
+  DeepSeek: 'https://chat.deepseek.com/',
   APIGenerator: 'https://retool.com/api-generator',
   DBDiagram: 'https://dbdiagram.io/d/demo-6724a1c7b1b39dd8582997d4',
   AWSCheatSheets: 'https://digitalcloud.training/aws-cheat-sheets',
@@ -96,6 +95,7 @@ export const ShopLinks = {
   FlowerForEveryone: 'https://www.flowersforeveryone.com.au/',
   GiftDoll: 'https://omgstation.com.au/',
   Groupon: 'https://www.groupon.com.au/',
+  InstantScript: 'https://www.instantscripts.com.au/',
 };
 
 export const OtherLinks = {
