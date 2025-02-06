@@ -6,6 +6,20 @@
 - https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm
 - node version: https://nodejs.org/en/download
 
+
+- Mac:
+```
+brew upgrade
+brew install nvm
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
+echo '[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"' >> ~/.zshrc
+echo '[ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"' >> ~/.zshrc
+source ~/.zshrc
+
+nvm --version
+
+```
+
 ## Global Packages
 
 - list global packages: `npm list -g`
