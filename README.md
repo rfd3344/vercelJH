@@ -7,7 +7,7 @@
 
 - UILibrary: Tailwind, ShadCN, Flowbite, DaisyUi, MaterialUi,
 - Supabase (Postgres database + auth platform)
-
+-
 - Auth: NextAuth,
 - Pay: Stripe
 - ORM: Prisma, Drizzle, Sequelize, TypeORM
@@ -15,7 +15,6 @@
 
 - Datadog
 
-- Sanity CMS
 - PGvector (Open-source vector similarity search for Postgres)
 - Inngest (Queuing and orchestration)
 - Sentry (Application performance and error tracking)
