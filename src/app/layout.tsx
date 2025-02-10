@@ -6,7 +6,6 @@ import { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
 
 import Provider from 'src/core/Provider';
-import ProviderRedux from 'src/core/redux/ProviderRedux';
 import Initiator from 'src/core/Initiator';
 import Header from 'src/core/navigation/Header';
 import Footer from 'src/core/navigation/Footer';

@@ -2,6 +2,7 @@
 // import ApolloProvider from './ApolloProvider';
 import ProviderRedux from './redux/ProviderRedux';
 
+import ThemeProvider from 'src/core/tailwind/theme-provider';
 import { ApolloProvider } from 'src/libs/apollo';
 
 interface IProps {
@@ -14,11 +15,11 @@ export default function Provider({
   return (
 
     <ProviderRedux >
-      <ApolloProvider>
-
-        {children}
-
-      </ApolloProvider>
+      <ThemeProvider>
+        <ApolloProvider>
+          {children}
+        </ApolloProvider>
+      </ThemeProvider>
     </ProviderRedux>
   );
 }
