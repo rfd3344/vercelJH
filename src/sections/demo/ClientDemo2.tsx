@@ -14,7 +14,7 @@ import PlayGround3 from './ui/PlayGround3';
 export default function ClientDemo2() {
 
   const { data } = useGetDemoQuery();
-  console.warn('data', data);
+  // console.warn('data', data);
   return (
     <section id="ClientDemo2">
       <h3>ClientDemo2</h3>
