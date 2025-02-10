@@ -39,8 +39,8 @@ export default function Page({ }) {
           ul: ({ node, ...props }: any) => <ul role="list" className=" list-disc pl-6" {...props} />,
           ol: ({ node, ...props }: any) => <ul role="list" className="  list-decimal pl-4" {...props} />,
 
-          code: ({ node, ...props }: any) => <code className='px-1' style={{ background: 'lightgray' }} {...props} />,
-          pre: ({ node, ...props }: any) => <pre className='pl-2 my-2 border-l-4 border-green-500 overflow-x-auto max-w-[calc(100vw-15px)]' style={{ background: 'lightgray' }} {...props} />,
+          code: ({ node, ...props }: any) => <code className='px-1' style={{ background: 'LightSlateGray' }} {...props} />,
+          pre: ({ node, ...props }: any) => <pre className='pl-2 my-2 border-l-4 border-green-500 overflow-x-auto max-w-[calc(100vw-15px)]' style={{ background: 'LightSlateGray' }} {...props} />,
           blockquote: ({ node, ...props }: any) => <blockquote className='px-2 border-l-8 border-indigo-500 font-bold my-2' style={{ background: 'whitesmoke' }} {...props} />,
           a: ({ node, children, ...props }: any) => <span >{children} <a {...props} target='_blank'><Icon value='FcLink' size='xl' className='inline' /></a></span>,
         }}
