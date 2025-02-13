@@ -8,7 +8,7 @@
 
 
 - Mac:
-```
+```bash
 brew upgrade
 brew install nvm
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
