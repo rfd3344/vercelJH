@@ -65,7 +65,7 @@ export default function LinkButton({ to = '', text = '', ...rest }) {
     // variants={'primary' }
     >
       <Link href={to} className='mr-1 [&_svg]:w-4 [&_svg]:h-4'>
-        <StartIcon className="translate-y-0" />
+        {/* <StartIcon className="translate-y-0" /> */}
         <p>{text}</p>
       </Link>
 
