@@ -48,6 +48,8 @@ nvm --version
 - npm install --global windows-build-tools
 
 ### depcheck
+- check unused dependency in package.json
+- npx depcheck
 
 # **PCSetup**
 
