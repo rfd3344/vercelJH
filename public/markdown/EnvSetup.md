@@ -65,13 +65,16 @@ nvm --version
 - ENV
 - ESLint
 - Git Blame
+- Github Copilot
+- Github Copilot Chat
+- GraphQL Syntax Support
+- HashiCorp Terraform
 - indent-rainbow
 - Path Intellisense
-- Postman
 - Prettier
+- Prisma
 - SQLite
 - SVG Preview
-- Terraform
 
 # **Docker**
 
