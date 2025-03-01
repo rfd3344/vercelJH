@@ -2,11 +2,12 @@
 
 ## nvm setup
 
-- node version: https://nodejs.org/en/download
+- node version list: https://nodejs.org/en/download
 - nvm --version
-- nvm list
+- nvm list, nvm install, nvm use
 
-- Windows Setup: `https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm`
+- Windows Setup:
+- https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm
 
 - Mac Setup:
 
