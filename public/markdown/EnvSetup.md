@@ -2,12 +2,14 @@
 
 ## nvm setup
 
-- Windows:
-- https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm
 - node version: https://nodejs.org/en/download
+- nvm --version
+- nvm list
 
+- Windows Setup: `https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows#install-nvm-windows-nodejs-and-npm`
 
-- Mac:
+- Mac Setup:
+
 ```bash
 brew upgrade
 brew install nvm
@@ -15,8 +17,6 @@ echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
 echo '[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"' >> ~/.zshrc
 echo '[ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"' >> ~/.zshrc
 source ~/.zshrc
-
-nvm --version
 
 ```
 
@@ -48,6 +48,7 @@ nvm --version
 - npm install --global windows-build-tools
 
 ### depcheck
+
 - check unused dependency in package.json
 - npx depcheck
 
