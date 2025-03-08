@@ -146,3 +146,10 @@ Code Sample3
 Code Sample4
 ```
 ````
+
+| Item                      | In Stock | Price |
+| ------------------------- | -------- | ----- |
+| Python Hat test test test | True     | 23.99 |
+| SQL Hat                   | True     | 23.99 |
+| Tee                       | False    | 19.99 |
+| Hoodie                    | False    | 42.99 |
