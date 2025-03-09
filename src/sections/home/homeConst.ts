@@ -15,6 +15,7 @@ export const CloudLinks = {
   DriveNotes:
     'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J',
   Messenger: 'https://www.messenger.com/c/9078176158941259/t/9786179018063448',
+  Confluence: 'https://rfd3344.atlassian.net/',
   Slack: 'https://app.slack.com/client/T07BG5VAJTS/D03A69MS5C4',
   Teams: 'https://teams.live.com/v2/',
   Resource: '/resource',
