@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="Page-1" id="rTQAHnz_gqVbVHMEzQIj">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-1" target="g0Lb75egn97fL_ZWfaNd-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-1" value="API Gateway&amp;nbsp;&lt;div&gt;for auth&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-2" target="g0Lb75egn97fL_ZWfaNd-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-2" value="CronJob&amp;nbsp;&lt;div&gt;(MobileReports)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-4" value="WebRequest&lt;div&gt;(WebReports)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-4" target="g0Lb75egn97fL_ZWfaNd-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-10" target="g0Lb75egn97fL_ZWfaNd-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-10" target="g0Lb75egn97fL_ZWfaNd-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-10" value="Lambda function&lt;br&gt;- generateReport" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-17" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Generate report&amp;nbsp;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="280" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-18" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Query report&amp;nbsp;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="770" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-19" value="store PDF on&lt;br&gt;S3 Bucket" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-22" target="g0Lb75egn97fL_ZWfaNd-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-22" value="EventBridge" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-25" value="query data from Backend API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-27" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="g0Lb75egn97fL_ZWfaNd-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="600" as="sourcePoint" />
+            <mxPoint x="190" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-29" target="g0Lb75egn97fL_ZWfaNd-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-29" value="Lambda function&lt;br&gt;- checkValidUser&lt;div&gt;- queryData&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-30" value="add metadata to database" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-35" target="g0Lb75egn97fL_ZWfaNd-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-35" value="SQS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-38" target="g0Lb75egn97fL_ZWfaNd-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-38" value="query accessible&amp;nbsp; report list from database" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-39" target="g0Lb75egn97fL_ZWfaNd-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-39" value="query one report PDF file&amp;nbsp;&lt;div&gt;- getReportByID&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0Lb75egn97fL_ZWfaNd-41" target="g0Lb75egn97fL_ZWfaNd-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-41" value="create presigned-URL with expired time and return" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0Lb75egn97fL_ZWfaNd-43" value="visit PDF file directly using presigned-URL" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
