@@ -20,7 +20,7 @@ import {
 } from 'src/sections/home/homeConst';
 
 export default function Page({ }) {
-  const mdFiles = fs.readdirSync(path.resolve('./public', 'markdown'));
+  // const mdFiles = fs.readdirSync(path.resolve('./public', 'markdown'));
 
   return (
     <main id="home" className='container'>
@@ -30,7 +30,7 @@ export default function Page({ }) {
       <LinksSection title="Cloud" linkMap={CloudLinks} />
       <LinksSection title="Github" linkMap={GithubLinks} />
       <LinksSection title="Develop" linkMap={DevelopLinks} />
-      <LinksSection
+      {/* <LinksSection
         title="Markdown"
         linkMap={mdFiles.reduce(
           (acc, item) => ({
@@ -39,7 +39,7 @@ export default function Page({ }) {
           }),
           {},
         )}
-      />
+      /> */}
 
       <LinksSection title="Work" linkMap={WorkLinks} />
       <LinksSection title="Home" linkMap={HomeLinks} />
