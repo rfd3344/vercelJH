@@ -6,7 +6,7 @@ import _ from 'lodash';
 import ButtonLink from './ButtonLink';
 import Typography from 'src/components/dataDisplay/typography';
 
-import homeLinks from 'public/link/home-link.json';
+import { homeLinks } from 'src/constants/home-links';
 
 
 
