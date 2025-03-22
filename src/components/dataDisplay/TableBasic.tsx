@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useMemo, ReactNode } from 'react';
 import _ from 'lodash';
 
-// import { Table } from 'flowbite-react';
 import {
   Table,
   TableBody,
