@@ -68,6 +68,7 @@ export const homeLinks = [
       { title: 'CleanUpCollection', url: 'https://www.thehills.nsw.gov.au/Services/For-Residents/Waste-Recycling/Clean-Up-Collection' },
       { title: 'SydneyWater', url: 'https://myaccount.sydneywater.com.au/Portal/Dashboard.aspx' },
       { title: 'HillsCouncilInvoice', url: 'https://thehills.enotices.com.au/login?email=rfd3344@gmail.com' },
+      { title: 'DEFTLevy', url: 'https://personal.deft.com.au/#/payer/dashboard/transactions' },
       { title: 'EToll', url: 'https://account.myetoll.transport.nsw.gov.au/login' },
     ],
   },
