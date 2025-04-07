@@ -23,6 +23,18 @@ export default function Page() {
     <main id="Webpage">
       <div >
         <div >
+
+          <iframe
+            // width={`${size}%`}
+            // sx={{
+            //   aspectRatio: '16/9',
+            // }}
+            // border={0}
+            // component="iframe"
+            allowFullScreen
+            src="https://gemini.google.com/app?hl=en-AU"
+
+          />
           <iframe
             // width={`${size}%`}
             // sx={{
