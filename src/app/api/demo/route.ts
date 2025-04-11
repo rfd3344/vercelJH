@@ -4,14 +4,14 @@ import {
 } from 'src/libs/next';
 
 
-import { example } from 'src/libs/openai';
+// import { example } from 'src/libs/openai';
 
 
 
 export async function GET(request: NextRequest) {
 
-  const res = await example();
-  console.warn(res);
+  // const res = await example();
+  // console.warn(res);
 
   const resp = { message: 'Hello World' };
   return NextResponse.json(resp);
