@@ -12,17 +12,10 @@ export const publicEnv = () => ({
   EXPRESS_SERVER: process.env.NEXT_PUBLIC_EXPRESS_SERVER || '',
   VERCEL_SERVER: process.env.NEXT_PUBLIC_VERCEL_SERVER || '',
 
-  SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
-  SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
 
   MONGO_USERNAME: process.env.NEXT_PUBLIC_MONGO_USERNAME || '',
   MONGO_PASSWORD: process.env.NEXT_PUBLIC_MONGO_PASSWORD || '',
   MONGO_DATABASE: process.env.NEXT_PUBLIC_MONGO_DATABASE || '',
-  OPENAI_KEY: process.env.NEXT_PUBLIC_OPENAI_KEY?.replace('rfd3344-', '') || '',
-
-  SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL|| '',
-  SUPABASE_KEY: process.env.NEXT_PUBLIC_SUPABASE_KEY || '',
-
 
 });
 

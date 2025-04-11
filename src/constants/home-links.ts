@@ -14,7 +14,7 @@ export const homeLinks = [
   {
     sectionHeader: 'Cloud',
     links: [
-      { title: 'Notes', url: '/supabase/note' },
+      { title: 'Notes', url: '/note' },
       { title: 'Confluence', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
       { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { title: 'Messenger', url: 'https://www.messenger.com/c/9078176158941259/t/9786179018063448' },
@@ -113,8 +113,6 @@ export const homeLinks = [
     sectionHeader: 'Others',
     links: [
       { title: 'Demo', url: '/demo' },
-      { title: 'Webpage', url: '/webpage' },
-      { title: 'Mongo', url: '/mongo' },
     ],
   },
 ];

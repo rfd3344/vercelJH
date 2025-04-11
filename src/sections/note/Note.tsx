@@ -5,8 +5,8 @@ import _ from 'lodash';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@shadcn/ui/tabs';
 import { Textarea } from '@shadcn/ui/textarea';
 
-import { supabase } from 'src/libs/supabase';
-
+// import { supabase } from 'src/libs/supabase';
+import { getSampleUsers } from 'src/libs/mongodb';
 
 export default function Note() {
 
@@ -14,22 +14,29 @@ export default function Note() {
   const [tab, setTab] = useState('✍️ Temp');
 
   useEffect(() => {
-    supabase.from('note').select().eq('active', true).order('id').then((resp: any) => {
-      const nextNotes = _.keyBy(resp.data, 'id');
-      setNotes(nextNotes);
-    });
+    // supabase.from('note').select().eq('active', true).order('id').then((resp: any) => {
+    //   const nextNotes = _.keyBy(resp.data, 'id');
+    //   setNotes(nextNotes);
+    // });
+
+    // getSampleUsers().then((resp: any) => {
+    //   console.warn('resp', resp);
+    //   // const nextNotes = _.keyBy(resp, 'id');
+    //   // setNotes(nextNotes);
+    // });
+    getSampleUsers();
   }, []);
 
   const handleBlur = (id = 0, content = '') => {
     if (notes[id].content === content) return;
 
-    supabase.from('note').update({ content }).eq('id', id).select().then((resp: any) => {
-      const data = resp?.data[0];
-      setNotes({
-        ...notes,
-        [data.id]: data,
-      });
-    });
+    // supabase.from('note').update({ content }).eq('id', id).select().then((resp: any) => {
+    //   const data = resp?.data[0];
+    //   setNotes({
+    //     ...notes,
+    //     [data.id]: data,
+    //   });
+    // });
   };
 
 

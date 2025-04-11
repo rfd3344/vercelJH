@@ -13,17 +13,17 @@ const openai = new OpenAI({
 
 export const openAiChat = async (messages: any) => {
 
-  const completion = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    max_tokens: 100,
-    messages,
-  }).catch(e => {
-    console.warn('OpenAI chat', e);
-    return e;
-  });
+  // const completion = await openai.chat.completions.create({
+  //   model: 'gpt-4o-mini',
+  //   max_tokens: 100,
+  //   messages,
+  // }).catch(e => {
+  //   console.warn('OpenAI chat', e);
+  //   return e;
+  // });
 
 
-  return completion;
+  // return completion;
 };
 
 
