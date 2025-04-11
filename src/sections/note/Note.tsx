@@ -21,14 +21,11 @@ export default function Note() {
   }, []);
 
   const handleBlur = (_id = 0, content = '') => {
-    console.warn('handleBlur', _id, content);
     if (notes[_id].content === content) return;
+
     fetch('/api/mongo/note', {
       method: 'PATCH',
       body: JSON.stringify({ _id, content }),
-    }).then(async resp => {
-      const resp2 = await resp.json();
-      console.warn('resp', resp2);
     });
 
   };
@@ -36,11 +33,9 @@ export default function Note() {
 
   const handleInput = (e: any) => {
     const target = e.target;
-
     if (target.scrollHeight < 500 || target.scrollHeight > 800) {
       return;
     }
-
     target.style.height = `${target.scrollHeight}px`;
   };
 
