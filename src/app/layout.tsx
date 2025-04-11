@@ -35,7 +35,7 @@ export default function RootLayout({
   children,
 }: IProps) {
   return (
-    <html lang="en" className={fontsClassName}>
+    <html lang="en" className={fontsClassName} suppressHydrationWarning>
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>
 
         <Provider>
