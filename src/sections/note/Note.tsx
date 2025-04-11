@@ -5,38 +5,32 @@ import _ from 'lodash';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@shadcn/ui/tabs';
 import { Textarea } from '@shadcn/ui/textarea';
 
-// import { supabase } from 'src/libs/supabase';
-import { getSampleUsers } from 'src/libs/mongodb';
 
 export default function Note() {
 
   const [notes, setNotes] = useState<any>({});
-  const [tab, setTab] = useState('✍️ Temp');
+  const [tab, setTab] = useState('Temp');
 
   useEffect(() => {
-    // supabase.from('note').select().eq('active', true).order('id').then((resp: any) => {
-    //   const nextNotes = _.keyBy(resp.data, 'id');
-    //   setNotes(nextNotes);
-    // });
+    fetch('/api/mongo/note').then(async resp => {
+      const notes = await resp.json();
+      const nextNotes = _.keyBy(notes, '_id');
+      setNotes(nextNotes);
+    });
 
-    // getSampleUsers().then((resp: any) => {
-    //   console.warn('resp', resp);
-    //   // const nextNotes = _.keyBy(resp, 'id');
-    //   // setNotes(nextNotes);
-    // });
-    getSampleUsers();
   }, []);
 
-  const handleBlur = (id = 0, content = '') => {
-    if (notes[id].content === content) return;
+  const handleBlur = (_id = 0, content = '') => {
+    console.warn('handleBlur', _id, content);
+    if (notes[_id].content === content) return;
+    fetch('/api/mongo/note', {
+      method: 'PATCH',
+      body: JSON.stringify({ _id, content }),
+    }).then(async resp => {
+      const resp2 = await resp.json();
+      console.warn('resp', resp2);
+    });
 
-    // supabase.from('note').update({ content }).eq('id', id).select().then((resp: any) => {
-    //   const data = resp?.data[0];
-    //   setNotes({
-    //     ...notes,
-    //     [data.id]: data,
-    //   });
-    // });
   };
 
 
@@ -76,7 +70,7 @@ export default function Note() {
                 rows={20}
                 defaultValue={item.content}
                 onInput={handleInput}
-                onBlur={(e) => handleBlur(item.id, e.target.value)}
+                onBlur={(e) => handleBlur(item._id, e.target.value)}
               />
             </TabsContent>
           ))}
