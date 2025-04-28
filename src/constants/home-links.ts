@@ -1,10 +1,8 @@
 export const homeLinks = [
   {
-    sectionHeader: 'Docs & Notes',
+    sectionHeader: 'Docs',
     links: [
       { title: 'LocalNotes', url: '/html/localNotes.html?notes=2' },
-      { title: 'Calculator', url: '/html/calculator.html' },
-      { title: 'ColorTable', url: '/html/colorTable.html' },
       { title: 'Confluence', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
       { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { title: 'rfd3344', url: 'https://github.com/rfd3344?tab=repositories' },
@@ -12,24 +10,26 @@ export const homeLinks = [
     ],
   },
   {
-    sectionHeader: 'Image Photo',
+    sectionHeader: 'Tools',
     links: [
+      { title: 'Calculator', url: '/html/calculator.html' },
+      { title: 'PayCalculator', url: 'https://paycalculator.com.au' },
+      { title: 'ILovePdf', url: 'https://www.ilovepdf.com' },
+      // { title: 'ChatGPT', url: 'https://chat.openai.com' },
+      { title: 'DeepSeek', url: 'https://chat.deepseek.com/' },
+    ],
+  },
+  {
+    sectionHeader: 'Image',
+    links: [
+      { title: 'ColorTable', url: '/html/colorTable.html' },
       { title: 'PhotoPea', url: 'https://photopea.com' },
       { title: 'ImageOnline', url: 'https://www.imgonline.com.ua/eng' },
     ],
   },
 
   {
-    sectionHeader: 'Cloud',
-    links: [
-
-      { title: 'ChatGPT', url: 'https://chat.openai.com' },
-      { title: 'DeepSeek', url: 'https://chat.deepseek.com/' },
-    ],
-  },
-
-  {
-    sectionHeader: 'Profession',
+    sectionHeader: 'Study',
     links: [
       { title: 'APIGenerator', url: 'https://retool.com/api-generator' },
       { title: 'DBDiagram', url: 'https://dbdiagram.io/d/demo-6724a1c7b1b39dd8582997d4' },
@@ -44,12 +44,9 @@ export const homeLinks = [
   {
     sectionHeader: 'Work',
     links: [
-      { title: 'WDoc', url: 'https://docs.google.com/document/d/1zXNje7E74rW9ICdVE4JMvw6e_6jHfdEsVCcqw8TzJnk/edit' },
-      { title: 'Console', url: 'https://ap-southeast-2.console.aws.amazon.com/console' },
+
       { title: 'PostmanJH', url: 'https://rfd3344.postman.co/workspace/JH~57a4fc2b-3943-4488-a483-ba3b6d21e6cd/request/10631940-8df98a7f-bdd9-4e8f-a9b4-b9715a86a108' },
       { title: 'Figma', url: 'https://www.figma.com/files/' },
-      { title: 'MailGoogle', url: 'https://mail.google.com/mail/u/1/#inbox' },
-      { title: 'CalendarGoogle', url: 'https://calendar.google.com/calendar/u/1/r' },
       { title: 'SeekReact', url: 'https://www.seek.com.au/react-jobs/in-Sydney-NSW-2000' },
     ],
   },
@@ -64,13 +61,18 @@ export const homeLinks = [
     ],
   },
   {
-    sectionHeader: 'Entertainment',
+    sectionHeader: 'Fun',
     links: [
       { title: 'GenShin', url: 'https://wiki.biligame.com/ys' },
       { title: 'StarRail', url: 'https://wiki.biligame.com/sr' },
       { title: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
       { title: '爱壹帆', url: 'https://www.google.com/search?q=yfsp' },
       { title: 'BiLiBiLi', url: 'https://www.bilibili.com' },
+    ],
+  },
+  {
+    sectionHeader: 'Sport',
+    links: [
       { title: 'PerisherSki', url: 'https://www.epicaustraliapass.com.au/' },
       { title: 'TennisHill', url: 'https://hills.bookable.net.au/search?categoryId=4' },
       { title: 'CastleHillTennis', url: 'https://www.tennisvenues.com.au/booking/hdta-caterson-tc' },
@@ -82,14 +84,11 @@ export const homeLinks = [
   {
     sectionHeader: 'Shopping',
     links: [
-      { title: 'Costco', url: 'https://www.costco.com.au/' },
-      { title: 'Nike', url: 'https://www.nike.com/au/w/new-3n82y' },
       { title: 'StockX', url: 'https://stockx.com/' },
       { title: 'OzBargain', url: 'https://www.ozbargain.com.au/' },
       { title: '澳洲省钱快报', url: 'https://www.dealmoon.com.au/' },
       { title: 'Temu', url: 'https://www.temu.com/au' },
       { title: 'Shein', url: 'https://au.shein.com/' },
-      { title: 'Amazon', url: 'https://www.amazon.com.au/' },
       { title: 'MSY', url: 'https://www.msy.com.au/' },
       { title: 'MVave', url: 'https://www.mwave.com.au/' },
       { title: 'FlowerBloomex', url: 'https://bloomex.com.au/' },
@@ -97,14 +96,18 @@ export const homeLinks = [
       { title: 'FlowerForEveryone', url: 'https://www.flowersforeveryone.com.au/' },
       { title: 'GiftDoll', url: 'https://omgstation.com.au/' },
       { title: 'Groupon', url: 'https://www.groupon.com.au/' },
+    ],
+  },
+  {
+    sectionHeader: 'Health',
+    links: [
       { title: 'InstantScript', url: 'https://www.instantscripts.com.au/' },
+
     ],
   },
   {
     sectionHeader: 'Others',
     links: [
-      { title: 'ILovePdf', url: 'https://www.ilovepdf.com' },
-      { title: 'PayCalculator', url: 'https://paycalculator.com.au' },
       { title: 'Demo', url: '/demo' },
     ],
   },
