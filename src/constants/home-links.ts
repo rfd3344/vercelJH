@@ -1,44 +1,33 @@
 export const homeLinks = [
   {
-    sectionHeader: 'Tools',
+    sectionHeader: 'Docs & Notes',
     links: [
       { title: 'LocalNotes', url: '/html/localNotes.html?notes=2' },
       { title: 'Calculator', url: '/html/calculator.html' },
       { title: 'ColorTable', url: '/html/colorTable.html' },
-      { title: 'PhotoPea', url: 'https://photopea.com' },
-      { title: 'ImageOnline', url: 'https://www.imgonline.com.ua/eng' },
-      { title: 'ILovePdf', url: 'https://www.ilovepdf.com' },
-      { title: 'PayCalculator', url: 'https://paycalculator.com.au' },
+      { title: 'Confluence', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
+      { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
+      { title: 'rfd3344', url: 'https://github.com/rfd3344?tab=repositories' },
+      { title: 'RepoFiles', url: '/github-repo' },
     ],
   },
+  {
+    sectionHeader: 'Image Photo',
+    links: [
+      { title: 'PhotoPea', url: 'https://photopea.com' },
+      { title: 'ImageOnline', url: 'https://www.imgonline.com.ua/eng' },
+    ],
+  },
+
   {
     sectionHeader: 'Cloud',
     links: [
-      // { title: 'Notes', url: '/note' },
-      // { title: 'Zoom', url: 'https://app.zoom.us/wc/team-chat' },
-      { title: 'Confluence', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
-      { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
-
-      { title: 'Messenger', url: 'https://www.messenger.com/c/9078176158941259/t/9786179018063448' },
-      { title: 'Slack', url: 'https://app.slack.com/client/T07BG5VAJTS/D03A69MS5C4' },
-      { title: 'Teams', url: 'https://teams.live.com/v2/' },
 
       { title: 'ChatGPT', url: 'https://chat.openai.com' },
       { title: 'DeepSeek', url: 'https://chat.deepseek.com/' },
-      // { title: 'Resource', url: '/resource' },
-      // { title: 'ExpressJH', url: 'https://express-jh.vercel.app/' },
     ],
   },
-  {
-    sectionHeader: 'Github',
-    links: [
-      { title: 'rfd3344', url: 'https://github.com/rfd3344?tab=repositories' },
-      { title: 'RepoFiles', url: '/github-repo' },
-      { title: 'StaticJH', url: 'https://github.com/rfd3344/staticJH' },
-      { title: 'Storybook', url: 'https://rfd3344w.github.io' },
-      { title: 'Roadmap', url: 'https://github.com/kamranahmedse/developer-roadmap' },
-    ],
-  },
+
   {
     sectionHeader: 'Profession',
     links: [
@@ -114,6 +103,8 @@ export const homeLinks = [
   {
     sectionHeader: 'Others',
     links: [
+      { title: 'ILovePdf', url: 'https://www.ilovepdf.com' },
+      { title: 'PayCalculator', url: 'https://paycalculator.com.au' },
       { title: 'Demo', url: '/demo' },
     ],
   },
