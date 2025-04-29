@@ -26,7 +26,7 @@ export const homeLinks = [
       { title: 'ColorTable', url: '/html/colorTable.html' },
       { title: 'PhotoPea', url: 'https://photopea.com' },
       { title: 'ImageOnline', url: 'https://www.imgonline.com.ua/eng' },
-      { excalidraw: 'https://excalidraw.com/' },
+      { title: 'ExcaliDraw', url: 'https://excalidraw.com/' },
 
       { title: 'Pixabay', url: 'https://pixabay.com' },
       { title: 'Unsplash', url: 'https://unsplash.com' },
