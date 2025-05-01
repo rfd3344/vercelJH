@@ -1,6 +1,6 @@
 export const homeLinks = [
   {
-    sectionHeader: 'Docs',
+    sectionHeader: 'Notes & Files',
     links: [
       { title: 'LocalNotes', url: '/html/localNotes.html?notes=2' },
       { title: 'Confluence', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
@@ -15,11 +15,14 @@ export const homeLinks = [
     sectionHeader: 'Tools',
     links: [
       { title: 'Calculator', url: '/html/calculator.html' },
+      { title: 'ChatGPT', url: 'https://chat.openai.com' },
+      { title: 'DeepSeek', url: 'https://chat.deepseek.com/' },
       { title: 'PayCalculator', url: 'https://paycalculator.com.au' },
       { title: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { title: 'tinyTools', url: 'https://tinywow.com/' },
-      { title: 'ChatGPT', url: 'https://chat.openai.com' },
-      { title: 'DeepSeek', url: 'https://chat.deepseek.com/' },
+      { title: 'snap-drop', url: 'https://www.snap-drop.net/' },
+      { title: 'skylinewebcams', url: 'https://www.skylinewebcams.com/zh.html' },
+      { title: 'Demanualslibmo', url: 'https://www.manualslib.com/' },
     ],
   },
   {
@@ -37,7 +40,7 @@ export const homeLinks = [
   },
 
   {
-    sectionHeader: 'Study',
+    sectionHeader: 'Tech',
     links: [
       { title: 'APIGenerator', url: 'https://retool.com/api-generator' },
       { title: 'DBDiagram', url: 'https://dbdiagram.io/d/demo-6724a1c7b1b39dd8582997d4' },
@@ -52,7 +55,6 @@ export const homeLinks = [
   {
     sectionHeader: 'Work',
     links: [
-
       { title: 'PostmanJH', url: 'https://rfd3344.postman.co/workspace/JH~57a4fc2b-3943-4488-a483-ba3b6d21e6cd/request/10631940-8df98a7f-bdd9-4e8f-a9b4-b9715a86a108' },
       { title: 'Figma', url: 'https://www.figma.com/files/' },
       { title: 'SeekReact', url: 'https://www.seek.com.au/react-jobs/in-Sydney-NSW-2000' },
@@ -76,6 +78,9 @@ export const homeLinks = [
       { title: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
       { title: '爱壹帆', url: 'https://www.google.com/search?q=yfsp' },
       { title: 'BiLiBiLi', url: 'https://www.bilibili.com' },
+      { title: 'poki', url: 'https://poki.com/' },
+      { title: '红警2', url: 'https://ra2web.com' },
+      { title: 'CS-Online', url: ' https://play-cs.com/en/servers' },
     ],
   },
   {
@@ -110,12 +115,13 @@ export const homeLinks = [
     sectionHeader: 'Health',
     links: [
       { title: 'InstantScript', url: 'https://www.instantscripts.com.au/' },
-
     ],
   },
   {
     sectionHeader: 'Others',
     links: [
+      { title: 'Demo', url: '/demo' },
+
       { title: 'Demo', url: '/demo' },
     ],
   },
