@@ -21,7 +21,7 @@ export const homeLinks = [
       { title: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { title: 'tinyTools', url: 'https://tinywow.com/' },
       { title: 'snap-drop', url: 'https://www.snap-drop.net/' },
-      { title: 'skylinewebcams', url: 'https://www.skylinewebcams.com/zh.html' },
+      { title: 'skylinewebcams', url: 'https://www.skylinewebcams.com/en.html' },
       { title: 'Demanualslibmo', url: 'https://www.manualslib.com/' },
     ],
   },
