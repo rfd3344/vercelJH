@@ -18,7 +18,7 @@ export default function URLAction() {
       <form action={handleSubmit}>
         <input
           name="url"
-          defaultValue="https://www.google.com/"
+          defaultValue="https://www.youtube.com/"
           style={{
             border: '3px solid',
             margin: 5,
