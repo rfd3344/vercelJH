@@ -4,7 +4,7 @@ import React, { Suspense } from 'react';
 import _ from 'lodash';
 
 import { usePathname } from 'src/libs/next';
-import { PagePath } from 'src/constants/pagePath';
+import { PagePath } from 'src/constants/page-path';
 import Loading from 'src/components/dataDisplay/Loading';
 
 import TitleGithubRepo from './TitleGithubRepo';

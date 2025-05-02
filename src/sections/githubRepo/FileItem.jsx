@@ -7,7 +7,7 @@ import { Link, Image } from 'src/libs/next';
 import Icon from 'src/components/dataDisplay/Icon';
 
 import { getFileType } from 'src/utils/fileUtils';
-import { FileTypeEnum } from 'src/constants/fileConst';
+import { FileTypeEnum } from 'src/constants/file-type';
 
 import { omitRoot } from './githubRepoUtils';
 import { getGithubFileUrl } from './githubRepoUtils';

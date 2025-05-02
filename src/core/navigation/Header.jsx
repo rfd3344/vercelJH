@@ -5,7 +5,7 @@ import { Avatar } from 'flowbite-react';
 
 import { usePathname } from 'src/libs/next';
 import { Link } from 'src/libs/next';
-import { PagePath } from 'src/constants/pagePath';
+import { PagePath } from 'src/constants/page-path';
 
 import Clock from './ui/Clock';
 import NavTitle from './ui/NavTitle';

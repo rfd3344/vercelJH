@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 import { publicEnv } from 'src/core/envConfig';
-import { FileTypeEnum } from 'src/constants/fileConst';
+import { FileTypeEnum } from 'src/constants/file-type';
 
 export const getFileType = (fileName = '') => {
   const fileExtension = _.lowerCase(fileName.split('.').pop());
