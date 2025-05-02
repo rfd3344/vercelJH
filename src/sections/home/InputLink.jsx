@@ -25,7 +25,7 @@ export default function URLAction() {
             minWidth: 250,
           }}
         />
-        <button type="submit" style={{ background: 'DodgerBlue', padding: 7 }}>Navigate</button>
+        <button type="submit" style={{ background: 'SeaGreen', padding: 3 }}>Apply</button>
       </form>
     </div>
   );
