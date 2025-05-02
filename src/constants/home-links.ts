@@ -7,8 +7,8 @@ export const homeLinks = [
       { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { title: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
       { title: 'teams', url: 'https://teams.live.com/v2' },
-      { title: 'rfd3344', url: 'https://github.com/rfd3344?tab=repositories' },
-      { title: 'RepoFiles', url: '/github-repo' },
+      { title: 'staticFiles', url: '/github-repo' },
+      { title: 'githubRepo', url: 'https://github.com/rfd3344?tab=repositories' },
     ],
   },
   {
