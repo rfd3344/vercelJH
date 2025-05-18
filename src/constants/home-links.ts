@@ -3,7 +3,7 @@ export const homeLinks = [
     sectionHeader: 'Notes & Files',
     links: [
       { title: 'LocalNotes', url: '/html/localNotes.html?notes=2' },
-      { title: 'Confluence', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
+      { title: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
       { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { title: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
       { title: 'teams', url: 'https://teams.live.com/v2' },
@@ -58,8 +58,7 @@ export const homeLinks = [
       // { title: 'PostmanJH', url: 'https://rfd3344.postman.co/workspace/JH~57a4fc2b-3943-4488-a483-ba3b6d21e6cd/request/10631940-8df98a7f-bdd9-4e8f-a9b4-b9715a86a108' },
       // { title: 'Figma', url: 'https://www.figma.com/files/' },
       { title: 'SeekReact', url: 'https://www.seek.com.au/react-jobs/in-Sydney-NSW-2000' },
-
-      { title: 'SeekReact', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
+      { title: 'WNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
 
       { title: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
       { title: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/SR/boards/27/backlog?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
