@@ -3,7 +3,7 @@ export const homeLinks = [
     sectionHeader: 'Notes & Files',
     links: [
       { title: 'LocalNotes', url: '/html/localNotes.html?notes=2' },
-      { title: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/12682173' },
+      { title: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/edit-v2/20480026' },
       { title: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { title: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
       { title: 'teams', url: 'https://teams.live.com/v2' },
@@ -69,13 +69,15 @@ export const homeLinks = [
     ],
   },
   {
-    sectionHeader: 'Home',
+    sectionHeader: 'Bill',
     links: [
       { title: 'CleanUpCollection', url: 'https://www.thehills.nsw.gov.au/Services/For-Residents/Waste-Recycling/Clean-Up-Collection' },
       { title: 'SydneyWater', url: 'https://myaccount.sydneywater.com.au/Portal/Dashboard.aspx' },
       { title: 'HillsCouncilInvoice', url: 'https://thehills.enotices.com.au/login?email=rfd3344@gmail.com' },
       { title: 'DEFTLevy', url: 'https://personal.deft.com.au/#/payer/dashboard/transactions' },
       { title: 'EToll', url: 'https://account.myetoll.transport.nsw.gov.au/login' },
+      { title: 'NRMA', url: 'https://connect.nrma.com.au/welcome/login/username' },
+      { title: 'ServiceNSW', url: 'https://account.service.nsw.gov.au/overview' },
     ],
   },
   {
