@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 
 import { addDevFunctions } from 'src/utils/dev.utils';
 
-export default function Initiator() {
+export function Initiator() {
   const isInitiated = useRef(false);
 
 

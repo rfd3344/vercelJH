@@ -1,29 +1,29 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 
-import { GithubFiles } from 'src/types/githubType';
+// import { GithubFiles } from 'src/types/githubType';
 
-import githubSlice from 'src/core/redux/githubSlice';
+// import githubSlice from 'src/core/redux/githubSlice';
 
-type GetMasterTreeResponse = {
-  sha?: string;
-  tree?: GithubFiles[];
-  truncated?: boolean;
-  url?: string;
-};
+// type GetMasterTreeResponse = {
+//   sha?: string;
+//   tree?: GithubFiles[];
+//   truncated?: boolean;
+//   url?: string;
+// };
 
-const extendedApi = githubSlice.injectEndpoints({
-  endpoints: (build) => ({
-    getMasterTree: build.query<GetMasterTreeResponse, string>({
-      query: (repoPath = '') => `${repoPath}/git/trees/main?recursive=1`,
-    }),
+// const extendedApi = githubSlice.injectEndpoints({
+//   endpoints: (build) => ({
+//     getMasterTree: build.query<GetMasterTreeResponse, string>({
+//       query: (repoPath = '') => `${repoPath}/git/trees/main?recursive=1`,
+//     }),
 
-  }),
-});
+//   }),
+// });
 
 
-export const {
-  useGetMasterTreeQuery,
+// export const {
+//   useGetMasterTreeQuery,
 
-} = extendedApi;
+// } = extendedApi;
 
-export default extendedApi;
+// export default extendedApi;

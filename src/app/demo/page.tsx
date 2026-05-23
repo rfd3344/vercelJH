@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { ServerDemo } from './server-demo';
 
-
-import ClientDemo1 from 'src/sections/demo/ClientDemo1';
-import ClientDemo2 from 'src/sections/demo/ClientDemo2';
-
-import ServerDemo from './ServerDemo';
-
+import { ClientDemo1 } from 'src/sections/demo/client-demo1';
+import { ClientDemo2 } from 'src/sections/demo/client-demo2';
 
 
 export default async function Page() {

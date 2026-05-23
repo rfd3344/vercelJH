@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import ResourceTable from 'src/sections/resource/ResourceTable';
+// import ResourceTable from 'src/sections/resource/ResourceTable';
 
 export default function Page({ }) {
 
@@ -42,7 +42,7 @@ export default function Page({ }) {
 
   return (
     <main id="resource" className='container overflow-x-auto'>
-      <ResourceTable data={data} />
+      {/* <ResourceTable data={data} /> */}
     </main>
   );
 }

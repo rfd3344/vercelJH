@@ -7,10 +7,11 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
+    "clean": "rm -rf .next node_modules",
     "dev": "next dev --turbopack",
     "dev:staging": "env-cmd -e base,staging next dev --turbopack",
     "dev:prod": "env-cmd -e base,prod next dev --turbopack",
-    "build": "env-cmd -e base,prod next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -20,11 +21,7 @@
     "test:ui": "vitest --ui",
     "test:e2e": "playwright test",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build",
-    "percy": "env-cmd -e staging,base percy storybook http://localhost:6006",
-    "analyze": "ANALYZE=true next build",
-    "shadcn": "npx shadcn@latest add",
-    "prepare": "husky"
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
@@ -82,7 +79,6 @@
     "lint-staged": "^17.0.5",
     "postcss": "^8.5.15",
     "prettier": "^3.8.3",
-    "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.4",

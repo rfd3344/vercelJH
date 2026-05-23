@@ -19,12 +19,12 @@
     "jsx": "react-jsx",
     "incremental": true,
     "baseUrl": "./",
-    "paths": {
-      // "@/*": ["./*"]
-      "@shadcn/*": [
-        "./src/libs/shadcn/*"
-      ]
-    },
+    // "paths": {
+    //   // "@/*": ["./*"]
+    //   "@shadcn/*": [
+    //     "./src/libs/shadcn/*"
+    //   ]
+    // },
     "plugins": [
       {
         "name": "next"

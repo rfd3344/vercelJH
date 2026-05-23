@@ -6,9 +6,9 @@ import markdown from 'src/sections/markdown/markdownSlice';
 import webpage from 'src/sections/webpage/webpageSlice';
 
 import core from './coreSlice';
-import apiSlice from './apiSlice';
-import githubSlice from './githubSlice';
-import expressSlice from './expressSlice';
+// import apiSlice from './apiSlice';
+// import githubSlice from './githubSlice';
+// import expressSlice from './expressSlice';
 
 export const store = configureStore({
   reducer: {
@@ -17,16 +17,16 @@ export const store = configureStore({
     webpage,
 
     core,
-    [apiSlice.reducerPath]: apiSlice.reducer,
-    [githubSlice.reducerPath]: githubSlice.reducer,
-    [expressSlice.reducerPath]: expressSlice.reducer,
+    // [apiSlice.reducerPath]: apiSlice.reducer,
+    // [githubSlice.reducerPath]: githubSlice.reducer,
+    // [expressSlice.reducerPath]: expressSlice.reducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware()
       // .prepend(listenerMiddleware.middleware)
-      .concat(apiSlice.middleware)
-      .concat(githubSlice.middleware)
-      .concat(expressSlice.middleware),
+      // .concat(apiSlice.middleware)
+      // .concat(githubSlice.middleware)
+      // .concat(expressSlice.middleware),
 });
 
 // Infer the type of makeStore

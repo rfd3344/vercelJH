@@ -1,23 +1,23 @@
 
-import expressSlice from 'src/core/redux/expressSlice';
+// import expressSlice from 'src/core/redux/expressSlice';
 
 
-const extendedApi = expressSlice.injectEndpoints({
+// const extendedApi = expressSlice.injectEndpoints({
 
-  endpoints: (build) => ({
+//   endpoints: (build) => ({
 
-    getDemo: build.query<any, void>({
-      query: () => '/demo/test1',
-    }),
+//     getDemo: build.query<any, void>({
+//       query: () => '/demo/test1',
+//     }),
 
-  }),
+//   }),
 
-});
+// });
 
 
-export const {
-  useGetDemoQuery,
+// export const {
+//   useGetDemoQuery,
 
-} = extendedApi;
+// } = extendedApi;
 
-export default extendedApi;
+// export default extendedApi;

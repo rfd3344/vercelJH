@@ -5,13 +5,14 @@
 import { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
 
-import Provider from 'src/core/Provider';
-import Initiator from 'src/core/Initiator';
-import Header from 'src/core/navigation/header';
-import Footer from 'src/core/navigation/footer';
-import { fontsClassName } from 'src/libs/next';
-import 'src/core/tailwind/tailwind.css';
+import { Provider } from 'src/core/provider';
+import { Initiator } from 'src/core/initiator';
+import { Header } from 'src/core/navigation/header';
+import { Footer } from 'src/core/navigation/footer';
+// import { fontsClassName } from 'src/libs/next';
+// import 'src/core/tailwind/tailwind.css';
 
+import "./globals.css";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -35,17 +36,14 @@ export default function RootLayout({
   children,
 }: IProps) {
   return (
-    <html lang="en" className={fontsClassName} suppressHydrationWarning>
+    <html lang="en" >
       <body className='min-h-screen grid grid-rows-[auto_1fr_auto]'>
-
         <Provider>
 
           <Initiator />
           <Header />
 
-          <div className='auto-rows-auto grid-flow-row px-2'>
-            {children}
-          </div>
+          {children}
 
           <Footer />
 
