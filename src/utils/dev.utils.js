@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import packageJson from 'src/../package.json';
+// import packageJson from 'src/../package.json';
 
 
 /*********************************************************************************************
@@ -17,7 +17,7 @@ export const getBuildInfo = () => {
   const stage = process.env.NEXT_PUBLIC_STAGE;
   const buildTime = process.env.NEXT_PUBLIC_BUILD_TIME;
 
-  return `stage: ${stage}, version: ${packageJson.version}, buildTime: ${buildTime}`;
+  return `stage: ${stage}, buildTime: ${buildTime}`;
 };
 
 /*********************************************************************************************

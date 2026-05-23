@@ -1,8 +1,11 @@
 import React from 'react';
 import _ from 'lodash';
+import Link from 'next/link';
 
-import LinkSections from 'src/sections/home/LinkSections';
-import InputLink from 'src/sections/home/InputLink';
+
+const AvailableLink = ({ href = '' }) => (
+  <Link className='underline p-2' href={href}>{href}</Link>
+);
 
 
 export default function Page({ }) {
@@ -10,9 +13,9 @@ export default function Page({ }) {
   return (
     <main id="home" className='container'>
 
+      <h1>Available Links</h1>
 
-      <LinkSections />
-      <InputLink />
+      <AvailableLink href="/github-repo" />
 
 
     </main>

@@ -7,8 +7,8 @@ import type { Metadata, Viewport } from 'next';
 
 import Provider from 'src/core/Provider';
 import Initiator from 'src/core/Initiator';
-import Header from 'src/core/navigation/Header';
-import Footer from 'src/core/navigation/Footer';
+import Header from 'src/core/navigation/header';
+import Footer from 'src/core/navigation/footer';
 import { fontsClassName } from 'src/libs/next';
 import 'src/core/tailwind/tailwind.css';
 
