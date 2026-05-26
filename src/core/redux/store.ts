@@ -1,9 +1,9 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 
-import githubRepo from 'src/sections/githubRepo/githubRepoSlice';
-import markdown from 'src/sections/markdown/markdownSlice';
-import webpage from 'src/sections/webpage/webpageSlice';
+// import githubRepo from 'src/sections/githubRepo/githubRepoSlice';
+// import markdown from 'src/sections/markdown/markdownSlice';
+// import webpage from 'src/sections/webpage/webpageSlice';
 
 import core from './coreSlice';
 // import apiSlice from './apiSlice';
@@ -12,9 +12,9 @@ import core from './coreSlice';
 
 export const store = configureStore({
   reducer: {
-    githubRepo,
-    markdown,
-    webpage,
+    // githubRepo,
+    // markdown,
+    // webpage,
 
     core,
     // [apiSlice.reducerPath]: apiSlice.reducer,
