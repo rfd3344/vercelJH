@@ -32,7 +32,7 @@ export function GithubRepoAccordion({
         title: root,
         content: <Grid className='gap-4'>
           {files.map((file: any) => (
-            <GridItem key={file.path} span={3}>
+            <GridItem key={file.path} span={6} sm={4} lg={3} xl={2}>
               <FileItem file={file} />
             </GridItem>
           ))}
