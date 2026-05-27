@@ -10,9 +10,8 @@ function run(cmd) {
 }
 
 try {
-
-  run('git add .');
   run(`npm version patch --no-git-tag-version`);
+  run('git add .');
   run('git commit -m "chore: release v$(node -p "require(\'./package.json\').version")"');
   run('git push');
   run('git push --tags');
