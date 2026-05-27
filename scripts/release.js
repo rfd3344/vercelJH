@@ -12,7 +12,7 @@ try {
   run(`npm version patch --no-git-tag-version`);
   run('git add .');
   const a = execSync('node -p "require(\'./package.json\').version"', { stdio: 'pipe' })
-  console.log('a:', a);
+  console.log('a:', a.toString());
   const version = execSync('node -p "require(\'./package.json\').version"', { stdio: 'pipe' }).toString().trim();
   run(`git commit -m "chore: release v${version}"`);
   // run('git push');
