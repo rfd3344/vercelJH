@@ -1,6 +1,6 @@
 {
   "name": "next-jh",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "private": true,
   "engines": {
     "node": ">=22.0.0",
@@ -11,7 +11,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "push": "npm version patch",
+    "push": "node scripts/release.js ",
+    "push3": "npm version patch",
     "push2": "git add . && npm version patch && git push",
     "test": "echo 'No tests configured'"
   },
