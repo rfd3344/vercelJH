@@ -13,7 +13,8 @@ try {
   run('git add .');
 
   const version = execSync('node -p "require(\'./package.json\').version"', { stdio: 'pipe' }).toString();
-  run(`git commit -m "chore: release v${version}"`);
+  run(`git commit -m "release v${version}"`);
+
   // run('git push');
 
   console.log(`✅ Release v${version}`);

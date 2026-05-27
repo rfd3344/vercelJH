@@ -1,6 +1,6 @@
 {
   "name": "next-jh",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "private": true,
   "engines": {
     "node": ">=22.0.0",
