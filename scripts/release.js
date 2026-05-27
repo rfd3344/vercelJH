@@ -16,7 +16,7 @@ try {
   run(`git commit -m "chore: release v${version}"`);
   // run('git push');
 
-  console.log(`✅ committed v${version}`);
+  console.log(`✅ Release v${version}`);
 } catch (err) {
   console.error('❌ Release failed');
   process.exit(1);
