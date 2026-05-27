@@ -11,7 +11,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "push": "git add . && git commit -m 'update' && npm version patch",
+    "push": "npm version patch",
     "push2": "git add . && npm version patch && git push",
     "test": "echo 'No tests configured'"
   },
