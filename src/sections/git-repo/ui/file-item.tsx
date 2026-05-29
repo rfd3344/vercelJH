@@ -26,7 +26,13 @@ export const getFileType = (filepath = '') => {
     case 'jpeg':
     case 'png':
 
-      return <Image src={getStaticJHUrl(filepath)} alt="" width={100} height={100} className="h-full w-auto m-auto" />
+      return <Image src={getStaticJHUrl(filepath)}
+        alt=""
+        className="h-full w-auto m-auto"
+        width={50}
+        height={50}
+        loading="lazy"
+      />
 
     default:
       return '📄';

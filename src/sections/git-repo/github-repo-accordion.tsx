@@ -1,12 +1,8 @@
-'use client';
 
 import _ from 'lodash';
-
-
 import { Accordion } from 'src/components/molecules/accordion';
 
-import { groupByRoot, GithubFile } from 'src/sections/githubRepo/github-repo.utils';
-// import { FolderItems } from 'src/sections/githubRepo/folder-items';
+import { groupByRoot, GithubFile } from './github-repo.utils';
 
 import { Grid, GridItem } from 'src/components/atoms/grid';
 import { FileItem } from './ui/file-item';

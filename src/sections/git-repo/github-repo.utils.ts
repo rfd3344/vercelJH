@@ -5,7 +5,19 @@ import _ from 'lodash';
 // import { GithubFiles } from 'src/types/githubType';
 
 
+export const STATIC_DOCS_REPO = 'rfd3344org/static-docs';
+export const STATIC_PICTURES_REPO = 'rfd3344org/static-pictures';
+
+
 export const STATIC_JH_REPO_URL = 'https://api.github.com/repos/rfd3344/staticJH/git/trees/main?recursive=1';
+
+
+
+export const loadGithubRepoTree = async (repo: string) => {
+  const res = await fetch(`https://api.github.com/repos/${repo}/git/trees/main?recursive=1`);
+  const data = await res.json();
+  return data.tree;
+};
 
 // export const getGithubFileUrl = (repoPath = '', filePath = '') => `${publicEnv().GITHUB_RAW}/${repoPath}/master/${filePath}`;
 // export const getGithubFileUrl = (repoPath = '', filePath = '') => `https://raw.githubusercontent.com/${repoPath}/master/${filePath}`;
