@@ -14,7 +14,9 @@ export const STATIC_JH_REPO_URL = 'https://api.github.com/repos/rfd3344/staticJH
 
 
 export const loadGithubRepoTree = async (repo: string) => {
-  const res = await fetch(`https://api.github.com/repos/${repo}/git/trees/main?recursive=1`);
+  const res = await fetch(`https://api.github.com/repos/${repo}/git/trees/main?recursive=1`, {
+    cache: "no-store",
+  });
   const data = await res.json();
   return data.tree;
 };
