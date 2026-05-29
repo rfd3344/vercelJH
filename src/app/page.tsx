@@ -11,9 +11,10 @@ export default function Page({ }) {
   return (
     <main id="home" className='container text-center'>
 
-      <h1>Available Links</h1>
+      <h1>Available Links </h1>
 
-      <AvailableLink href="/github-repo" />
+      <AvailableLink href="/static-docs" />
+      <AvailableLink href="/static-pictures" />
       <AvailableLink href="/demo" />
 
     </main>
