@@ -3,8 +3,8 @@
   "version": "2.0.17",
   "private": true,
   "engines": {
-    "node": ">=22.0.0",
-    "npm": ">=10.0.0"
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
   },
   "scripts": {
     "clean": "rm -rf .next node_modules",
