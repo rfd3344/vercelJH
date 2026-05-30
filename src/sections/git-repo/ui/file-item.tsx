@@ -53,7 +53,7 @@ export function FileItem({
           {getFileType(repoPath, file.path)}
         </div>
 
-        <p>
+        <p className='break-all'>
           {omitRoot(file.path)}
         </p>
       </Link>

@@ -63,7 +63,8 @@ export function Accordion({
                 {item.title}
               </span>
 
-              <span>{isOpen ? "▼" : "▶"}</span>
+              {/* <span>{isOpen ? "▼" : "▶"}</span> */}
+              <span>{isOpen ? "_" : "+"}</span>
             </button>
 
             <div
@@ -76,7 +77,7 @@ export function Accordion({
               `}
             >
               <div className="overflow-hidden">
-                <div className="px-5 pb-5 text-sm leading-6 text-gray-600">
+                <div className="p-4 text-sm leading-6 text-gray-600">
                   {isOpen && item.content}
                 </div>
               </div>
