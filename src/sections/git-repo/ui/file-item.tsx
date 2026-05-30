@@ -4,60 +4,59 @@ import _ from 'lodash';
 
 import { Link, Image } from 'src/libs/next';
 
-import { getGithubRawUrl, omitRoot } from '../github-repo.utils';
+import { getGithubRawUrl, getGithubPreviewUrl, omitRoot, PDF_VIEWER_URL } from '../github-repo.utils';
 
 
-// export enum FileTypeEnum {
-//   IMAGE = 'IMAGE',
-//   PDF = 'PDF',
-//   MD = 'MD',
-//   OTHERS = 'OTHERS',
-// }
 
-const getFileType = (repo = '', filepath = '') => {
-  const fileExtension = _.lowerCase(filepath.split('.').pop());
-
-  switch (fileExtension) {
-    case 'pdf':
-      return '📕 ';
-    case 'md':
-      return 'Ⓜ️';
-    case 'jpg':
-    case 'jpeg':
-    case 'png':
-
-      return <Image src={getGithubRawUrl(repo, filepath)}
-        alt=""
-        className="h-full w-auto m-auto"
-        width={50}
-        height={50}
-        loading="lazy"
-      />
-
-    default:
-      return '📄';
-  }
-
-};
 
 
 export function FileItem({
   file = {},
   repoPath = '',
 }: any) {
+  const filePath = file.path;
+  const fileExtension = _.lowerCase(filePath.split('.').pop());
+  const displayName = omitRoot(filePath);
+  const rawUrl = getGithubRawUrl(repoPath, filePath);
+
+
+  const renderPreview = () => {
+    switch (fileExtension) {
+      case 'pdf':
+        return <Link href={PDF_VIEWER_URL + encodeURIComponent(rawUrl)} target="_blank">📕</Link>;
+      case 'md':
+        return <Link href={getGithubPreviewUrl(repoPath, filePath)} target="_blank">Ⓜ️</Link>;
+      case 'jpg':
+      case 'jpeg':
+      case 'png':
+        return (
+          <Link href={rawUrl} target="_blank" >
+            <Image
+              src={rawUrl}
+              alt=""
+              className="h-full w-auto m-auto"
+              width={50}
+              height={50}
+              loading="lazy"
+            />
+          </Link>
+        )
+      default:
+        return <Link href={rawUrl} target="_blank">📄</Link>
+    }
+  }
+
 
   return (
     <div id="FileItem" className='text-center' >
-      <Link href={getGithubRawUrl(repoPath, file.path)} target="_blank" rel="noopener noreferrer">
-        <div className='text-5xl'>
-          {getFileType(repoPath, file.path)}
-        </div>
 
-        <p className='break-all'>
-          {omitRoot(file.path)}
-        </p>
-      </Link>
+      <div className='text-5xl'>
+        {renderPreview()}
+      </div>
 
+      <p className='break-all'>
+        {displayName}
+      </p>
 
     </div>
   );
