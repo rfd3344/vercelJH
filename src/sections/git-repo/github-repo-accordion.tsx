@@ -5,7 +5,7 @@ import { Accordion } from 'src/components/molecules/accordion';
 import { groupByRoot, GithubFile } from './github-repo.utils';
 
 import { Grid, GridItem } from 'src/components/atoms/grid';
-import { FileItem } from './ui/file-item';
+import { FileItem } from './file-item';
 
 interface IProps {
   files: GithubFile[];

@@ -1,10 +1,8 @@
 
 import _ from 'lodash';
-
-
 import { Link, Image } from 'src/libs/next';
 
-import { getGithubRawUrl, getGithubPreviewUrl, omitRoot, PDF_VIEWER_URL } from '../github-repo.utils';
+import { getGithubRawUrl, getGithubPreviewUrl, omitRoot, PDF_VIEWER_URL } from './github-repo.utils';
 
 
 
