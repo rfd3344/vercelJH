@@ -12,8 +12,6 @@
     "build": "next build",
     "start": "next start",
     "push": "node scripts/release.js ",
-    "push3": "npm version patch",
-    "push2": "git add . && npm version patch && git push",
     "test": "echo 'No tests configured'"
   },
   "dependencies": {
