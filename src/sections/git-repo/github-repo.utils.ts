@@ -9,7 +9,7 @@ export const STATIC_DOCS_REPO = 'rfd3344org/static-docs';
 export const STATIC_PICTURES_REPO = 'rfd3344org/static-pictures';
 
 
-export const STATIC_JH_REPO_URL = 'https://api.github.com/repos/rfd3344/staticJH/git/trees/main?recursive=1';
+// export const STATIC_JH_REPO_URL = 'https://api.github.com/repos/rfd3344/staticJH/git/trees/main?recursive=1';
 
 
 
@@ -23,7 +23,7 @@ export const loadGithubRepoTree = async (repo: string) => {
 
 // export const getGithubFileUrl = (repoPath = '', filePath = '') => `${publicEnv().GITHUB_RAW}/${repoPath}/master/${filePath}`;
 // export const getGithubFileUrl = (repoPath = '', filePath = '') => `https://raw.githubusercontent.com/${repoPath}/master/${filePath}`;
-export const getStaticJHUrl = (filePath = '') => `https://raw.githubusercontent.com/rfd3344/staticJH/master/${filePath}`;
+export const getGithubRawUrl = (repo = '', filePath = '') => `https://raw.githubusercontent.com/${repo}/master/${filePath}`;
 
 
 // https://raw.githubusercontent.com/CardieX/cardiex-frontend/a1a60095f3d42da378ab968b2efea05b5d0e1466/apps/back-office/public/flags/usa.svg?token=BPGW2WFW3L5ZBOI3BGWOWADKCU4LU

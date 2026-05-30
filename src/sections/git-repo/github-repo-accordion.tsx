@@ -9,10 +9,12 @@ import { FileItem } from './ui/file-item';
 
 interface IProps {
   files: GithubFile[];
+  repoPath: string;
 }
 
 export function GithubRepoAccordion({
-  files
+  files,
+  repoPath
 }: IProps) {
 
   const filteredFiles = files?.filter(
@@ -29,7 +31,7 @@ export function GithubRepoAccordion({
         content: <Grid className='gap-4'>
           {files.map((file: any) => (
             <GridItem key={file.path} span={6} sm={4} lg={3} xl={2}>
-              <FileItem file={file} />
+              <FileItem file={file} repoPath={repoPath} />
             </GridItem>
           ))}
         </Grid>,

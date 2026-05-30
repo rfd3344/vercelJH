@@ -10,7 +10,7 @@ export default async function StaticPicturesPage() {
 
   return (
     <main id="StaticPicturesPage" className='container mx-auto my-4'>
-      <GithubRepoAccordion files={tree} />
+      <GithubRepoAccordion files={tree} repoPath={STATIC_PICTURES_REPO} />
     </main>
   );
 }

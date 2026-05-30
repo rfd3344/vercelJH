@@ -4,17 +4,17 @@ import _ from 'lodash';
 
 import { Link, Image } from 'src/libs/next';
 
-import { getStaticJHUrl, omitRoot } from '../github-repo.utils';
+import { getGithubRawUrl, omitRoot } from '../github-repo.utils';
 
 
-export enum FileTypeEnum {
-  IMAGE = 'IMAGE',
-  PDF = 'PDF',
-  MD = 'MD',
-  OTHERS = 'OTHERS',
-}
+// export enum FileTypeEnum {
+//   IMAGE = 'IMAGE',
+//   PDF = 'PDF',
+//   MD = 'MD',
+//   OTHERS = 'OTHERS',
+// }
 
-export const getFileType = (filepath = '') => {
+const getFileType = (repo = '', filepath = '') => {
   const fileExtension = _.lowerCase(filepath.split('.').pop());
 
   switch (fileExtension) {
@@ -26,7 +26,7 @@ export const getFileType = (filepath = '') => {
     case 'jpeg':
     case 'png':
 
-      return <Image src={getStaticJHUrl(filepath)}
+      return <Image src={getGithubRawUrl(repo, filepath)}
         alt=""
         className="h-full w-auto m-auto"
         width={50}
@@ -43,16 +43,17 @@ export const getFileType = (filepath = '') => {
 
 export function FileItem({
   file = {},
+  repoPath = '',
 }: any) {
 
   return (
     <div id="FileItem" className='text-center' >
-      <Link href={getStaticJHUrl(file.path)} target="_blank" rel="noopener noreferrer">
+      <Link href={getGithubRawUrl(repoPath, file.path)} target="_blank" rel="noopener noreferrer">
         <div className='text-5xl'>
-          {getFileType(file.path)}
+          {getFileType(repoPath, file.path)}
         </div>
 
-        <p >
+        <p>
           {omitRoot(file.path)}
         </p>
       </Link>
