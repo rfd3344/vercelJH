@@ -1,29 +1,14 @@
 import {
   type NextRequest,
   NextResponse,
-} from 'src/libs/next';
-
-
-// import { example } from 'src/libs/openai';
-
-
+} from 'src/lib/next';
 
 export async function GET(request: NextRequest) {
-
-  // const res = await example();
-  // console.warn(res);
-
-  const resp = { message: 'Hello World' };
+  const resp = { message: 'Hello Demo' };
   return NextResponse.json(resp);
 }
 
-// To handle a POST request to /api
 export async function POST(request: NextRequest) {
-
-
-
-
-
-  const resp = { message: 'Hello World' };
+  const resp = { message: 'Hello Demo' };
   return NextResponse.json(resp);
 }

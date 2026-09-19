@@ -1,24 +1,24 @@
-#!/usr/bin/env node
+// #!/usr/bin/env node
 
-const { execSync } = require('node:child_process');
+// const { execSync } = require('node:child_process');
 
 
-function run(cmd) {
-  console.log(`→ ${cmd}`);
-  execSync(cmd, { stdio: 'inherit' });
-}
+// function run(cmd) {
+//   console.log(`→ ${cmd}`);
+//   execSync(cmd, { stdio: 'inherit' });
+// }
 
-try {
-  run(`npm version patch --no-git-tag-version`);
-  run('git add .');
+// try {
+//   run(`npm version patch --no-git-tag-version`);
+//   run('git add .');
 
-  const version = execSync('node -p "require(\'./package.json\').version"', { stdio: 'pipe' }).toString();
-  run(`git commit -m "release v${version}"`);
+//   const version = execSync('node -p "require(\'./package.json\').version"', { stdio: 'pipe' }).toString();
+//   run(`git commit -m "release v${version}"`);
 
-  // run('git push');
+//   // run('git push');
 
-  console.log(`✅ Release v${version}`);
-} catch (err) {
-  console.error('❌ Release failed');
-  process.exit(1);
-}
+//   console.log(`✅ Release v${version}`);
+// } catch (err) {
+//   console.error('❌ Release failed');
+//   process.exit(1);
+// }

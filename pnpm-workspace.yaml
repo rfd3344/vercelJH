@@ -1,4 +1,5 @@
 packages:
   - .
 allowBuilds:
+  '@sentry/cli': false
   sharp: false

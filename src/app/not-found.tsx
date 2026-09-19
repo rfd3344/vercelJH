@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'src/libs/next';
+import { Link } from 'src/lib/next';
 
 export default function NotFound() {
   return (
