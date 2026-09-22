@@ -1,5 +1,5 @@
 
-import { cn } from "src/utils/tailwind.utils";
+import { cn } from "@/utils/tailwind.utils";
 import { ElementType, ReactNode } from "react";
 
 type TypographyVariant =

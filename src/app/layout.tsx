@@ -1,16 +1,12 @@
-
-
-
-
 import { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
 
-import { Provider } from 'src/core/provider';
-import { Initiator } from 'src/core/initiator';
-import { Header } from 'src/core/navigation/header';
-import { Footer } from 'src/core/navigation/footer';
-// import { fontsClassName } from 'src/libs/next';
-// import 'src/core/tailwind/tailwind.css';
+import { Provider } from '@/core/provider';
+import { Initiator } from '@/core/initiator';
+import { Header } from '@/core/navigation/header';
+import { Footer } from '@/core/navigation/footer';
+// import { fontsClassName } from '@/libs/next';
+// import '@/core/tailwind/tailwind.css';
 
 import "./globals.css";
 

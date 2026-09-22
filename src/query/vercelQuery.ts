@@ -1,5 +1,5 @@
 
-// import apiSlice from 'src/core/redux/apiSlice';
+// import apiSlice from '@/core/redux/apiSlice';
 
 
 // const extendedApi = apiSlice.injectEndpoints({

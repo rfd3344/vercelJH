@@ -1,7 +1,7 @@
 import {
   type NextRequest,
   NextResponse,
-} from 'src/lib/next';
+} from '@/lib/next';
 
 export async function GET(request: NextRequest) {
   const resp = { message: 'Hello Demo' };

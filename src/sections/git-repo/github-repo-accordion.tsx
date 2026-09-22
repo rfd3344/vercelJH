@@ -1,10 +1,10 @@
 
 import _ from 'lodash';
-import { Accordion } from 'src/components/molecules/accordion';
+import { Accordion } from '@/components/molecules/accordion';
 
 import { groupByRoot, GithubFile } from './github-repo.utils';
 
-import { Grid, GridItem } from 'src/components/atoms/grid';
+import { Grid, GridItem } from '@/components/atoms/grid';
 import { FileItem } from './file-item';
 
 interface IProps {

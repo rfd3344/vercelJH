@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { Link } from 'src/libs/next';
+import { Link } from '@/libs/next';
 import { Button } from '@shadcn/ui/button';
 
 

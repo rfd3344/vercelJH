@@ -4,9 +4,9 @@ import React from 'react';
 import _ from 'lodash';
 
 import ButtonLink from './ButtonLink';
-import Typography from 'src/components/dataDisplay/typography';
+import Typography from '@/components/dataDisplay/typography';
 
-import { homeLinks } from 'src/constants/home-links';
+import { homeLinks } from '@/constants/home-links';
 
 
 

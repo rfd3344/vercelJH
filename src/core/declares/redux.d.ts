@@ -1,4 +1,4 @@
-import { RootState } from 'src/core/redux/store';
+import { RootState } from '@/core/redux/store';
 
 // declare module 'react-redux' {
 //   interface useSelector {

@@ -1,7 +1,7 @@
 import { ServerDemo } from './server-demo';
 
-import { ClientDemo1 } from 'src/sections/demo/client-demo1';
-import { ClientDemo2 } from 'src/sections/demo/client-demo2';
+import { ClientDemo1 } from '@/sections/demo/client-demo1';
+import { ClientDemo2 } from '@/sections/demo/client-demo2';
 
 
 export default async function Page() {

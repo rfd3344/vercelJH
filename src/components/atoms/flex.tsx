@@ -1,7 +1,7 @@
 // components/ui/Flex.tsx
 
 import { ReactNode } from "react";
-import { cn } from "src/utils/tailwind.utils";
+import { cn } from "@/utils/tailwind.utils";
 
 type FlexProps = {
   children: ReactNode;

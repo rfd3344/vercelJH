@@ -3,7 +3,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { useRouter } from 'src/libs/next';
+import { useRouter } from '@/libs/next';
 
 export default function URLAction() {
   const router = useRouter();

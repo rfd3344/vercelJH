@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react';
 
-// import { cookie, getCookie } from 'src/utils/cookie.utils';
+// import { cookie, getCookie } from '@/utils/cookie.utils';
 
 // /***
 //  * get cookie valu and listen to changes

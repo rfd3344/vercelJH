@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-// import ResourceTable from 'src/sections/resource/ResourceTable';
+// import ResourceTable from '@/sections/resource/ResourceTable';
 
 export default function Page({ }) {
 

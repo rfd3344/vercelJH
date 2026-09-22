@@ -2,9 +2,9 @@
 // import _ from 'lodash';
 // import { useNavigate, useLocation } from 'react-router-dom';
 
-// import { useCookie } from 'src/hooks';
+// import { useCookie } from '@/hooks';
 
-// import { RoutePaths } from 'src/constants/routeConst';
+// import { RoutePaths } from '@/constants/routeConst';
 
 // export default function useAuth() {
 //   const nav = useNavigate();

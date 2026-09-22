@@ -3,7 +3,7 @@
 
 // import {
 //   useGetDemoQuery,
-// } from 'src/query/expressQuery';
+// } from '@/query/expressQuery';
 
 
 export function ClientDemo2() {

@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react';
 
-// import { STORAGE_CHANGE, getStorage } from 'src/utils/localStorage.utils';
+// import { STORAGE_CHANGE, getStorage } from '@/utils/localStorage.utils';
 
 // export const useStorage = (name = '', isSessionStorage = false) => {
 //   const [value, setValue] = useState<string | Storage | null>(() =>

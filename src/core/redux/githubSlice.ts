@@ -1,7 +1,7 @@
 
 // import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-// import { publicEnv } from 'src/core/envConfig';
+// import { publicEnv } from '@/core/envConfig';
 
 
 // const githubSlice = createApi({

@@ -1,7 +1,7 @@
 'use client';
 // import { useSelector, useDispatch } from 'react-redux';
 
-// import { updateWebpage } from 'src/sections/webpage/webpageSlice';
+// import { updateWebpage } from '@/sections/webpage/webpageSlice';
 
 export default function Page() {
   // const dispatch = useDispatch();

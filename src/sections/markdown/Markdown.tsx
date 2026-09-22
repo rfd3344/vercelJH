@@ -2,14 +2,14 @@
 
 // import React, { useState, useEffect } from 'react';
 
-// import { useSearchParams } from 'src/libs/next';
+// import { useSearchParams } from '@/libs/next';
 // import { useSelector, useDispatch } from 'react-redux';
 
-// import Icon from 'src/components2/dataDisplay/Icon';
+// import Icon from '@/components2/dataDisplay/Icon';
 
-// import ReactMarkdown from 'src/libs/ReactMarkdown';
+// import ReactMarkdown from '@/libs/ReactMarkdown';
 
-// import Typography from 'src/components2/dataDisplay/typography';
+// import Typography from '@/components2/dataDisplay/typography';
 
 // export default function Page({ }) {
 //   const searchParams = useSearchParams();

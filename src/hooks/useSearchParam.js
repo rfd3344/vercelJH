@@ -1,8 +1,8 @@
 // import { useMemo } from 'react';
 // import _ from 'lodash';
 
-// import { queryStringParse } from 'src/utils/queryString.utils';
-// import { useSearchParams as useSearchParamsNext } from 'src/libs/next';
+// import { queryStringParse } from '@/utils/queryString.utils';
+// import { useSearchParams as useSearchParamsNext } from '@/libs/next';
 
 // /********************************
 //  * this method is retive the url params

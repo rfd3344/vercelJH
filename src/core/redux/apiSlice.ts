@@ -1,7 +1,7 @@
 // import type { Action, PayloadAction } from '@reduxjs/toolkit';
 // import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-// // import { publicEnv } from 'src/core/envConfig';
+// // import { publicEnv } from '@/core/envConfig';
 // // import { HYDRATE } from 'next-redux-wrapper';
 
 // type RootState = any // normally inferred from state
@@ -22,7 +22,7 @@
 //       return action.payload[reducerPath];
 //     }
 //   },
-//   // endpoints are defined in folder `src/query`
+//   // endpoints are defined in folder `@/query`
 //   // ref: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
 //   endpoints: () => ({}),
 

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-// import packageJson from 'src/../package.json';
+// import packageJson from '@/../package.json';
 
 
 /*********************************************************************************************

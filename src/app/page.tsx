@@ -1,10 +1,8 @@
 import Link from 'next/link';
 
-
 const AvailableLink = ({ href = '' }) => (
   <Link className='underline p-2 block' href={href}>{href}</Link>
 );
-
 
 export default function Page({ }) {
 

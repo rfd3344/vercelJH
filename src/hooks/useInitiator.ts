@@ -3,12 +3,12 @@
 // import { useNavigate, useLocation } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 
-// import { useCookie } from 'src/hooks';
-// import { setCookie } from 'src/utils/cookieUtils';
-// import { fetchUserDetails } from 'src/pages/auth/meSlice';
-// import { fetchCountryDetails } from 'src/core/coreSlice';
+// import { useCookie } from '@/hooks';
+// import { setCookie } from '@/utils/cookieUtils';
+// import { fetchUserDetails } from '@/pages/auth/meSlice';
+// import { fetchCountryDetails } from '@/core/coreSlice';
 
-// import { RoutePaths } from 'src/constants/routeConst';
+// import { RoutePaths } from '@/constants/routeConst';
 
 // export default function useInitiator() {
 //   const dispatch = useDispatch();

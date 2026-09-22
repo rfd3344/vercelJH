@@ -1,6 +1,6 @@
 // import { MongoClient, ObjectId } from 'mongodb';
 
-// import { publicEnv } from 'src/core/envConfig';
+// import { publicEnv } from '@/core/envConfig';
 
 
 // const MONGO_URL = `mongodb+srv://${publicEnv().MONGO_USERNAME}:${publicEnv().MONGO_PASSWORD}@cluster0.lph5oow.mongodb.net/`;

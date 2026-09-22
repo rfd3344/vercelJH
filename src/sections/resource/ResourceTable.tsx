@@ -2,7 +2,7 @@
 // import React from 'react';
 // import _ from 'lodash';
 
-// import { Link } from 'src/libs/next';
+// import { Link } from '@/libs/next';
 // // import { Table } from 'flowbite-react';
 
 // import {

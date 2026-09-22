@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
-import { GithubRepoAccordion } from 'src/sections/git-repo/github-repo-accordion';
-import { loadGithubRepoTree, STATIC_DOCS_REPO } from 'src/sections/git-repo/github-repo.utils';
+import { GithubRepoAccordion } from '@/sections/git-repo/github-repo-accordion';
+import { loadGithubRepoTree, STATIC_DOCS_REPO } from '@/sections/git-repo/github-repo.utils';
 
 
 export default async function StaticDocsPage() {

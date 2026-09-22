@@ -1,8 +1,8 @@
 // import _ from 'lodash';
 
-// import { GithubFiles } from 'src/types/githubType';
+// import { GithubFiles } from '@/types/githubType';
 
-// import githubSlice from 'src/core/redux/githubSlice';
+// import githubSlice from '@/core/redux/githubSlice';
 
 // type GetMasterTreeResponse = {
 //   sha?: string;

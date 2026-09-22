@@ -1,9 +1,9 @@
 // import { useState, useCallback } from 'react';
 // import _ from 'lodash';
 
-// import { useRouter } from 'src/libs/next';
+// import { useRouter } from '@/libs/next';
 
-// import { queryStringStringify, ParsedQuery } from 'src/utils/queryString.utils';
+// import { queryStringStringify, ParsedQuery } from '@/utils/queryString.utils';
 
 // /****
 //  * similar as react-router v6 useNavigation

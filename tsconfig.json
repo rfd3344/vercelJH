@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,13 +18,15 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "baseUrl": "./",
-    // "paths": {
-    //   // "@/*": ["./*"]
-    //   "@shadcn/*": [
-    //     "./src/libs/shadcn/*"
-    //   ]
-    // },
+    // "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+      // "@shadcn/*": [
+      //   "./src/libs/shadcn/*"
+      // ]
+    },
     "plugins": [
       {
         "name": "next"
